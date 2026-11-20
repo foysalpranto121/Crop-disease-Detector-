@@ -91,3 +91,9 @@ if (_dist / "index.html").is_file():
         if path and file.is_file() and file.is_relative_to(_dist):
             return FileResponse(file)
         return FileResponse(_dist / "index.html")  # client-side routes like /result/12
+
+else:  # API-only deployment (the website is hosted elsewhere, e.g. Netlify)
+
+    @app.get("/", include_in_schema=False)
+    def root() -> dict:
+        return {"name": "Crop Disease Detector API", "status": "ok", "docs": "/docs", "health": "/api/health"}

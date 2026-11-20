@@ -1,0 +1,37 @@
+# Netlify hosts the website (frontend/). The API runs separately — see README "Deployment".
+# In Netlify → Site configuration → Environment variables, set:
+#   VITE_API_URL = https://<your-backend-host>   (no trailing slash)
+
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  VITE_USE_MOCKS = "false"
+
+# Single-page app: every route (/diagnose, /result/12, ...) is served by index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(self), microphone=(), geolocation=()"
+
+# Vite puts a content hash in every asset file name, so they can be cached forever
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/diseases/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
