@@ -2,7 +2,7 @@ import { useState, type FormEvent } from "react";
 import { Link, useLocation, useNavigate, useSearchParams } from "react-router";
 import { Lock, Mail } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { toApiError, USE_MOCKS } from "../api/client";
+import { toApiError } from "../api/client";
 import { AuthShell } from "../components/AuthShell";
 import { TextField } from "../components/Field";
 import { Alert, Button } from "../components/ui";
@@ -51,7 +51,6 @@ export default function LoginPage() {
         <Button type="submit" size="lg" className="w-full" loading={busy}>
           {t("auth.submit_login")}
         </Button>
-        {(USE_MOCKS || import.meta.env.DEV) && <p className="rounded-2xl bg-leaf-50 p-3 text-xs text-leaf-800">{t("auth.demo_hint")}</p>}
         <p className="text-center text-sm text-leaf-900/70">
           {t("auth.no_account")}{" "}
           <Link to="/register" className="font-semibold text-leaf-700 hover:underline">

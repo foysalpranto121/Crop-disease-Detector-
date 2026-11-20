@@ -1,5 +1,6 @@
 import type { Disease, DiseaseType, L, Treatment } from "../../api/types";
-import { diseaseImages } from "../../lib/diseaseImages";
+import manifest from "../../../public/diseases/manifest.json";
+import { diseaseImages, slugify } from "../../lib/diseaseImages";
 import { cropByKey } from "./crops";
 import { EXTRA_DEFS } from "./extraDiseases";
 
@@ -927,7 +928,11 @@ export function buildDiseases(): Disease[] {
   let treatmentId = 1;
   const all = [
     ...DEFS.map((d) => ({ ...d, classLabel: d.label, images: diseaseImages(d.label) })),
-    ...EXTRA_DEFS.map((d) => ({ ...d, classLabel: `${d.model}:${d.label}`, images: [] as string[] })),
+    ...EXTRA_DEFS.map((d) => {
+      const classLabel = `${d.model}:${d.label}`;
+      // Not every specialist class has public photos yet; use the ones that were downloaded.
+      return { ...d, classLabel, images: (manifest as Record<string, string[]>)[slugify(classLabel)] ?? [] };
+    }),
   ];
   return all.map((d, index) => ({
     id: index + 1,

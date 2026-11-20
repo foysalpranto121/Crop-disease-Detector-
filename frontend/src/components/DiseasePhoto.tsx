@@ -17,7 +17,7 @@ export function DiseasePhoto({ src, alt, emoji, className }: { src?: string | nu
 }
 
 /** Large photo with clickable thumbnails (disease detail page). */
-export function PhotoGallery({ images, alt, emoji }: { images: string[]; alt: string; emoji?: string }) {
+export function PhotoGallery({ images, alt, emoji, credit }: { images: string[]; alt: string; emoji?: string; credit?: string }) {
   const { t } = useTranslation();
   const [active, setActive] = useState(0);
   if (!images.length) return null;
@@ -44,7 +44,7 @@ export function PhotoGallery({ images, alt, emoji }: { images: string[]; alt: st
           </button>
         ))}
       </div>
-      <figcaption className="mt-2 text-[11px] text-leaf-900/50">{t("library.photo_credit")}</figcaption>
+      <figcaption className="mt-2 text-[11px] text-leaf-900/50">{credit ?? t("library.photo_credit")}</figcaption>
     </figure>
   );
 }

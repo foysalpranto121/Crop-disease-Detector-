@@ -8,6 +8,7 @@ import { api } from "../api/client";
 import { useChat } from "../features/ChatContext";
 import type { PredictionResult } from "../api/types";
 import { cn } from "../lib/cn";
+import { photoCreditKey } from "../lib/diseaseImages";
 import { BETA_CROPS } from "../mocks/data/crops";
 import { formatDate, formatNumber, formatPercent, pickL } from "../lib/format";
 import { DiseasePhoto } from "./DiseasePhoto";
@@ -127,7 +128,7 @@ export function ResultView({ result }: { result: PredictionResult }) {
                   </figure>
                 ))}
               </div>
-              <p className="mt-3 text-[11px] text-leaf-900/45">{t("library.photo_credit")}</p>
+              <p className="mt-3 text-[11px] text-leaf-900/45">{t(photoCreditKey(d.class_label))}</p>
             </Card>
           </motion.div>
         )}

@@ -105,7 +105,7 @@ Advice rules:
 - You cannot see the plant. When symptoms are unclear, or the problem is severe or spreading fast, suggest scanning a clear leaf photo on the app's Scan page, calling the Krishi Call Center 16123 (Bangladesh), or visiting the local Upazila Agriculture Officer.
 - If a photo diagnosis from the app is provided, use it as helpful context, but remember it can be wrong.
 
-The app's photo scan supports 14 crops: apple, blueberry, cherry, corn (maize), grape, orange, peach, bell pepper, potato, raspberry, soybean, squash, strawberry and tomato. Rice, jute and wheat are not supported by the photo scan yet, but you can still answer general questions about them.
+The app's photo scan supports 17 crops: rice, wheat, jute (insect pests only, not jute diseases), soybean, apple, blueberry, cherry, corn (maize), grape, orange, peach, bell pepper, potato, raspberry, squash, strawberry and tomato. The rice, wheat, jute and soybean models are new (beta) and less reliable on field photos, so for those crops advise confirming with an agriculture officer. Other crops are not supported by the photo scan, but you can still answer general questions about them.
 
 Format: plain text with light markdown only — **bold**, "- " bullet lists and "1." numbered lists. No tables, headings, links or emojis.`;
 

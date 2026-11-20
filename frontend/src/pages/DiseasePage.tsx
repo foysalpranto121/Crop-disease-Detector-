@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { api } from "../api/client";
 import { TypeBadge } from "../components/DiseaseCard";
 import { PhotoGallery } from "../components/DiseasePhoto";
+import { photoCreditKey } from "../lib/diseaseImages";
 import { TYPE_META } from "../components/diseaseMeta";
 import { TreatmentTabs } from "../components/TreatmentTabs";
 import { Badge, ButtonLink, Card, ErrorState, LoadingState } from "../components/ui";
@@ -33,7 +34,7 @@ export default function DiseasePage() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <Card className={cn("overflow-hidden bg-gradient-to-br p-6 sm:p-8", TYPE_META[d.type].gradient)}>
               <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
-                <PhotoGallery images={d.images} alt={`${pickL(d.crop.name, lang)} — ${pickL(d.name, lang)}`} emoji={d.crop.emoji} />
+                <PhotoGallery images={d.images} alt={`${pickL(d.crop.name, lang)} — ${pickL(d.name, lang)}`} emoji={d.crop.emoji} credit={t(photoCreditKey(d.class_label))} />
                 <div>
                   <div className="flex flex-wrap gap-1.5">
                     <Badge tone="neutral">{pickL(d.crop.name, lang)}</Badge>
