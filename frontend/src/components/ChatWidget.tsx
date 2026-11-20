@@ -1,11 +1,34 @@
 import { useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { ArrowUp, MessageCircleQuestion, RotateCcw, Sparkles, Square, SquarePen, WifiOff, X } from "lucide-react";
+import { ArrowUp, RotateCcw, Square, SquarePen, WifiOff, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useChat, type UiMessage } from "../features/ChatContext";
 import { cn } from "../lib/cn";
 import { ChatMarkdown } from "./ChatMarkdown";
 import { LeafMark } from "./Logo";
+
+/** Krishi AI's face: a Bangladeshi farmer-doctor portrait (public/avatar/krishi-doctor.webp); leaf logo if missing. */
+const BOT_AVATAR_SRC = "/avatar/krishi-doctor.webp";
+
+function BotAvatar({ className, online = false }: { className?: string; online?: boolean }) {
+  const [failed, setFailed] = useState(false);
+  return (
+    <span className={cn("relative inline-block shrink-0", className)}>
+      {failed ? (
+        <LeafMark className="size-full" />
+      ) : (
+        <img
+          src={BOT_AVATAR_SRC}
+          alt=""
+          onError={() => setFailed(true)}
+          className="size-full rounded-full bg-leaf-100 object-cover ring-2 ring-white shadow-sm"
+          draggable={false}
+        />
+      )}
+      {online && <span className="absolute end-0 bottom-0 size-[28%] min-h-2.5 min-w-2.5 rounded-full bg-[#22c55e] ring-2 ring-white" aria-hidden />}
+    </span>
+  );
+}
 
 function TypingDots() {
   return (
@@ -33,7 +56,7 @@ function Bubble({ m, onRetry }: { m: UiMessage; onRetry: () => void }) {
   }
   return (
     <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="flex gap-2">
-      <LeafMark className="mt-1 size-7 shrink-0" />
+      <BotAvatar className="mt-1 size-8" />
       <div className="min-w-0 max-w-[88%]">
         <div className="rounded-2xl rounded-es-md bg-white px-4 py-3 text-[15px] leading-relaxed shadow-sm ring-1 ring-leaf-900/5">
           {m.status === "streaming" && !m.content ? (
@@ -125,11 +148,14 @@ export function ChatWidget() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             aria-label={t("chat.open")}
-            className="fixed end-4 bottom-4 z-40 flex items-center gap-2 rounded-full bg-gradient-to-br from-leaf-500 to-leaf-700 p-4 text-white shadow-xl shadow-leaf-900/25 sm:end-6 sm:bottom-6 sm:px-5"
+            className="fixed end-4 bottom-4 z-40 flex items-center gap-2.5 rounded-full bg-gradient-to-br from-leaf-500 to-leaf-700 p-1.5 text-white shadow-xl shadow-leaf-900/25 sm:end-6 sm:bottom-6 sm:pe-5"
           >
             <span className="animate-pulse-ring absolute inset-0 rounded-full bg-leaf-400/40 decorative-motion" aria-hidden />
-            <MessageCircleQuestion className="relative size-6" aria-hidden />
-            <span className="relative hidden font-semibold sm:inline">{t("chat.open")}</span>
+            <BotAvatar className="size-14" online />
+            <span className="relative hidden text-start leading-tight sm:block">
+              <span className="block font-semibold">{t("chat.open")}</span>
+              <span className="block text-xs text-white/80">{t("chat.online")}</span>
+            </span>
           </motion.button>
         )}
       </AnimatePresence>
@@ -147,12 +173,12 @@ export function ChatWidget() {
           >
             {/* Header */}
             <header className="flex items-center gap-3 bg-gradient-to-r from-leaf-700 to-leaf-500 px-4 py-3 text-white">
-              <span className="grid size-10 place-items-center rounded-2xl bg-white/15">
-                <Sparkles className="size-5" aria-hidden />
-              </span>
+              <BotAvatar className="size-12" online />
               <div className="min-w-0 flex-1">
                 <h2 className="leading-tight font-semibold">{t("chat.title")}</h2>
-                <p className="truncate text-xs text-leaf-50/85">{t("chat.subtitle")}</p>
+                <p className="flex items-center gap-1.5 truncate text-xs text-leaf-50/90">
+                  <span className="size-1.5 rounded-full bg-[#4ade80]" aria-hidden /> {t("chat.online")} · {t("chat.subtitle")}
+                </p>
               </div>
               <button type="button" onClick={chat.clear} className="rounded-full p-2 hover:bg-white/15" aria-label={t("chat.clear")} title={t("chat.clear")}>
                 <SquarePen className="size-5" />
@@ -172,7 +198,7 @@ export function ChatWidget() {
             {/* Messages */}
             <div ref={listRef} className="flex-1 space-y-4 overflow-y-auto px-4 py-4" aria-live="polite">
               <div className="flex gap-2">
-                <LeafMark className="mt-1 size-7 shrink-0" />
+                <BotAvatar className="mt-1 size-8" />
                 <p className="max-w-[88%] rounded-2xl rounded-es-md bg-white px-4 py-3 text-[15px] leading-relaxed shadow-sm ring-1 ring-leaf-900/5">{t("chat.welcome")}</p>
               </div>
 

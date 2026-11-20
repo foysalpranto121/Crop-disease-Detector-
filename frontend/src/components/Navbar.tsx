@@ -1,13 +1,106 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router";
 import { AnimatePresence, motion } from "motion/react";
-import { LogOut, Menu, ScanLine, UserRound, X } from "lucide-react";
+import { ChevronDown, History, LayoutDashboard, LogOut, Menu, ScanLine, X } from "lucide-react";
+import type { User } from "../api/types";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "../features/AuthContext";
 import { cn, container } from "../lib/cn";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { Logo } from "./Logo";
 import { Button, ButtonLink } from "./ui";
+
+function initials(name: string): string {
+  return (
+    name
+      .split(/\s+/)
+      .filter(Boolean)
+      .slice(0, 2)
+      .map((w) => w[0]?.toUpperCase())
+      .join("") || "?"
+  );
+}
+
+/** Avatar button with a dropdown: who is signed in, quick links and a clearly labelled "Log out". */
+function UserMenu({ user, onLogout }: { user: User; onLogout: () => void }) {
+  const { t } = useTranslation();
+  const location = useLocation();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => setOpen(false), [location.pathname]);
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", onDown);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDown);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
+  const roleLabel = user.role === "admin" ? t("nav.admin") : user.role === "agronomist" ? t("auth.agronomist") : t("auth.farmer");
+  const item = "flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors";
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-haspopup="menu"
+        aria-expanded={open}
+        aria-label={`${t("nav.account")}: ${user.name}`}
+        className="flex items-center gap-2 rounded-full bg-white/80 p-1 shadow-sm ring-1 ring-leaf-900/10 transition hover:bg-white hover:ring-leaf-300 sm:pe-3"
+      >
+        <span className="grid size-8 place-items-center rounded-full bg-gradient-to-br from-leaf-500 to-leaf-700 text-xs font-bold text-white">{initials(user.name)}</span>
+        <span className="hidden max-w-28 truncate text-sm font-semibold text-leaf-900 sm:inline">{user.name.split(" ")[0]}</span>
+        <ChevronDown className={cn("hidden size-4 text-leaf-900/50 transition-transform sm:block", open && "rotate-180")} aria-hidden />
+      </button>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            role="menu"
+            initial={{ opacity: 0, y: -8, scale: 0.96 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -8, scale: 0.96 }}
+            transition={{ duration: 0.16 }}
+            className="absolute end-0 top-full z-50 mt-2 w-64 origin-top-right rounded-2xl bg-white p-2 shadow-xl ring-1 ring-leaf-900/10"
+          >
+            <div className="flex items-center gap-3 rounded-xl bg-leaf-50 p-3">
+              <span className="grid size-10 shrink-0 place-items-center rounded-full bg-gradient-to-br from-leaf-500 to-leaf-700 text-sm font-bold text-white">{initials(user.name)}</span>
+              <div className="min-w-0">
+                <p className="truncate font-semibold">{user.name}</p>
+                <p className="truncate text-xs text-leaf-900/60">{user.email}</p>
+                <span className="mt-1 inline-block rounded-full bg-white px-2 py-0.5 text-[11px] font-semibold text-leaf-700 ring-1 ring-leaf-200">{roleLabel}</span>
+              </div>
+            </div>
+            <div className="mt-1">
+              <NavLink to="/history" role="menuitem" className={cn(item, "hover:bg-leaf-50")}>
+                <History className="size-4 text-leaf-600" aria-hidden /> {t("nav.history")}
+              </NavLink>
+              {user.role === "admin" && (
+                <NavLink to="/admin" role="menuitem" className={cn(item, "hover:bg-leaf-50")}>
+                  <LayoutDashboard className="size-4 text-leaf-600" aria-hidden /> {t("nav.admin")}
+                </NavLink>
+              )}
+            </div>
+            <div className="my-1 border-t border-leaf-100" />
+            <button type="button" role="menuitem" onClick={onLogout} className={cn(item, "text-danger-700 hover:bg-danger-100")}>
+              <LogOut className="size-4" aria-hidden /> {t("nav.logout")}
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
 
 export function Navbar() {
   const { t } = useTranslation();
@@ -60,14 +153,7 @@ export function Navbar() {
         <div className="ms-auto flex items-center gap-2">
           <LanguageSwitch />
           {user ? (
-            <div className="hidden items-center gap-1 lg:flex">
-              <span className="flex items-center gap-1.5 rounded-full bg-leaf-50 px-3 py-1.5 text-sm font-medium">
-                <UserRound className="size-4 text-leaf-600" aria-hidden /> {user.name.split(" ")[0]}
-              </span>
-              <Button variant="ghost" size="sm" onClick={logout} aria-label={t("nav.logout")} title={t("nav.logout")}>
-                <LogOut className="size-4" />
-              </Button>
-            </div>
+            <UserMenu user={user} onLogout={logout} />
           ) : (
             <ButtonLink to="/login" variant="ghost" size="sm" className="max-lg:hidden">
               {t("nav.login")}

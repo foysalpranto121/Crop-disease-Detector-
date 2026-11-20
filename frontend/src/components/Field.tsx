@@ -1,4 +1,5 @@
-import { useId, type InputHTMLAttributes, type ReactNode, type SelectHTMLAttributes, type TextareaHTMLAttributes } from "react";
+import { Eye, EyeOff } from "lucide-react";
+import { useId, useState, type InputHTMLAttributes, type ReactNode, type SelectHTMLAttributes, type TextareaHTMLAttributes } from "react";
 import { cn } from "../lib/cn";
 
 const control = "w-full rounded-2xl border border-leaf-200 bg-white px-4 text-leaf-900 outline-none transition placeholder:text-leaf-900/35 focus:border-leaf-500 focus:ring-4 focus:ring-leaf-200/60";
@@ -23,6 +24,26 @@ export function TextField({ label, hint, icon, className, ...rest }: InputHTMLAt
   return (
     <Wrapper id={id} label={label} hint={hint} icon={icon}>
       <input id={id} className={cn(control, "h-12", icon && "ps-11", className)} {...rest} />
+    </Wrapper>
+  );
+}
+
+/** Password input with a show / hide toggle. */
+export function PasswordField({ label, hint, icon, className, showLabel, hideLabel, ...rest }: Omit<InputHTMLAttributes<HTMLInputElement>, "type"> & { label: ReactNode; hint?: ReactNode; icon?: ReactNode; showLabel: string; hideLabel: string }) {
+  const id = useId();
+  const [visible, setVisible] = useState(false);
+  return (
+    <Wrapper id={id} label={label} hint={hint} icon={icon}>
+      <input id={id} type={visible ? "text" : "password"} className={cn(control, "h-12 pe-12", icon && "ps-11", className)} {...rest} />
+      <button
+        type="button"
+        onClick={() => setVisible((v) => !v)}
+        aria-label={visible ? hideLabel : showLabel}
+        aria-pressed={visible}
+        className="absolute end-2 top-1/2 grid size-9 -translate-y-1/2 place-items-center rounded-full text-leaf-900/45 transition hover:bg-leaf-50 hover:text-leaf-700"
+      >
+        {visible ? <EyeOff className="size-4" aria-hidden /> : <Eye className="size-4" aria-hidden />}
+      </button>
     </Wrapper>
   );
 }

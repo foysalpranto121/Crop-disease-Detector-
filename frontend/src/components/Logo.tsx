@@ -24,7 +24,7 @@ export function Logo({ light = false }: { light?: boolean }) {
   return (
     <Link to="/" className="flex shrink-0 items-center gap-2.5" aria-label={t("app.name")}>
       <LeafMark className="size-9 drop-shadow-sm" />
-      <span className={cn("font-display text-[15px] leading-tight font-bold sm:text-base", light ? "text-white" : "text-leaf-900")}>
+      <span className={cn("font-display text-[15px] leading-tight font-bold max-[420px]:sr-only sm:text-base", light ? "text-white" : "text-leaf-900")}>
         {t("app.name")}
       </span>
     </Link>
