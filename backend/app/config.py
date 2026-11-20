@@ -33,7 +33,7 @@ class Settings(BaseSettings):
     min_plant_ratio: float = 0.06  # share of plant-coloured pixels below which the photo is "not a leaf"
     max_upload_mb: int = 10
 
-    # Demo accounts (development only — set SEED_DEMO_USERS=false in production)
+    # Admin login (always created) + demo farmer account (development only — SEED_DEMO_USERS=false in production)
     seed_demo_users: bool = True
     admin_email: str = "admin@demo.com"
     admin_password: str = "admin123"

@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { Phone, Printer, RotateCcw, ScanLine, Share2, Sparkles, ThumbsDown, ThumbsUp, Stethoscope } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { diagnosisFromResult } from "../api/chat";
-import { api } from "../api/client";
+import { api, apiAsset } from "../api/client";
 import { useChat } from "../features/ChatContext";
 import type { PredictionResult } from "../api/types";
 import { cn } from "../lib/cn";
@@ -53,7 +53,7 @@ export function ResultView({ result }: { result: PredictionResult }) {
             <div className="grid gap-5 sm:grid-cols-[160px_minmax(0,1fr)_auto] sm:items-center">
               <div className="overflow-hidden rounded-2xl bg-leaf-100">
                 {result.image_url ? (
-                  <img src={result.image_url} alt={t("result.your_photo")} className="aspect-square w-full object-cover" />
+                  <img src={apiAsset(result.image_url)} alt={t("result.your_photo")} className="aspect-square w-full object-cover" />
                 ) : (
                   <div className="grid aspect-square place-items-center text-6xl" aria-hidden>
                     {d?.crop.emoji ?? "🍃"}
@@ -118,7 +118,7 @@ export function ResultView({ result }: { result: PredictionResult }) {
               </p>
               <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
                 <figure>
-                  <DiseasePhoto src={result.image_url} alt={t("result.your_photo")} emoji={d.crop.emoji} className="aspect-square w-full rounded-2xl ring-3 ring-leaf-500" />
+                  <DiseasePhoto src={apiAsset(result.image_url)} alt={t("result.your_photo")} emoji={d.crop.emoji} className="aspect-square w-full rounded-2xl ring-3 ring-leaf-500" />
                   <figcaption className="mt-1.5 text-center text-xs font-semibold text-leaf-700">{t("result.your_leaf")}</figcaption>
                 </figure>
                 {d.images.map((src, i) => (

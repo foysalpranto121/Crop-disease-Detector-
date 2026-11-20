@@ -1,4 +1,4 @@
-import { ApiError } from "./client";
+import { ApiError, BASE_URL } from "./client";
 import type { Lang, PredictionResult } from "./types";
 import { pickL } from "../lib/format";
 
@@ -28,7 +28,6 @@ export type ChatEvent =
   | { type: "done"; finish_reason: string | null }
   | { type: "error"; code: string; message?: string };
 
-const BASE_URL: string = import.meta.env.VITE_API_URL ?? "";
 
 export function diagnosisFromResult(result: PredictionResult, lang: string): DiagnosisContext | null {
   const d = result.disease;

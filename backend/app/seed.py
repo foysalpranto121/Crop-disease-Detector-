@@ -56,16 +56,25 @@ def seed_knowledge_base(db: Session) -> None:
         log.info("Seeded %d diseases", added)
 
 
-def seed_demo_users(db: Session) -> None:
-    demo = [
-        ("Admin", settings.admin_email, settings.admin_password, "admin", "Dhaka"),
-        ("Rahim Uddin", "farmer@demo.com", "farmer123", "farmer", "Bogura"),
-    ]
-    for name, email, password, role, district in demo:
-        if not db.scalar(select(User).where(User.email == email)):
-            db.add(User(name=name, email=email, password_hash=hash_password(password), role=role, country="Bangladesh", district=district))
-            log.warning("Created demo account %s (%s) — disable with SEED_DEMO_USERS=false in production", email, role)
+def _ensure_user(db: Session, name: str, email: str, password: str, role: str, district: str) -> bool:
+    if db.scalar(select(User).where(User.email == email)):
+        return False
+    db.add(User(name=name, email=email, password_hash=hash_password(password), role=role, country="Bangladesh", district=district))
     db.commit()
+    return True
+
+
+def seed_admin(db: Session) -> None:
+    """The admin account always exists; its login comes from ADMIN_EMAIL / ADMIN_PASSWORD."""
+    if _ensure_user(db, "Admin", settings.admin_email, settings.admin_password, "admin", "Dhaka"):
+        log.info("Created admin account %s", settings.admin_email)
+    if settings.admin_password == "admin123":
+        log.warning("ADMIN_PASSWORD is the default — set a strong one before going public")
+
+
+def seed_demo_users(db: Session) -> None:
+    if _ensure_user(db, "Rahim Uddin", "farmer@demo.com", "farmer123", "farmer", "Bogura"):
+        log.warning("Created demo farmer account — disable with SEED_DEMO_USERS=false in production")
 
 
 def check_label_contract(db: Session, labels: list[str]) -> None:
@@ -80,6 +89,7 @@ def init_db(labels: list[str]) -> None:
     Base.metadata.create_all(engine)
     with SessionLocal() as db:
         seed_knowledge_base(db)
+        seed_admin(db)
         if settings.seed_demo_users:
             seed_demo_users(db)
         check_label_contract(db, labels)

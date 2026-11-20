@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from "re
 import { AnimatePresence, motion } from "motion/react";
 import { Activity, CircleCheck, CircleX, LayoutDashboard, ListChecks, MessageSquare, Pencil, Plus, ScanLine, Search, Trash2, TriangleAlert, Users } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { api, USE_MOCKS } from "../api/client";
+import { api, apiAsset, USE_MOCKS } from "../api/client";
 import type { Disease, L, Treatment, TreatmentInput, TreatmentType } from "../api/types";
 import { TypeBadge } from "../components/DiseaseCard";
 import { SelectField, TextAreaField, TextField } from "../components/Field";
@@ -181,7 +181,7 @@ function Logs() {
                 <td className="px-4 py-2">
                   <div className="size-11 overflow-hidden rounded-xl bg-leaf-100">
                     {row.image_url ? (
-                      <img src={row.image_url} alt="" className="size-full object-cover" loading="lazy" />
+                      <img src={apiAsset(row.image_url)} alt="" className="size-full object-cover" loading="lazy" />
                     ) : (
                       <span className="grid size-full place-items-center text-xl" aria-hidden>
                         {row.disease?.crop.emoji ?? "🍃"}
@@ -239,7 +239,7 @@ function FeedbackList() {
         <Card key={f.id} className="flex gap-4 p-4">
           <div className="size-16 shrink-0 overflow-hidden rounded-2xl bg-leaf-100">
             {f.image_url ? (
-              <img src={f.image_url} alt="" className="size-full object-cover" />
+              <img src={apiAsset(f.image_url)} alt="" className="size-full object-cover" />
             ) : (
               <span className="grid size-full place-items-center text-3xl" aria-hidden>
                 {f.disease?.crop.emoji ?? "🍃"}

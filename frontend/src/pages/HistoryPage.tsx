@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import { AnimatePresence, motion } from "motion/react";
 import { History as HistoryIcon, ScanLine, Search, Trash2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { api } from "../api/client";
+import { api, apiAsset } from "../api/client";
 import type { HistoryItem } from "../api/types";
 import { Badge, ButtonLink, EmptyState, ErrorState, LoadingState, PageHeader } from "../components/ui";
 import { cn, container } from "../lib/cn";
@@ -103,7 +103,7 @@ export default function HistoryPage() {
                       <Link to={`/result/${h.id}`} className="flex gap-4 p-4">
                         <div className="size-20 shrink-0 overflow-hidden rounded-2xl bg-leaf-100">
                           {h.image_url ? (
-                            <img src={h.image_url} alt="" className="size-full object-cover" loading="lazy" />
+                            <img src={apiAsset(h.image_url)} alt="" className="size-full object-cover" loading="lazy" />
                           ) : (
                             <div className="grid size-full place-items-center text-4xl" aria-hidden>
                               {h.disease?.crop.emoji ?? "🍃"}

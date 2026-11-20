@@ -15,10 +15,19 @@ import type {
   User,
 } from "./types";
 
-const BASE_URL: string = import.meta.env.VITE_API_URL ?? "";
+/** Backend origin, e.g. https://you-crop-api.hf.space. Empty = same origin (local dev proxy / backend-served build). */
+export const BASE_URL: string = (import.meta.env.VITE_API_URL ?? "").replace(/\/+$/, "");
 const TOKEN_KEY = "cdd.token";
 
 export const USE_MOCKS = import.meta.env.VITE_USE_MOCKS !== "false";
+
+/** Backend-relative URLs (uploaded scan photos: /api/images/...) must point at the backend when it runs elsewhere. */
+export function apiAsset(url: string): string;
+export function apiAsset(url: string | null | undefined): string | null;
+export function apiAsset(url: string | null | undefined): string | null {
+  if (!url) return null;
+  return url.startsWith("/api/") ? BASE_URL + url : url;
+}
 
 export class ApiError extends Error {
   readonly status: number;
