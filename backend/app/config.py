@@ -21,6 +21,7 @@ class Settings(BaseSettings):
     upload_dir: Path = DATA_DIR / "uploads"
     model_dir: Path = BACKEND_DIR / "model"
     frontend_dist: Path = PROJECT_DIR / "frontend" / "dist"
+    frontend_public: Path = PROJECT_DIR / "frontend" / "public"  # reference disease photos live here
 
     # Security
     secret_key: str = ""  # empty -> a random key is generated once and kept in data/.secret_key

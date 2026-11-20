@@ -8,6 +8,7 @@ import { api } from "../api/client";
 import { useChat } from "../features/ChatContext";
 import type { PredictionResult } from "../api/types";
 import { cn } from "../lib/cn";
+import { BETA_CROPS } from "../mocks/data/crops";
 import { formatDate, formatNumber, formatPercent, pickL } from "../lib/format";
 import { DiseasePhoto } from "./DiseasePhoto";
 import { Celebration } from "./Celebration";
@@ -91,6 +92,11 @@ export function ResultView({ result }: { result: PredictionResult }) {
         <motion.div {...rise(0.1)}>
           {isHealthy && <Alert tone="success" title={t("result.healthy_title")}>{t("result.healthy_desc")}</Alert>}
           {lowConf && <Alert tone="warning" title={t("result.low_title")}>{t("result.low_desc")}</Alert>}
+          {d && !notLeaf && BETA_CROPS.has(d.crop.key) && (
+            <Alert tone="info" title={t("result.beta_title")}>
+              {t("result.beta_desc")}
+            </Alert>
+          )}
           {notLeaf && (
             <Alert tone="danger" title={t("result.not_leaf_title")}>
               <p>{t("result.not_leaf_desc")}</p>

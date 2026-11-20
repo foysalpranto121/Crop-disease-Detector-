@@ -1,6 +1,6 @@
 [
   {
-    "model_index": 0,
+    "id": 1,
     "class_label": "Apple Scab",
     "crop_key": "apple",
     "name": {
@@ -55,7 +55,7 @@
     ]
   },
   {
-    "model_index": 1,
+    "id": 2,
     "class_label": "Apple with Black Rot",
     "crop_key": "apple",
     "name": {
@@ -110,7 +110,7 @@
     ]
   },
   {
-    "model_index": 2,
+    "id": 3,
     "class_label": "Cedar Apple Rust",
     "crop_key": "apple",
     "name": {
@@ -165,7 +165,7 @@
     ]
   },
   {
-    "model_index": 3,
+    "id": 4,
     "class_label": "Healthy Apple",
     "crop_key": "apple",
     "name": {
@@ -214,7 +214,7 @@
     ]
   },
   {
-    "model_index": 4,
+    "id": 5,
     "class_label": "Healthy Blueberry Plant",
     "crop_key": "blueberry",
     "name": {
@@ -263,7 +263,7 @@
     ]
   },
   {
-    "model_index": 5,
+    "id": 6,
     "class_label": "Cherry with Powdery Mildew",
     "crop_key": "cherry",
     "name": {
@@ -318,7 +318,7 @@
     ]
   },
   {
-    "model_index": 6,
+    "id": 7,
     "class_label": "Healthy Cherry Plant",
     "crop_key": "cherry",
     "name": {
@@ -367,7 +367,7 @@
     ]
   },
   {
-    "model_index": 7,
+    "id": 8,
     "class_label": "Corn (Maize) with Cercospora and Gray Leaf Spot",
     "crop_key": "corn",
     "name": {
@@ -422,7 +422,7 @@
     ]
   },
   {
-    "model_index": 8,
+    "id": 9,
     "class_label": "Corn (Maize) with Common Rust",
     "crop_key": "corn",
     "name": {
@@ -477,7 +477,7 @@
     ]
   },
   {
-    "model_index": 9,
+    "id": 10,
     "class_label": "Corn (Maize) with Northern Leaf Blight",
     "crop_key": "corn",
     "name": {
@@ -532,7 +532,7 @@
     ]
   },
   {
-    "model_index": 10,
+    "id": 11,
     "class_label": "Healthy Corn (Maize) Plant",
     "crop_key": "corn",
     "name": {
@@ -581,7 +581,7 @@
     ]
   },
   {
-    "model_index": 11,
+    "id": 12,
     "class_label": "Grape with Black Rot",
     "crop_key": "grape",
     "name": {
@@ -636,7 +636,7 @@
     ]
   },
   {
-    "model_index": 12,
+    "id": 13,
     "class_label": "Grape with Esca (Black Measles)",
     "crop_key": "grape",
     "name": {
@@ -688,7 +688,7 @@
     ]
   },
   {
-    "model_index": 13,
+    "id": 14,
     "class_label": "Grape with Isariopsis Leaf Spot",
     "crop_key": "grape",
     "name": {
@@ -743,7 +743,7 @@
     ]
   },
   {
-    "model_index": 14,
+    "id": 15,
     "class_label": "Healthy Grape Plant",
     "crop_key": "grape",
     "name": {
@@ -792,7 +792,7 @@
     ]
   },
   {
-    "model_index": 15,
+    "id": 16,
     "class_label": "Orange with Citrus Greening",
     "crop_key": "orange",
     "name": {
@@ -847,7 +847,7 @@
     ]
   },
   {
-    "model_index": 16,
+    "id": 17,
     "class_label": "Peach with Bacterial Spot",
     "crop_key": "peach",
     "name": {
@@ -902,7 +902,7 @@
     ]
   },
   {
-    "model_index": 17,
+    "id": 18,
     "class_label": "Healthy Peach Plant",
     "crop_key": "peach",
     "name": {
@@ -951,7 +951,7 @@
     ]
   },
   {
-    "model_index": 18,
+    "id": 19,
     "class_label": "Bell Pepper with Bacterial Spot",
     "crop_key": "pepper",
     "name": {
@@ -1006,7 +1006,7 @@
     ]
   },
   {
-    "model_index": 19,
+    "id": 20,
     "class_label": "Healthy Bell Pepper Plant",
     "crop_key": "pepper",
     "name": {
@@ -1055,7 +1055,7 @@
     ]
   },
   {
-    "model_index": 20,
+    "id": 21,
     "class_label": "Potato with Early Blight",
     "crop_key": "potato",
     "name": {
@@ -1110,7 +1110,7 @@
     ]
   },
   {
-    "model_index": 21,
+    "id": 22,
     "class_label": "Potato with Late Blight",
     "crop_key": "potato",
     "name": {
@@ -1165,7 +1165,7 @@
     ]
   },
   {
-    "model_index": 22,
+    "id": 23,
     "class_label": "Healthy Potato Plant",
     "crop_key": "potato",
     "name": {
@@ -1214,7 +1214,7 @@
     ]
   },
   {
-    "model_index": 23,
+    "id": 24,
     "class_label": "Healthy Raspberry Plant",
     "crop_key": "raspberry",
     "name": {
@@ -1263,7 +1263,7 @@
     ]
   },
   {
-    "model_index": 24,
+    "id": 25,
     "class_label": "Healthy Soybean Plant",
     "crop_key": "soybean",
     "name": {
@@ -1312,7 +1312,7 @@
     ]
   },
   {
-    "model_index": 25,
+    "id": 26,
     "class_label": "Squash with Powdery Mildew",
     "crop_key": "squash",
     "name": {
@@ -1370,7 +1370,7 @@
     ]
   },
   {
-    "model_index": 26,
+    "id": 27,
     "class_label": "Strawberry with Leaf Scorch",
     "crop_key": "strawberry",
     "name": {
@@ -1425,7 +1425,7 @@
     ]
   },
   {
-    "model_index": 27,
+    "id": 28,
     "class_label": "Healthy Strawberry Plant",
     "crop_key": "strawberry",
     "name": {
@@ -1474,7 +1474,7 @@
     ]
   },
   {
-    "model_index": 28,
+    "id": 29,
     "class_label": "Tomato with Bacterial Spot",
     "crop_key": "tomato",
     "name": {
@@ -1529,7 +1529,7 @@
     ]
   },
   {
-    "model_index": 29,
+    "id": 30,
     "class_label": "Tomato with Early Blight",
     "crop_key": "tomato",
     "name": {
@@ -1584,7 +1584,7 @@
     ]
   },
   {
-    "model_index": 30,
+    "id": 31,
     "class_label": "Tomato with Late Blight",
     "crop_key": "tomato",
     "name": {
@@ -1639,7 +1639,7 @@
     ]
   },
   {
-    "model_index": 31,
+    "id": 32,
     "class_label": "Tomato with Leaf Mold",
     "crop_key": "tomato",
     "name": {
@@ -1694,7 +1694,7 @@
     ]
   },
   {
-    "model_index": 32,
+    "id": 33,
     "class_label": "Tomato with Septoria Leaf Spot",
     "crop_key": "tomato",
     "name": {
@@ -1749,7 +1749,7 @@
     ]
   },
   {
-    "model_index": 33,
+    "id": 34,
     "class_label": "Tomato with Spider Mites or Two-spotted Spider Mite",
     "crop_key": "tomato",
     "name": {
@@ -1804,7 +1804,7 @@
     ]
   },
   {
-    "model_index": 34,
+    "id": 35,
     "class_label": "Tomato with Target Spot",
     "crop_key": "tomato",
     "name": {
@@ -1859,7 +1859,7 @@
     ]
   },
   {
-    "model_index": 35,
+    "id": 36,
     "class_label": "Tomato Yellow Leaf Curl Virus",
     "crop_key": "tomato",
     "name": {
@@ -1914,7 +1914,7 @@
     ]
   },
   {
-    "model_index": 36,
+    "id": 37,
     "class_label": "Tomato Mosaic Virus",
     "crop_key": "tomato",
     "name": {
@@ -1966,7 +1966,7 @@
     ]
   },
   {
-    "model_index": 37,
+    "id": 38,
     "class_label": "Healthy Tomato Plant",
     "crop_key": "tomato",
     "name": {
@@ -2008,6 +2008,2130 @@
         "remedy": {
           "en": "Stake plants, remove lower leaves touching the soil, and rotate crops.",
           "bn": "গাছে খুঁটি দিন, মাটি ছোঁয়া নিচের পাতা ছেঁটে দিন এবং শস্যপর্যায় মানুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "class_label": "rice:Rice__Bacterial_Leaf_Blight",
+    "crop_key": "rice",
+    "name": {
+      "en": "Bacterial Leaf Blight",
+      "bn": "পাতাপোড়া রোগ (ব্যাকটেরিয়াল লিফ ব্লাইট)"
+    },
+    "type": "bacteria",
+    "is_healthy": false,
+    "pathogen": "Xanthomonas oryzae pv. oryzae",
+    "symptoms": {
+      "en": "Water-soaked yellowish stripes start at leaf tips or edges and turn straw-white; leaves dry from the tip down.",
+      "bn": "পাতার আগা বা কিনারা থেকে পানিভেজা হলদেটে দাগ শুরু হয়ে খড়ের মতো সাদা হয়; পাতা আগা থেকে শুকিয়ে যায়।"
+    },
+    "causes": {
+      "en": "Bacterium spread by rain, irrigation water and wind; worse with too much urea and after storms.",
+      "bn": "ব্যাকটেরিয়া বৃষ্টি, সেচের পানি ও বাতাসে ছড়ায়; অতিরিক্ত ইউরিয়া ও ঝড়ের পর বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "No spray fully cures it. Stop urea, apply extra potash (MOP); a copper-based bactericide can slow the spread.",
+          "bn": "কোনো স্প্রে পুরোপুরি সারায় না। ইউরিয়া বন্ধ করুন, অতিরিক্ত পটাশ (এমওপি) দিন; কপারভিত্তিক বালাইনাশক ছড়ানো কমাতে পারে।"
+        },
+        "dosage": null,
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Drain the field for a few days and remove badly infected plants.",
+          "bn": "কয়েক দিন জমির পানি সরিয়ে দিন এবং বেশি আক্রান্ত গাছ তুলে ফেলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Grow resistant varieties, use balanced fertiliser and avoid cutting seedling tips at transplanting.",
+          "bn": "প্রতিরোধী জাত চাষ করুন, সুষম সার দিন এবং রোপণের সময় চারার আগা কাটবেন না।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "class_label": "rice:Rice__Brown_Spot",
+    "crop_key": "rice",
+    "name": {
+      "en": "Brown Spot",
+      "bn": "বাদামি দাগ রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Bipolaris oryzae",
+    "symptoms": {
+      "en": "Many oval brown spots with grey centres on leaves; seeds may turn dark.",
+      "bn": "পাতায় ধূসর মাঝখানসহ অনেক ডিম্বাকার বাদামি দাগ; ধানের দানা কালচে হতে পারে।"
+    },
+    "causes": {
+      "en": "Fungus carried on seed; common in poor, nutrient-deficient soils and dry spells.",
+      "bn": "বীজবাহিত ছত্রাক; পুষ্টিহীন মাটি ও খরার সময় বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Propiconazole 25 EC at first symptoms; repeat after 10–15 days if needed.",
+          "bn": "প্রথম লক্ষণে প্রোপিকোনাজল ২৫ ইসি স্প্রে করুন; প্রয়োজনে ১০–১৫ দিন পর আবার দিন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Apply balanced fertiliser with enough potash and zinc; treat seed in hot water (52 °C, 10 min).",
+          "bn": "পর্যাপ্ত পটাশ ও দস্তাসহ সুষম সার দিন; বীজ গরম পানিতে (৫২ °সে, ১০ মিনিট) শোধন করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use healthy, treated seed and keep soil fertile.",
+          "bn": "সুস্থ, শোধিত বীজ ব্যবহার করুন এবং মাটির উর্বরতা বজায় রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "class_label": "rice:Rice__Healthy_Leaf",
+    "crop_key": "rice",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease or pest signs found. The leaf looks normal.",
+      "bn": "কোনো রোগ বা পোকার লক্ষণ পাওয়া যায়নি। পাতা স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the crop healthy.",
+      "bn": "ফসল সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Check the field every week, including leaf undersides, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচসহ মাঠ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser (do not overuse urea) and keep the field free of weeds.",
+          "bn": "সুষম সার দিন (অতিরিক্ত ইউরিয়া নয়) এবং মাঠ আগাছামুক্ত রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep 2–5 cm of water in the field during tillering and avoid excess urea.",
+          "bn": "কুশি পর্যায়ে জমিতে ২–৫ সেমি পানি রাখুন এবং অতিরিক্ত ইউরিয়া এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "class_label": "rice:Rice__Leaf_Blast",
+    "crop_key": "rice",
+    "name": {
+      "en": "Leaf Blast",
+      "bn": "ব্লাস্ট রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Magnaporthe oryzae",
+    "symptoms": {
+      "en": "Spindle- or eye-shaped spots with grey centres and brown edges; spots join and leaves die. Neck blast makes panicles white and empty.",
+      "bn": "মাকুর বা চোখের মতো দাগ, মাঝখান ধূসর ও কিনারা বাদামি; দাগ মিলে পাতা মরে যায়। শীষ ব্লাস্টে শীষ সাদা ও চিটা হয়।"
+    },
+    "causes": {
+      "en": "Fungus spread by wind; favoured by cool nights, dew, cloudy weather and too much urea.",
+      "bn": "বাতাসে ছড়ানো ছত্রাক; ঠান্ডা রাত, শিশির, মেঘলা আবহাওয়া ও অতিরিক্ত ইউরিয়ায় বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Tricyclazole 75 WP at first spots, and again at booting/heading for neck blast.",
+          "bn": "প্রথম দাগে ট্রাইসাইক্লাজল ৭৫ ডব্লিউপি স্প্রে করুন এবং শীষ ব্লাস্ট ঠেকাতে থোড়/শীষ বের হওয়ার সময় আবার দিন।"
+        },
+        "dosage": {
+          "en": "0.6 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ০.৬ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Stop urea top-dressing and keep standing water in the field.",
+          "bn": "ইউরিয়ার উপরি প্রয়োগ বন্ধ করুন এবং জমিতে পানি ধরে রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Grow blast-resistant varieties and split nitrogen into small doses.",
+          "bn": "ব্লাস্ট-প্রতিরোধী জাত চাষ করুন এবং নাইট্রোজেন ছোট ছোট কিস্তিতে দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "class_label": "rice:Rice__Leaf_Scald",
+    "crop_key": "rice",
+    "name": {
+      "en": "Leaf Scald",
+      "bn": "পাতা ঝলসা রোগ (লিফ স্ক্যাল্ড)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Microdochium oryzae",
+    "symptoms": {
+      "en": "Large zoned lesions start at leaf tips with alternating light and dark brown bands; tips look scalded.",
+      "bn": "পাতার আগা থেকে হালকা ও গাঢ় বাদামি ডোরাকাটা বড় দাগ; আগা পোড়া দেখায়।"
+    },
+    "causes": {
+      "en": "Fungus favoured by high nitrogen, close spacing and wet weather.",
+      "bn": "বেশি নাইট্রোজেন, ঘন রোপণ ও ভেজা আবহাওয়ায় ছত্রাকটি বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Propiconazole 25 EC or Mancozeb 75 WP when lesions appear.",
+          "bn": "দাগ দেখা দিলে প্রোপিকোনাজল ২৫ ইসি বা ম্যানকোজেব ৭৫ ডব্লিউপি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "1 mL (Propiconazole) or 2.5 g (Mancozeb) per litre",
+          "bn": "প্রতি লিটারে ১ মিলি (প্রোপিকোনাজল) বা ২.৫ গ্রাম (ম্যানকোজেব)"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove infected leaves and crop residue; reduce nitrogen.",
+          "bn": "আক্রান্ত পাতা ও ফসলের অবশিষ্টাংশ সরান; নাইট্রোজেন কমান।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser and recommended plant spacing.",
+          "bn": "সুষম সার ও সুপারিশকৃত দূরত্বে রোপণ করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "class_label": "rice:Rice__Narrow_Brown_Leaf_Spot",
+    "crop_key": "rice",
+    "name": {
+      "en": "Narrow Brown Leaf Spot",
+      "bn": "সরু বাদামি দাগ রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Cercospora janseana",
+    "symptoms": {
+      "en": "Short, narrow, dark brown streaks running parallel to the leaf veins.",
+      "bn": "পাতার শিরার সমান্তরালে ছোট, সরু, গাঢ় বাদামি রেখা।"
+    },
+    "causes": {
+      "en": "Fungus favoured by potash deficiency and late-season humidity.",
+      "bn": "পটাশের অভাব ও মৌসুমের শেষ দিকের আর্দ্রতায় ছত্রাকটি বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Propiconazole 25 EC if the disease spreads to upper leaves.",
+          "bn": "রোগ উপরের পাতায় ছড়ালে প্রোপিকোনাজল ২৫ ইসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Apply enough potash and remove infected stubble after harvest.",
+          "bn": "পর্যাপ্ত পটাশ দিন এবং ফসল কাটার পর আক্রান্ত নাড়া সরিয়ে ফেলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Grow tolerant varieties and use balanced fertiliser.",
+          "bn": "সহনশীল জাত চাষ করুন এবং সুষম সার দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "class_label": "rice:Rice__Rice_Hispa",
+    "crop_key": "rice",
+    "name": {
+      "en": "Rice Hispa",
+      "bn": "পামরি পোকা"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Dicladispa armigera",
+    "symptoms": {
+      "en": "White parallel streaks on leaves where adults scrape the surface; larvae tunnel inside leaves, which dry and turn white.",
+      "bn": "পূর্ণবয়স্ক পোকা পাতা চেঁছে খাওয়ায় সাদা সমান্তরাল দাগ হয়; কীড়া পাতার ভেতরে সুড়ঙ্গ করে, পাতা শুকিয়ে সাদা হয়।"
+    },
+    "causes": {
+      "en": "A small spiny black beetle; outbreaks follow heavy urea use and grassy weeds.",
+      "bn": "ছোট কাঁটাযুক্ত কালো পোকা; অতিরিক্ত ইউরিয়া ও ঘাসজাতীয় আগাছায় প্রকোপ বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Malathion 57 EC when there are more than 4 adults per hill.",
+          "bn": "প্রতি গোছায় ৪টির বেশি পূর্ণবয়স্ক পোকা থাকলে ম্যালাথিয়ন ৫৭ ইসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Catch adults with a sweep net; cut and destroy leaf tips with eggs before transplanting.",
+          "bn": "হাতজাল দিয়ে পূর্ণবয়স্ক পোকা ধরুন; রোপণের আগে ডিমযুক্ত পাতার আগা কেটে নষ্ট করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Avoid excess urea and remove grassy weeds around the field.",
+          "bn": "অতিরিক্ত ইউরিয়া এড়িয়ে চলুন এবং জমির আশপাশের ঘাস পরিষ্কার রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "class_label": "rice:Rice__Sheath_Blight",
+    "crop_key": "rice",
+    "name": {
+      "en": "Sheath Blight",
+      "bn": "খোল পোড়া রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Rhizoctonia solani",
+    "symptoms": {
+      "en": "Oval greenish-grey blotches with brown borders on the leaf sheath near the water line, spreading up to the leaves.",
+      "bn": "পানির উপরিভাগের কাছে খোলে বাদামি কিনারাসহ ডিম্বাকার সবুজাভ-ধূসর দাগ, যা উপরের পাতায় ছড়ায়।"
+    },
+    "causes": {
+      "en": "Soil-borne fungus; favoured by dense planting, high nitrogen, heat and humidity.",
+      "bn": "মাটিবাহিত ছত্রাক; ঘন রোপণ, বেশি নাইট্রোজেন, গরম ও আর্দ্রতায় বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Hexaconazole 5 EC or Azoxystrobin 23 SC at the base of the plants.",
+          "bn": "গাছের গোড়ায় হেক্সাকোনাজল ৫ ইসি বা অ্যাজোক্সিস্ট্রোবিন ২৩ এসসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Drain the field for a few days and remove infected lower leaves.",
+          "bn": "কয়েক দিন জমির পানি সরিয়ে দিন এবং আক্রান্ত নিচের পাতা সরান।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use wider spacing, balanced nitrogen and remove stubble after harvest.",
+          "bn": "দূরে দূরে রোপণ করুন, সুষম নাইট্রোজেন দিন এবং ফসল কাটার পর নাড়া সরান।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "class_label": "india:Wheat___Black_Rust",
+    "crop_key": "wheat",
+    "name": {
+      "en": "Black (Stem) Rust",
+      "bn": "কালো মরিচা (কাণ্ডের মরিচা)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Puccinia graminis",
+    "symptoms": {
+      "en": "Elongated brick-red pustules on stems and leaves that later turn black; stems weaken and lodge.",
+      "bn": "কাণ্ড ও পাতায় লম্বাটে ইটের মতো লাল ফুসকুড়ি, পরে কালো হয়; কাণ্ড দুর্বল হয়ে হেলে পড়ে।"
+    },
+    "causes": {
+      "en": "Rust fungus spread over long distances by wind; warm, humid weather.",
+      "bn": "বাতাসে বহু দূর ছড়ানো মরিচা ছত্রাক; উষ্ণ, আর্দ্র আবহাওয়ায় বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Propiconazole 25 EC as soon as symptoms appear; repeat after 12–15 days if needed.",
+          "bn": "লক্ষণ দেখা দেওয়ামাত্র প্রোপিকোনাজল ২৫ ইসি স্প্রে করুন; প্রয়োজনে ১২–১৫ দিন পর আবার দিন।"
+        },
+        "dosage": {
+          "en": "0.5 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ০.৫ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove volunteer wheat and grassy hosts near the field.",
+          "bn": "মাঠের আশপাশের আপনা-আপনি গজানো গম ও ঘাস সরিয়ে ফেলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Grow rust-resistant varieties and sow on time (mid-November in Bangladesh).",
+          "bn": "মরিচা-প্রতিরোধী জাত চাষ করুন এবং সময়মতো (বাংলাদেশে নভেম্বরের মাঝামাঝি) বপন করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "class_label": "india:Wheat___Brown_Rust",
+    "crop_key": "wheat",
+    "name": {
+      "en": "Brown (Leaf) Rust",
+      "bn": "পাতার মরিচা (বাদামি মরিচা)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Puccinia triticina",
+    "symptoms": {
+      "en": "Small round orange-brown pustules scattered on the upper leaf surface; rubbing the leaf leaves rusty powder on fingers.",
+      "bn": "পাতার উপরে ছড়ানো ছোট গোল কমলা-বাদামি ফুসকুড়ি; ঘষলে আঙুলে মরিচার মতো গুঁড়া লাগে।"
+    },
+    "causes": {
+      "en": "Rust fungus spread by wind; moderate temperatures and dew.",
+      "bn": "বাতাসে ছড়ানো মরিচা ছত্রাক; মাঝারি তাপমাত্রা ও শিশিরে বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Propiconazole 25 EC as soon as symptoms appear; repeat after 12–15 days if needed.",
+          "bn": "লক্ষণ দেখা দেওয়ামাত্র প্রোপিকোনাজল ২৫ ইসি স্প্রে করুন; প্রয়োজনে ১২–১৫ দিন পর আবার দিন।"
+        },
+        "dosage": {
+          "en": "0.5 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ০.৫ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove volunteer wheat plants; avoid very late sowing.",
+          "bn": "আপনা-আপনি গজানো গম সরান; খুব দেরিতে বপন করবেন না।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Grow rust-resistant varieties and sow on time (mid-November in Bangladesh).",
+          "bn": "মরিচা-প্রতিরোধী জাত চাষ করুন এবং সময়মতো (বাংলাদেশে নভেম্বরের মাঝামাঝি) বপন করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "class_label": "india:Wheat___Flag_Smut",
+    "crop_key": "wheat",
+    "name": {
+      "en": "Flag Smut",
+      "bn": "ফ্ল্যাগ স্মাট"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Urocystis agropyri",
+    "symptoms": {
+      "en": "Long grey-black streaks on leaves and sheaths that burst into black powder; leaves twist and plants stay stunted.",
+      "bn": "পাতা ও খোলে লম্বা ধূসর-কালো রেখা যা ফেটে কালো গুঁড়া বের হয়; পাতা মোচড়ায় ও গাছ খাটো থাকে।"
+    },
+    "causes": {
+      "en": "Seed- and soil-borne fungus.",
+      "bn": "বীজ ও মাটিবাহিত ছত্রাক।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Treat seed with Carboxin + Thiram (e.g. 'Vitavax 200' type) before sowing.",
+          "bn": "বপনের আগে কার্বক্সিন + থিরাম ('ভিটাভেক্স ২০০' ধরনের) দিয়ে বীজ শোধন করুন।"
+        },
+        "dosage": {
+          "en": "3 g per kg of seed",
+          "bn": "প্রতি কেজি বীজে ৩ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Pull out and burn infected plants before the spores spread.",
+          "bn": "রেণু ছড়ানোর আগে আক্রান্ত গাছ তুলে পুড়িয়ে ফেলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use certified seed and rotate with non-cereal crops.",
+          "bn": "প্রত্যয়িত বীজ ব্যবহার করুন এবং দানাশস্য নয় এমন ফসলের সাথে শস্যপর্যায় মানুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "class_label": "india:Wheat___Healthy",
+    "crop_key": "wheat",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease or pest signs found. The leaf looks normal.",
+      "bn": "কোনো রোগ বা পোকার লক্ষণ পাওয়া যায়নি। পাতা স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the crop healthy.",
+      "bn": "ফসল সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Check the field every week, including leaf undersides, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচসহ মাঠ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser (do not overuse urea) and keep the field free of weeds.",
+          "bn": "সুষম সার দিন (অতিরিক্ত ইউরিয়া নয়) এবং মাঠ আগাছামুক্ত রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Give 2–3 irrigations at crown-root initiation, booting and grain filling.",
+          "bn": "শিকড় গজানো, থোড় ও দানা পুষ্ট হওয়ার সময় ২–৩টি সেচ দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "class_label": "india:Wheat___Leaf_Blight",
+    "crop_key": "wheat",
+    "name": {
+      "en": "Leaf Blight (Spot Blotch)",
+      "bn": "পাতা ঝলসানো রোগ (বাইপোলারিস)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Bipolaris sorokiniana",
+    "symptoms": {
+      "en": "Brown oval spots with yellow halos join into large dead patches; leaves dry early. A major wheat disease in Bangladesh.",
+      "bn": "হলুদ বলয়সহ বাদামি ডিম্বাকার দাগ মিলে বড় মরা অংশ হয়; পাতা আগেই শুকায়। বাংলাদেশে গমের প্রধান রোগ।"
+    },
+    "causes": {
+      "en": "Seed-borne fungus; warm, humid weather after heading and late sowing.",
+      "bn": "বীজবাহিত ছত্রাক; শীষ বের হওয়ার পর উষ্ণ, আর্দ্র আবহাওয়া ও দেরিতে বপনে বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Propiconazole 25 EC as soon as symptoms appear; repeat after 12–15 days if needed.",
+          "bn": "লক্ষণ দেখা দেওয়ামাত্র প্রোপিকোনাজল ২৫ ইসি স্প্রে করুন; প্রয়োজনে ১২–১৫ দিন পর আবার দিন।"
+        },
+        "dosage": {
+          "en": "0.5 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ০.৫ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Treat seed (Carboxin + Thiram, 3 g/kg) and remove infected residue.",
+          "bn": "বীজ শোধন করুন (কার্বক্সিন + থিরাম, প্রতি কেজিতে ৩ গ্রাম) এবং আক্রান্ত অবশিষ্টাংশ সরান।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Sow on time, use tolerant varieties and balanced fertiliser.",
+          "bn": "সময়মতো বপন করুন, সহনশীল জাত ও সুষম সার ব্যবহার করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "class_label": "india:Wheat___Powdery_Mildew",
+    "crop_key": "wheat",
+    "name": {
+      "en": "Powdery Mildew",
+      "bn": "পাউডারি মিলডিউ (সাদা গুঁড়া রোগ)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Blumeria graminis f. sp. tritici",
+    "symptoms": {
+      "en": "White to grey powdery patches on leaves and stems; leaves yellow and dry.",
+      "bn": "পাতা ও কাণ্ডে সাদা থেকে ধূসর পাউডারের মতো ছোপ; পাতা হলুদ হয়ে শুকায়।"
+    },
+    "causes": {
+      "en": "Fungus favoured by cool, cloudy, humid weather and dense crops.",
+      "bn": "ঠান্ডা, মেঘলা, আর্দ্র আবহাওয়া ও ঘন ফসলে ছত্রাকটি বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Propiconazole 25 EC as soon as symptoms appear; repeat after 12–15 days if needed.",
+          "bn": "লক্ষণ দেখা দেওয়ামাত্র প্রোপিকোনাজল ২৫ ইসি স্প্রে করুন; প্রয়োজনে ১২–১৫ দিন পর আবার দিন।"
+        },
+        "dosage": {
+          "en": "0.5 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ০.৫ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Spray wettable sulphur (2 g per litre).",
+          "bn": "ভেজানো যায় এমন সালফার (প্রতি লিটারে ২ গ্রাম) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Avoid excess nitrogen and very dense sowing.",
+          "bn": "অতিরিক্ত নাইট্রোজেন ও খুব ঘন বপন এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "class_label": "india:Wheat___Scab",
+    "crop_key": "wheat",
+    "name": {
+      "en": "Scab (Head Blight)",
+      "bn": "স্ক্যাব (শীষ ঝলসানো রোগ)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Fusarium graminearum",
+    "symptoms": {
+      "en": "Parts of the spike turn bleached white; pink-orange fungal growth at the base of spikelets; shrivelled grains.",
+      "bn": "শীষের অংশ সাদা হয়ে যায়; ছোট শীষের গোড়ায় গোলাপি-কমলা ছত্রাক; দানা চিটা হয়।"
+    },
+    "causes": {
+      "en": "Fungus infects at flowering during warm, wet weather; survives on maize and wheat residue.",
+      "bn": "উষ্ণ, ভেজা আবহাওয়ায় ফুল ফোটার সময় সংক্রমণ; ভুট্টা ও গমের অবশিষ্টাংশে বেঁচে থাকে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Tebuconazole 25 EC at early flowering.",
+          "bn": "ফুল ফোটার শুরুতে টেবুকোনাজল ২৫ ইসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Plough under crop residue after harvest.",
+          "bn": "ফসল কাটার পর অবশিষ্টাংশ চাষ দিয়ে মাটিতে মিশিয়ে দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Do not grow wheat right after maize; use clean seed.",
+          "bn": "ভুট্টার ঠিক পরে গম চাষ করবেন না; পরিষ্কার বীজ ব্যবহার করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "class_label": "india:Wheat___Yellow_Rust",
+    "crop_key": "wheat",
+    "name": {
+      "en": "Yellow (Stripe) Rust",
+      "bn": "হলুদ মরিচা"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Puccinia striiformis",
+    "symptoms": {
+      "en": "Bright yellow pustules arranged in stripes along the leaf veins; yellow powder on hands.",
+      "bn": "পাতার শিরা বরাবর ডোরাকাটা সারিতে উজ্জ্বল হলুদ ফুসকুড়ি; হাতে হলুদ গুঁড়া লাগে।"
+    },
+    "causes": {
+      "en": "Rust fungus spread by wind; cool (10–15 °C), humid weather.",
+      "bn": "বাতাসে ছড়ানো মরিচা ছত্রাক; ঠান্ডা (১০–১৫ °সে), আর্দ্র আবহাওয়ায় বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Propiconazole 25 EC as soon as symptoms appear; repeat after 12–15 days if needed.",
+          "bn": "লক্ষণ দেখা দেওয়ামাত্র প্রোপিকোনাজল ২৫ ইসি স্প্রে করুন; প্রয়োজনে ১২–১৫ দিন পর আবার দিন।"
+        },
+        "dosage": {
+          "en": "0.5 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ০.৫ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove volunteer wheat; scout fields weekly from January.",
+          "bn": "আপনা-আপনি গজানো গম সরান; জানুয়ারি থেকে প্রতি সপ্তাহে মাঠ পর্যবেক্ষণ করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Grow rust-resistant varieties and sow on time (mid-November in Bangladesh).",
+          "bn": "মরিচা-প্রতিরোধী জাত চাষ করুন এবং সময়মতো (বাংলাদেশে নভেম্বরের মাঝামাঝি) বপন করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "class_label": "soybean:Downy Mildew",
+    "crop_key": "soybean",
+    "name": {
+      "en": "Downy Mildew",
+      "bn": "ডাউনি মিলডিউ"
+    },
+    "type": "oomycete",
+    "is_healthy": false,
+    "pathogen": "Peronospora manshurica",
+    "symptoms": {
+      "en": "Pale yellow-green spots on the upper leaf; grey fuzzy growth underneath; spots turn brown.",
+      "bn": "পাতার উপরে ফ্যাকাশে হলদে-সবুজ দাগ; নিচে ধূসর তুলার মতো আস্তরণ; দাগ বাদামি হয়।"
+    },
+    "causes": {
+      "en": "Water mould carried on seed and residue; cool, wet weather.",
+      "bn": "বীজ ও অবশিষ্টাংশবাহিত পানির ছত্রাক; ঠান্ডা, ভেজা আবহাওয়ায় বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Metalaxyl + Mancozeb when spots appear.",
+          "bn": "দাগ দেখা দিলে মেটালাক্সিল + ম্যানকোজেব স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove infected leaves and improve air flow.",
+          "bn": "আক্রান্ত পাতা সরান এবং বাতাস চলাচল বাড়ান।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use clean seed and rotate crops.",
+          "bn": "পরিষ্কার বীজ ব্যবহার করুন ও শস্যপর্যায় মানুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "class_label": "soybean:Frogeye Leaf Spot",
+    "crop_key": "soybean",
+    "name": {
+      "en": "Frogeye Leaf Spot",
+      "bn": "ফ্রগআই পাতার দাগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Cercospora sojina",
+    "symptoms": {
+      "en": "Small round spots with grey centres and red-brown borders, like a frog's eye.",
+      "bn": "ধূসর মাঝখান ও লালচে-বাদামি কিনারাসহ ছোট গোল দাগ, ব্যাঙের চোখের মতো।"
+    },
+    "causes": {
+      "en": "Fungus on infected residue and seed; warm, humid weather.",
+      "bn": "আক্রান্ত অবশিষ্টাংশ ও বীজে ছত্রাক; উষ্ণ, আর্দ্র আবহাওয়ায় বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Azoxystrobin 23 SC at first spots.",
+          "bn": "প্রথম দাগে অ্যাজোক্সিস্ট্রোবিন ২৩ এসসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Plough under residue after harvest.",
+          "bn": "ফসল কাটার পর অবশিষ্টাংশ মাটিতে মিশিয়ে দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Grow resistant varieties and rotate for at least one year.",
+          "bn": "প্রতিরোধী জাত চাষ করুন এবং অন্তত এক বছর শস্যপর্যায় মানুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "class_label": "soybean:Healthy",
+    "crop_key": "soybean",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease or pest signs found. The leaf looks normal.",
+      "bn": "কোনো রোগ বা পোকার লক্ষণ পাওয়া যায়নি। পাতা স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the crop healthy.",
+      "bn": "ফসল সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Check the field every week, including leaf undersides, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচসহ মাঠ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser (do not overuse urea) and keep the field free of weeds.",
+          "bn": "সুষম সার দিন (অতিরিক্ত ইউরিয়া নয়) এবং মাঠ আগাছামুক্ত রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use good-quality seed and keep plant spacing open for air flow.",
+          "bn": "মানসম্মত বীজ ব্যবহার করুন এবং বাতাস চলাচলের জন্য গাছের মাঝে ফাঁকা রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "class_label": "soybean:Mosaic Virus",
+    "crop_key": "soybean",
+    "name": {
+      "en": "Mosaic Virus",
+      "bn": "মোজাইক ভাইরাস"
+    },
+    "type": "virus",
+    "is_healthy": false,
+    "pathogen": "Soybean mosaic virus (SMV)",
+    "symptoms": {
+      "en": "Light and dark green mottling, puckered and curled leaves; stunted plants and mottled seeds.",
+      "bn": "হালকা ও গাঢ় সবুজ ছোপ, কোঁচকানো ও কুঁকড়ানো পাতা; গাছ খাটো ও বীজে দাগ।"
+    },
+    "causes": {
+      "en": "Virus spread by aphids and infected seed.",
+      "bn": "জাবপোকা ও আক্রান্ত বীজের মাধ্যমে ছড়ানো ভাইরাস।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "No cure for the virus. Control aphids with Imidacloprid 17.8 SL.",
+          "bn": "ভাইরাসের কোনো প্রতিকার নেই। ইমিডাক্লোপ্রিড ১৭.৮ এসএল দিয়ে জাবপোকা দমন করুন।"
+        },
+        "dosage": {
+          "en": "0.5 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ০.৫ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove infected plants early; use yellow sticky traps for aphids.",
+          "bn": "আক্রান্ত গাছ আগেভাগে সরান; জাবপোকার জন্য হলুদ আঠালো ফাঁদ দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Sow virus-free seed and resistant varieties.",
+          "bn": "ভাইরাসমুক্ত বীজ ও প্রতিরোধী জাত বপন করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "class_label": "soybean:Rust",
+    "crop_key": "soybean",
+    "name": {
+      "en": "Rust",
+      "bn": "মরিচা রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Phakopsora pachyrhizi",
+    "symptoms": {
+      "en": "Small tan to reddish-brown lesions mainly on the underside of leaves; leaves yellow and drop early.",
+      "bn": "মূলত পাতার নিচে ছোট হালকা বাদামি থেকে লালচে-বাদামি দাগ; পাতা হলুদ হয়ে আগেই ঝরে।"
+    },
+    "causes": {
+      "en": "Rust fungus spread by wind; warm, humid weather with long leaf wetness.",
+      "bn": "বাতাসে ছড়ানো মরিচা ছত্রাক; উষ্ণ, আর্দ্র আবহাওয়া ও দীর্ঘক্ষণ পাতা ভেজা থাকলে বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Tebuconazole 25 EC at first symptoms; repeat after 15 days.",
+          "bn": "প্রথম লক্ষণে টেবুকোনাজল ২৫ ইসি স্প্রে করুন; ১৫ দিন পর আবার দিন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove heavily infected leaves and volunteer plants.",
+          "bn": "বেশি আক্রান্ত পাতা ও আপনা-আপনি গজানো গাছ সরান।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Sow early and grow tolerant varieties.",
+          "bn": "আগাম বপন করুন এবং সহনশীল জাত চাষ করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "class_label": "soybean:Septoria Brown Spot",
+    "crop_key": "soybean",
+    "name": {
+      "en": "Septoria Brown Spot",
+      "bn": "সেপ্টোরিয়া বাদামি দাগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Septoria glycines",
+    "symptoms": {
+      "en": "Small irregular dark brown spots on lower leaves, often with yellowing around them; spreads upward.",
+      "bn": "নিচের পাতায় ছোট অনিয়মিত গাঢ় বাদামি দাগ, চারপাশে প্রায়ই হলুদ; উপরের দিকে ছড়ায়।"
+    },
+    "causes": {
+      "en": "Fungus survives on residue; spread by rain splash in warm, wet weather.",
+      "bn": "অবশিষ্টাংশে বেঁচে থাকা ছত্রাক; উষ্ণ, ভেজা আবহাওয়ায় বৃষ্টির ছিটায় ছড়ায়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Mancozeb 75 WP if spots reach the middle of the plant.",
+          "bn": "দাগ গাছের মাঝামাঝি পৌঁছালে ম্যানকোজেব ৭৫ ডব্লিউপি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Plough under residue and remove infected lower leaves.",
+          "bn": "অবশিষ্টাংশ মাটিতে মিশিয়ে দিন এবং আক্রান্ত নিচের পাতা সরান।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Rotate with cereals and use clean seed.",
+          "bn": "দানাশস্যের সাথে শস্যপর্যায় মানুন এবং পরিষ্কার বীজ ব্যবহার করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "class_label": "jute:Beet Armyworm",
+    "crop_key": "jute",
+    "name": {
+      "en": "Beet Armyworm",
+      "bn": "বিট আর্মিওয়ার্ম (লেদা পোকা)"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Spodoptera exigua",
+    "symptoms": {
+      "en": "Green larvae feed in groups, skeletonising and then eating whole leaves.",
+      "bn": "সবুজ কীড়া দল বেঁধে পাতা ঝাঁঝরা করে, পরে পুরো পাতা খেয়ে ফেলে।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Spodoptera exigua). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Spodoptera exigua)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Emamectin benzoate 5 SG on young larvae.",
+          "bn": "ছোট কীড়ার ওপর এমামেকটিন বেনজোয়েট ৫ এসজি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "1 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "class_label": "jute:Black Hairy",
+    "crop_key": "jute",
+    "name": {
+      "en": "Black Hairy Caterpillar",
+      "bn": "কালো শুঁয়োপোকা"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Estigmene / Spilosoma spp.",
+    "symptoms": {
+      "en": "Hairy black caterpillars eat leaves; heavy attacks strip plants bare.",
+      "bn": "লোমশ কালো শুঁয়োপোকা পাতা খায়; বেশি আক্রমণে গাছ পাতাশূন্য হয়।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Estigmene / Spilosoma spp.). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Estigmene / Spilosoma spp.)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Cypermethrin 10 EC when damage is first seen.",
+          "bn": "ক্ষতি প্রথম দেখা দিলে সাইপারমেথ্রিন ১০ ইসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "class_label": "jute:Cutworm",
+    "crop_key": "jute",
+    "name": {
+      "en": "Cutworm",
+      "bn": "কাটুই পোকা"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Agrotis ipsilon",
+    "symptoms": {
+      "en": "Larvae hide in soil by day and cut young seedlings at the base at night.",
+      "bn": "কীড়া দিনে মাটিতে লুকিয়ে থাকে এবং রাতে কচি চারা গোড়া থেকে কেটে দেয়।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Agrotis ipsilon). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Agrotis ipsilon)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Apply Chlorpyrifos 20 EC around the plant base in the evening.",
+          "bn": "সন্ধ্যায় গাছের গোড়ার চারপাশে ক্লোরপাইরিফস ২০ ইসি প্রয়োগ করুন।"
+        },
+        "dosage": {
+          "en": "2 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "class_label": "jute:Field Cricket",
+    "crop_key": "jute",
+    "name": {
+      "en": "Field Cricket",
+      "bn": "মাঠের ঝিঁঝিঁ পোকা"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Gryllus / Brachytrupes spp.",
+    "symptoms": {
+      "en": "Crickets cut seedlings and feed on young leaves at night.",
+      "bn": "ঝিঁঝিঁ পোকা রাতে চারা কাটে ও কচি পাতা খায়।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Gryllus / Brachytrupes spp.). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Gryllus / Brachytrupes spp.)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Apply Chlorpyrifos 20 EC around the plant base in the evening.",
+          "bn": "সন্ধ্যায় গাছের গোড়ার চারপাশে ক্লোরপাইরিফস ২০ ইসি প্রয়োগ করুন।"
+        },
+        "dosage": {
+          "en": "2 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "class_label": "jute:Jute Aphid",
+    "crop_key": "jute",
+    "name": {
+      "en": "Jute Aphid",
+      "bn": "পাটের জাবপোকা"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Aphis gossypii",
+    "symptoms": {
+      "en": "Tiny soft insects suck sap from tips and leaf undersides; leaves curl and plants become sticky.",
+      "bn": "ছোট নরম পোকা ডগা ও পাতার নিচ থেকে রস চুষে খায়; পাতা কুঁকড়ায় ও গাছ আঠালো হয়।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Aphis gossypii). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Aphis gossypii)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Imidacloprid 17.8 SL on infested plants.",
+          "bn": "আক্রান্ত গাছে ইমিডাক্লোপ্রিড ১৭.৮ এসএল স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "0.5 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ০.৫ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "class_label": "jute:Jute Hairy",
+    "crop_key": "jute",
+    "name": {
+      "en": "Jute Hairy Caterpillar",
+      "bn": "পাটের বিছা পোকা"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Spilarctia obliqua",
+    "symptoms": {
+      "en": "Young larvae feed together under leaves; older hairy larvae spread and eat whole leaves.",
+      "bn": "ছোট কীড়া পাতার নিচে দল বেঁধে খায়; বড় লোমশ কীড়া ছড়িয়ে পুরো পাতা খেয়ে ফেলে।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Spilarctia obliqua). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Spilarctia obliqua)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Cypermethrin 10 EC when damage is first seen.",
+          "bn": "ক্ষতি প্রথম দেখা দিলে সাইপারমেথ্রিন ১০ ইসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "class_label": "jute:Jute Red Mite",
+    "crop_key": "jute",
+    "name": {
+      "en": "Jute Red Mite",
+      "bn": "পাটের লাল মাকড়"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Tetranychus spp.",
+    "symptoms": {
+      "en": "Tiny red mites under leaves cause pale speckles and fine webbing; leaves turn bronze and dry.",
+      "bn": "পাতার নিচে ছোট লাল মাকড় ফ্যাকাশে দাগ ও সূক্ষ্ম জাল তৈরি করে; পাতা তামাটে হয়ে শুকায়।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Tetranychus spp.). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Tetranychus spp.)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray wettable sulphur 80 WG or Abamectin 1.8 EC on leaf undersides and young tips.",
+          "bn": "পাতার নিচে ও কচি ডগায় সালফার ৮০ ডব্লিউজি বা অ্যাবামেকটিন ১.৮ ইসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2 g (sulphur) or 1 mL (Abamectin) per litre",
+          "bn": "প্রতি লিটারে ২ গ্রাম (সালফার) বা ১ মিলি (অ্যাবামেকটিন)"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "class_label": "jute:Jute Semilooper",
+    "crop_key": "jute",
+    "name": {
+      "en": "Jute Semilooper",
+      "bn": "পাটের ঘোড়া পোকা"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Anomis sabulifera",
+    "symptoms": {
+      "en": "Green looping larvae eat the tender top leaves and buds, causing branching and poor fibre.",
+      "bn": "সবুজ ঘোড়া পোকা কচি ডগার পাতা ও কুঁড়ি খায়, ফলে শাখা বের হয় ও আঁশ খারাপ হয়।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Anomis sabulifera). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Anomis sabulifera)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Cypermethrin 10 EC when damage is first seen.",
+          "bn": "ক্ষতি প্রথম দেখা দিলে সাইপারমেথ্রিন ১০ ইসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "class_label": "jute:Jute Stem Girdler",
+    "crop_key": "jute",
+    "name": {
+      "en": "Jute Stem Girdler",
+      "bn": "পাটের কাণ্ড বেষ্টনকারী পোকা"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Nupserha bicolor",
+    "symptoms": {
+      "en": "Beetles cut rings around the stem; the top wilts and the larva bores inside.",
+      "bn": "পোকা কাণ্ডের চারদিকে বলয় কেটে দেয়; আগা নেতিয়ে পড়ে ও কীড়া ভেতরে ছিদ্র করে।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Nupserha bicolor). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Nupserha bicolor)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Apply Chlorpyrifos 20 EC around the plant base in the evening.",
+          "bn": "সন্ধ্যায় গাছের গোড়ার চারপাশে ক্লোরপাইরিফস ২০ ইসি প্রয়োগ করুন।"
+        },
+        "dosage": {
+          "en": "2 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "class_label": "jute:Jute Stem Weevil",
+    "crop_key": "jute",
+    "name": {
+      "en": "Jute Stem Weevil",
+      "bn": "পাটের কাণ্ডের উইভিল"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Apion corchori",
+    "symptoms": {
+      "en": "Small weevils lay eggs in the stem; larvae bore inside, causing knots and weak fibre.",
+      "bn": "ছোট উইভিল কাণ্ডে ডিম পাড়ে; কীড়া ভেতরে ছিদ্র করে, গিঁট ও দুর্বল আঁশ হয়।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Apion corchori). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Apion corchori)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Apply Chlorpyrifos 20 EC around the plant base in the evening.",
+          "bn": "সন্ধ্যায় গাছের গোড়ার চারপাশে ক্লোরপাইরিফস ২০ ইসি প্রয়োগ করুন।"
+        },
+        "dosage": {
+          "en": "2 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "class_label": "jute:Leaf Beetle",
+    "crop_key": "jute",
+    "name": {
+      "en": "Leaf Beetle",
+      "bn": "পাতার বিটল"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Chrysomelidae",
+    "symptoms": {
+      "en": "Beetles chew holes in leaves, especially on young plants.",
+      "bn": "বিটল পোকা পাতায় ছিদ্র করে খায়, বিশেষ করে কচি গাছে।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Chrysomelidae). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Chrysomelidae)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Cypermethrin 10 EC when damage is first seen.",
+          "bn": "ক্ষতি প্রথম দেখা দিলে সাইপারমেথ্রিন ১০ ইসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "class_label": "jute:Mealybug",
+    "crop_key": "jute",
+    "name": {
+      "en": "Mealybug",
+      "bn": "ছাতরা পোকা"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Maconellicoccus hirsutus",
+    "symptoms": {
+      "en": "White waxy insects cluster on stems and tips, sucking sap; tips become bunchy and stunted.",
+      "bn": "সাদা মোমের মতো পোকা কাণ্ড ও ডগায় জড়ো হয়ে রস চুষে খায়; ডগা গুচ্ছ ও খাটো হয়।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Maconellicoccus hirsutus). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Maconellicoccus hirsutus)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Imidacloprid 17.8 SL on infested plants.",
+          "bn": "আক্রান্ত গাছে ইমিডাক্লোপ্রিড ১৭.৮ এসএল স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "0.5 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ০.৫ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "class_label": "jute:Pod Borer",
+    "crop_key": "jute",
+    "name": {
+      "en": "Pod Borer",
+      "bn": "ফল ছিদ্রকারী পোকা"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Helicoverpa armigera",
+    "symptoms": {
+      "en": "Larvae bore into pods and buds and feed on seeds.",
+      "bn": "কীড়া ফল ও কুঁড়িতে ছিদ্র করে বীজ খায়।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Helicoverpa armigera). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Helicoverpa armigera)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Emamectin benzoate 5 SG on young larvae.",
+          "bn": "ছোট কীড়ার ওপর এমামেকটিন বেনজোয়েট ৫ এসজি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "1 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "class_label": "jute:Scopula Emissaria",
+    "crop_key": "jute",
+    "name": {
+      "en": "Looper Moth (Scopula emissaria)",
+      "bn": "লুপার মথ (স্কোপুলা)"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Scopula emissaria",
+    "symptoms": {
+      "en": "Looper larvae feed on leaves, leaving irregular holes.",
+      "bn": "লুপার কীড়া পাতা খেয়ে অনিয়মিত ছিদ্র করে।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Scopula emissaria). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Scopula emissaria)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Cypermethrin 10 EC when damage is first seen.",
+          "bn": "ক্ষতি প্রথম দেখা দিলে সাইপারমেথ্রিন ১০ ইসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "class_label": "jute:Termite",
+    "crop_key": "jute",
+    "name": {
+      "en": "Termite",
+      "bn": "উইপোকা"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Isoptera",
+    "symptoms": {
+      "en": "Termites eat roots and the stem base; plants wilt and fall over, mostly in dry soil.",
+      "bn": "উইপোকা শিকড় ও কাণ্ডের গোড়া খায়; গাছ নেতিয়ে পড়ে, সাধারণত শুকনো মাটিতে।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Isoptera). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Isoptera)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Drench the soil around affected plants with Chlorpyrifos 20 EC.",
+          "bn": "আক্রান্ত গাছের চারপাশের মাটিতে ক্লোরপাইরিফস ২০ ইসি ঢেলে দিন।"
+        },
+        "dosage": {
+          "en": "4 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ৪ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "class_label": "jute:Termite odontotermes (Rambur)",
+    "crop_key": "jute",
+    "name": {
+      "en": "Termite (Odontotermes)",
+      "bn": "উইপোকা (ওডোন্টোটার্মিস)"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Odontotermes obesus",
+    "symptoms": {
+      "en": "Mound-building termites damage roots and lower stems, and cover stems with mud galleries.",
+      "bn": "ঢিবি তৈরিকারী উইপোকা শিকড় ও নিচের কাণ্ড নষ্ট করে এবং কাণ্ড মাটির সুড়ঙ্গে ঢেকে দেয়।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Odontotermes obesus). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Odontotermes obesus)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Drench the soil around affected plants with Chlorpyrifos 20 EC.",
+          "bn": "আক্রান্ত গাছের চারপাশের মাটিতে ক্লোরপাইরিফস ২০ ইসি ঢেলে দিন।"
+        },
+        "dosage": {
+          "en": "4 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ৪ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "class_label": "jute:Yellow Mite",
+    "crop_key": "jute",
+    "name": {
+      "en": "Yellow Mite",
+      "bn": "হলুদ মাকড়"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Polyphagotarsonemus latus",
+    "symptoms": {
+      "en": "Tiny mites on tender tips make young leaves curl down, turn copper-coloured and brittle. A key jute pest.",
+      "bn": "কচি ডগায় ছোট মাকড় নতুন পাতা নিচের দিকে কোঁকড়ায়, তামাটে ও ভঙ্গুর করে। পাটের প্রধান পোকা।"
+    },
+    "causes": {
+      "en": "Insect/mite pest (Polyphagotarsonemus latus). Usually worse in warm, humid weather and weedy fields.",
+      "bn": "পোকা/মাকড় (Polyphagotarsonemus latus)। সাধারণত উষ্ণ, আর্দ্র আবহাওয়া ও আগাছাপূর্ণ মাঠে বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray wettable sulphur 80 WG or Abamectin 1.8 EC on leaf undersides and young tips.",
+          "bn": "পাতার নিচে ও কচি ডগায় সালফার ৮০ ডব্লিউজি বা অ্যাবামেকটিন ১.৮ ইসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2 g (sulphur) or 1 mL (Abamectin) per litre",
+          "bn": "প্রতি লিটারে ২ গ্রাম (সালফার) বা ১ মিলি (অ্যাবামেকটিন)"
+        },
+        "precautions": {
+          "en": "Wear gloves and a mask; do not spray in wind or before rain; respect the waiting period on the label.",
+          "bn": "গ্লাভস ও মাস্ক পরুন; বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না; লেবেলে লেখা অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hand-pick larvae and egg masses, use light traps at night, and spray neem oil (5 mL per litre) on young stages.",
+          "bn": "কীড়া ও ডিমের গাদা হাতে তুলে নষ্ট করুন, রাতে আলোর ফাঁদ দিন এবং ছোট অবস্থায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the field and borders weed-free, sow on time, use balanced fertiliser and check plants twice a week.",
+          "bn": "মাঠ ও আইল আগাছামুক্ত রাখুন, সময়মতো বপন করুন, সুষম সার দিন এবং সপ্তাহে দুবার গাছ পরীক্ষা করুন।"
         },
         "dosage": null,
         "precautions": null

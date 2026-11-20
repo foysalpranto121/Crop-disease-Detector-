@@ -212,8 +212,8 @@ export default function LandingPage() {
               </Reveal>
               <div className="mt-8 grid grid-cols-2 gap-3">
                 {[
-                  { node: <CountUp to={38} />, label: t("landing.stat_diseases") },
-                  { node: <CountUp to={14} />, label: t("landing.stat_crops") },
+                  { node: <CountUp to={77} />, label: t("landing.stat_diseases") },
+                  { node: <CountUp to={17} />, label: t("landing.stat_crops") },
                   { node: <CountUp to={2} prefix="<" />, label: t("landing.stat_seconds") },
                   { node: <CountUp to={2} />, label: t("landing.stat_languages") },
                 ].map((s, i) => (

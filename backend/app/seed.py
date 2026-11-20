@@ -6,7 +6,7 @@ import json
 import logging
 from pathlib import Path
 
-from sqlalchemy import func, select
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.config import settings
@@ -23,14 +23,22 @@ def _load(name: str):
 
 
 def seed_knowledge_base(db: Session) -> None:
-    if db.scalar(select(func.count()).select_from(Disease)):
-        return
+    """Insert missing crops/diseases and refresh crop metadata. Existing disease rows (maybe edited by an admin) are kept."""
+    crops = {c.key: c for c in db.scalars(select(Crop))}
     for i, c in enumerate(_load("crops.json")):
-        db.add(Crop(key=c["key"], name=c["name"], emoji=c["emoji"], supported=c["supported"], sort_order=i))
+        row = crops.get(c["key"])
+        if row is None:
+            db.add(Crop(key=c["key"], name=c["name"], emoji=c["emoji"], supported=c["supported"], sort_order=i))
+        else:
+            row.name, row.emoji, row.supported, row.sort_order = c["name"], c["emoji"], c["supported"], i
     db.flush()
+    existing = set(db.scalars(select(Disease.class_label)))
+    added = 0
     for d in _load("diseases.json"):
+        if d["class_label"] in existing:
+            continue
         disease = Disease(
-            id=d["model_index"] + 1,
+            id=d["id"],
             class_label=d["class_label"],
             crop_key=d["crop_key"],
             name=d["name"],
@@ -42,8 +50,10 @@ def seed_knowledge_base(db: Session) -> None:
         )
         disease.treatments = [Treatment(type=t["type"], remedy=t["remedy"], dosage=t["dosage"], precautions=t["precautions"]) for t in d["treatments"]]
         db.add(disease)
+        added += 1
     db.commit()
-    log.info("Seeded crops and diseases")
+    if added:
+        log.info("Seeded %d diseases", added)
 
 
 def seed_demo_users(db: Session) -> None:

@@ -2,7 +2,7 @@ import re
 import uuid
 from time import perf_counter
 
-from fastapi import APIRouter, Depends, File, Request, UploadFile
+from fastapi import APIRouter, Depends, File, Form, Request, UploadFile
 from fastapi.concurrency import run_in_threadpool
 from fastapi.responses import FileResponse
 from PIL import Image
@@ -12,7 +12,7 @@ from app.config import settings
 from app.database import get_db
 from app.deps import api_error, optional_user
 from app.ml.image_checks import ImageRejected, check_quality, load_image, looks_like_plant
-from app.ml.inference import Classifier
+from app.ml.registry import PEST_CROPS, ModelRegistry, Route
 from app.models import Feedback, Prediction, User
 from app.ratelimit import RateLimiter, client_ip
 from app.schemas import FeedbackIn, PredictionOut
@@ -33,15 +33,19 @@ def _save_image(img: Image.Image) -> str:
     return name
 
 
-def _analyse(clf: Classifier, img: Image.Image):
+def _analyse(models: ModelRegistry, route: Route, img: Image.Image, crop: str | None):
     check_quality(img)
-    return clf.predict(img, top_k=3), looks_like_plant(img, settings.min_plant_ratio)
+    version, scores = models.predict(img, route, top_k=3)
+    # Pest photos show insects (often not green), so the leaf-colour check would wrongly reject them.
+    is_plant = crop in PEST_CROPS or looks_like_plant(img, settings.min_plant_ratio)
+    return version, scores, is_plant
 
 
 @router.post("/predict", response_model=PredictionOut)
 async def predict(
     request: Request,
     file: UploadFile = File(...),
+    crop: str | None = Form(None, max_length=30, description="Crop key, e.g. rice. Empty = detect among all PlantVillage crops."),
     user: User | None = Depends(optional_user),
     db: Session = Depends(get_db),
 ) -> PredictionOut:
@@ -50,10 +54,14 @@ async def predict(
     started = perf_counter()
     max_bytes = settings.max_upload_mb * 1024 * 1024
     data = await file.read(max_bytes + 1)
-    clf: Classifier = request.app.state.classifier
+    models: ModelRegistry = request.app.state.models
+    crop = (crop or "").strip().lower() or None
+    route = models.route(crop)
+    if route is None:
+        raise api_error(422, "UNSUPPORTED_CROP", f"No model is available for the crop '{crop}'.")
     try:
         img = await run_in_threadpool(load_image, data, max_bytes)
-        scores, is_plant = await run_in_threadpool(_analyse, clf, img)
+        version, scores, is_plant = await run_in_threadpool(_analyse, models, route, img, crop)
     except ImageRejected as e:
         raise api_error(e.status, e.reason, e.message) from None
 
@@ -62,8 +70,8 @@ async def predict(
         status, disease_id, top_k = "not_a_leaf", None, []
     else:
         status = "ok" if top.probability >= settings.low_confidence_threshold else "low_confidence"
-        disease_id = top.index + 1
-        top_k = [{"disease_id": s.index + 1, "confidence": round(s.probability, 4)} for s in scores]
+        disease_id = top.disease_id
+        top_k = [{"disease_id": s.disease_id, "confidence": round(s.probability, 4)} for s in scores]
 
     image_name = await run_in_threadpool(_save_image, img)
     p = Prediction(
@@ -74,7 +82,7 @@ async def predict(
         disease_id=disease_id,
         top_k=top_k,
         latency_ms=round((perf_counter() - started) * 1000),
-        model_version=clf.version,
+        model_version=version,
     )
     db.add(p)
     db.commit()

@@ -15,7 +15,7 @@ const outDir = resolve(here, "../../backend/app/seed");
 mkdirSync(outDir, { recursive: true });
 
 const diseases = buildDiseases().map((d) => ({
-  model_index: d.id - 1,
+  id: d.id,
   class_label: d.class_label,
   crop_key: d.crop.key,
   name: d.name,
@@ -29,4 +29,4 @@ const diseases = buildDiseases().map((d) => ({
 
 writeFileSync(resolve(outDir, "crops.json"), JSON.stringify(CROPS, null, 2) + "\n", "utf8");
 writeFileSync(resolve(outDir, "diseases.json"), JSON.stringify(diseases, null, 2) + "\n", "utf8");
-console.log(`Wrote ${CROPS.length} crops and ${diseases.length} diseases (${MODEL_LABELS.length} model labels) to ${outDir}`);
+console.log(`Wrote ${CROPS.length} crops and ${diseases.length} diseases (${MODEL_LABELS.length} main-model labels) to ${outDir}`);

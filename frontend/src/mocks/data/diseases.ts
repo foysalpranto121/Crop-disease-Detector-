@@ -1,6 +1,7 @@
 import type { Disease, DiseaseType, L, Treatment } from "../../api/types";
 import { diseaseImages } from "../../lib/diseaseImages";
 import { cropByKey } from "./crops";
+import { EXTRA_DEFS } from "./extraDiseases";
 
 /*
  * Disease & treatment knowledge base for the 38 classes of the pre-trained model
@@ -917,18 +918,26 @@ const DEFS: Def[] = [
   healthy("Healthy Tomato Plant", "tomato"),
 ];
 
-/** Build the full disease list with stable ids (id = model index + 1). */
+/**
+ * Build the full disease list with stable ids.
+ * PlantVillage classes: id = main-model index + 1, class_label = model label.
+ * Specialist crop models (rice, wheat, soybean, jute): ids after that, class_label = "<model>:<label>".
+ */
 export function buildDiseases(): Disease[] {
   let treatmentId = 1;
-  return DEFS.map((d, index) => ({
+  const all = [
+    ...DEFS.map((d) => ({ ...d, classLabel: d.label, images: diseaseImages(d.label) })),
+    ...EXTRA_DEFS.map((d) => ({ ...d, classLabel: `${d.model}:${d.label}`, images: [] as string[] })),
+  ];
+  return all.map((d, index) => ({
     id: index + 1,
-    class_label: d.label,
+    class_label: d.classLabel,
     crop: cropByKey(d.crop),
     name: d.name,
     type: d.type,
     is_healthy: d.type === "healthy",
     pathogen: d.pathogen,
-    images: diseaseImages(d.label),
+    images: d.images,
     symptoms: d.symptoms,
     causes: d.causes,
     treatments: d.treatments.map((t) => ({ ...t, id: treatmentId++ })),

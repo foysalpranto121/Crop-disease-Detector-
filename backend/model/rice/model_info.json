@@ -1,0 +1,28 @@
+{
+  "model_id": "Shaq2/chashibhai-rice-disease-cls",
+  "version": "rice-yolo26cls-1.0",
+  "source": "https://huggingface.co/Shaq2/chashibhai-rice-disease-cls",
+  "license": "MIT",
+  "reported_metric": "see model card",
+  "output": "probs",
+  "preprocessing": {
+    "mode": "shortest_crop",
+    "resize": 320,
+    "crop": 320,
+    "mean": [
+      0,
+      0,
+      0
+    ],
+    "std": [
+      1,
+      1,
+      1
+    ]
+  },
+  "file": "model.onnx",
+  "num_classes": 8,
+  "size_bytes": 6174035,
+  "sha256": "935eaf3d11637b2f469dc695126011fb7930d3578d0f95d1ca126444f383218b",
+  "quantized": false
+}

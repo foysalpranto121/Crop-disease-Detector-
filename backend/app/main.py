@@ -18,7 +18,8 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from app.config import settings
-from app.ml.inference import Classifier
+from app.database import SessionLocal
+from app.ml.registry import ModelRegistry
 from app.routers import admin, auth, chat, history, library, predict
 from app.seed import init_db
 
@@ -28,11 +29,14 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(messag
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     settings.upload_dir.mkdir(parents=True, exist_ok=True)
-    classifier = Classifier(settings.model_dir)  # load once; reused by every request
+    registry = ModelRegistry(settings.model_dir)  # load every model once; reused by every request
+    classifier = registry.main
     init_db(classifier.labels)
-    app.state.classifier = classifier
+    with SessionLocal() as db:
+        registry.bind(db)
+    app.state.models = registry
     app.state.http = httpx.AsyncClient(timeout=httpx.Timeout(60.0, connect=10.0))
-    logging.getLogger("app").info("Model %s loaded (%d classes); AI chat %s", classifier.version, len(classifier.labels), "on" if settings.euri_api_key else "off (no EURI_API_KEY)")
+    logging.getLogger("app").info("Models loaded: %s; AI chat %s", ", ".join(registry.models), "on" if settings.euri_api_key else "off (no EURI_API_KEY)")
     yield
     await app.state.http.aclose()
 
@@ -60,8 +64,14 @@ for r in (auth.router, library.router, predict.router, history.router, admin.rou
 
 @app.get("/api/health", tags=["health"])
 def health(request: Request) -> dict:
-    clf: Classifier = request.app.state.classifier
-    return {"status": "ok", "model_version": clf.version, "num_classes": len(clf.labels), "chat": bool(settings.euri_api_key)}
+    reg: ModelRegistry = request.app.state.models
+    return {
+        "status": "ok",
+        "model_version": reg.main.version,
+        "num_classes": len(reg.main.labels),
+        "crop_models": {crop: reg.models[r.model].version for crop, r in reg.routes.items() if r.model != "main"},
+        "chat": bool(settings.euri_api_key),
+    }
 
 
 @app.api_route("/api/{path:path}", methods=["GET", "POST", "PUT", "DELETE"], include_in_schema=False)

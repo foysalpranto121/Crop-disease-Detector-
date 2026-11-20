@@ -100,9 +100,11 @@ const json = (body: unknown) => JSON.stringify(body);
 
 export const api = {
   // Diagnosis
-  predict(image: Blob, fileName = "leaf.jpg") {
+  /** `crop` limits the diagnosis to one crop's model and classes; omit it for automatic detection. */
+  predict(image: Blob, fileName = "leaf.jpg", crop?: string | null) {
     const form = new FormData();
     form.append("file", image, fileName);
+    if (crop) form.append("crop", crop);
     return request<PredictionResult>("/api/predict", { method: "POST", body: form });
   },
   sendFeedback(predictionId: number, isCorrect: boolean, comment?: string) {

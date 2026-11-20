@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+from functools import lru_cache
 
 from sqlalchemy.orm import Session
 
@@ -29,9 +30,18 @@ def slugify(label: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", label.lower()).strip("-")
 
 
+@lru_cache(maxsize=1)
+def _photo_files() -> frozenset[str]:
+    folder = settings.frontend_public / "diseases"
+    return frozenset(p.name for p in folder.glob("*.jpg")) if folder.is_dir() else frozenset()
+
+
 def disease_images(class_label: str) -> list[str]:
+    """Reference photos that exist in frontend/public/diseases (some newer crop classes have none yet)."""
     slug = slugify(class_label)
-    return [f"/diseases/{slug}-{i}.jpg" for i in range(1, IMAGES_PER_DISEASE + 1)]
+    names = [f"{slug}-{i}.jpg" for i in range(1, IMAGES_PER_DISEASE + 1)]
+    files = _photo_files()
+    return [f"/diseases/{n}" for n in names if n in files]
 
 
 def band_of(confidence: float) -> str:
@@ -81,7 +91,7 @@ def prediction_out(p: Prediction, db: Session) -> PredictionOut:
     for k in p.top_k or []:
         d = db.get(Disease, k["disease_id"])
         if d:
-            top_k.append(TopKOut(disease_id=d.id, name=d.name, crop=d.crop.name, confidence=k["confidence"], image=disease_images(d.class_label)[0]))
+            top_k.append(TopKOut(disease_id=d.id, name=d.name, crop=d.crop.name, confidence=k["confidence"], image=next(iter(disease_images(d.class_label)), None)))
     return PredictionOut(
         id=p.id,
         status=p.status,

@@ -49,9 +49,28 @@ const MODEL_ID2LABEL = [
 describe("disease knowledge base", () => {
   const diseases = buildDiseases();
 
+  const main = diseases.filter((d) => !d.class_label.includes(":"));
+
   it("matches the pre-trained model's 38 labels in the same order", () => {
     expect(MODEL_LABELS).toEqual(MODEL_ID2LABEL);
-    expect(diseases.map((d) => d.id)).toEqual(MODEL_ID2LABEL.map((_, i) => i + 1));
+    expect(main.map((d) => d.id)).toEqual(MODEL_ID2LABEL.map((_, i) => i + 1));
+    expect(diseases.map((d) => d.id)).toEqual(diseases.map((_, i) => i + 1));
+  });
+
+  it.each([
+    ["rice", "rice", 8],
+    ["india", "wheat", 8],
+    ["soybean", "soybean", 6],
+    ["jute", "jute", 17],
+  ])("has one entry per class of the %s crop model (labels.json)", (model, crop, count) => {
+    const labels = JSON.parse(readFileSync(resolve(__dirname, `../../../backend/model/${model}/labels.json`), "utf8")) as string[];
+    const rows = diseases.filter((d) => d.class_label.startsWith(`${model}:`));
+    expect(rows).toHaveLength(count);
+    expect(rows.every((d) => d.crop.key === crop)).toBe(true);
+    // listed in model order, and every label really exists in the model
+    const idx = rows.map((d) => labels.indexOf(d.class_label.slice(model.length + 1)));
+    expect(idx.every((i) => i >= 0)).toBe(true);
+    expect([...idx].sort((a, b) => a - b)).toEqual(idx);
   });
 
   it("has Bangla and English text for every name, symptom and cause", () => {
@@ -77,10 +96,10 @@ describe("disease knowledge base", () => {
     }
   });
 
-  it("has 3 real reference photos on disk for every class, matching the download manifest", () => {
+  it("has 3 real reference photos on disk for every PlantVillage class, matching the download manifest", () => {
     const publicDir = resolve(__dirname, "../../public");
     const manifest = JSON.parse(readFileSync(resolve(publicDir, "diseases/manifest.json"), "utf8")) as Record<string, string[]>;
-    for (const d of diseases) {
+    for (const d of main) {
       expect(d.images, d.class_label).toHaveLength(3);
       expect(manifest[slugify(d.class_label)], d.class_label).toEqual(d.images);
       for (const url of d.images) expect(existsSync(resolve(publicDir, `.${url}`)), url).toBe(true);

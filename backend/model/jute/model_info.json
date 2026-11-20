@@ -1,0 +1,28 @@
+{
+  "model_id": "dimasichsanul/jute_pest_classification",
+  "version": "jute-pest-vit-1.0",
+  "source": "https://huggingface.co/dimasichsanul/jute_pest_classification",
+  "license": "Apache-2.0",
+  "reported_metric": "F1 0.982 (Jute Pest dataset, UCI)",
+  "output": "logits",
+  "preprocessing": {
+    "mode": "square",
+    "resize": 224,
+    "crop": 224,
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "file": "model.onnx",
+  "num_classes": 17,
+  "size_bytes": 86881521,
+  "sha256": "bc9ce978e6e8d1d7b307f5e4d317071dcdce2b240e3617e624f81b1cb72c24ed",
+  "quantized": true
+}

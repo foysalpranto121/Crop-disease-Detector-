@@ -1,0 +1,28 @@
+{
+  "model_id": "sanjeevani-04/indian-crop-disease-mobilenetv2",
+  "version": "india-crops-mobilenetv2-1.0",
+  "source": "https://huggingface.co/sanjeevani-04/indian-crop-disease-mobilenetv2",
+  "license": "see model card (other)",
+  "reported_metric": "97.3% accuracy, macro-F1 0.890",
+  "output": "logits",
+  "preprocessing": {
+    "mode": "shortest_crop",
+    "resize": 256,
+    "crop": 224,
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "file": "model.onnx",
+  "num_classes": 35,
+  "size_bytes": 9230714,
+  "sha256": "8d0a666dce917a0e3c143f4308ffb571f663b2abfcea9f84347fa2f3a7ab06e0",
+  "quantized": false
+}

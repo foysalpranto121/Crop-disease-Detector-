@@ -1,0 +1,28 @@
+{
+  "model_id": "ixrbhii/soybean-disease-convnext",
+  "version": "soybean-convnext-1.0",
+  "source": "https://huggingface.co/ixrbhii/soybean-disease-convnext",
+  "license": "CC-BY-4.0",
+  "reported_metric": "91.7% test accuracy, macro-F1 0.881",
+  "output": "logits",
+  "preprocessing": {
+    "mode": "shortest_crop",
+    "resize": 224,
+    "crop": 224,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "file": "model.onnx",
+  "num_classes": 6,
+  "size_bytes": 50255458,
+  "sha256": "8498e37a3aa1b579f1c1a6da30dc0cc03cc36c704b34879d86c89b62b9974c64",
+  "quantized": true
+}

@@ -9,6 +9,11 @@ const REFERENCES = [
   "Mohanty, S. P., Hughes, D. P., & Salathé, M. (2016). Using deep learning for image-based plant disease detection. Frontiers in Plant Science, 7, 1419.",
   "Sandler, M., Howard, A., Zhu, M., Zhmoginov, A., & Chen, L.-C. (2018). MobileNetV2: Inverted residuals and linear bottlenecks. CVPR.",
   "Pre-trained model: linkanjarad/mobilenet_v2_1.0_224-plant-disease-identification (Hugging Face).",
+  "Rice model: Shaq2/chashibhai-rice-disease-cls (Hugging Face, MIT).",
+  "Wheat model: sanjeevani-04/indian-crop-disease-mobilenetv2 (Hugging Face) — wheat classes.",
+  "Soybean model: ixrbhii/soybean-disease-convnext (Hugging Face, CC-BY-4.0).",
+  "Jute pest model: dimasichsanul/jute_pest_classification (Hugging Face, Apache-2.0), trained on the UCI Jute Pest dataset.",
+  "Validation photos: Dhan-Shomadhan rice leaf dataset (Bangladesh), via Project-AgML.",
 ];
 
 export default function AboutPage() {
@@ -35,6 +40,7 @@ export default function AboutPage() {
           <li>{t("about.limit1")}</li>
           <li>{t("about.limit2")}</li>
           <li>{t("about.limit3")}</li>
+          <li>{t("about.limit4")}</li>
         </ul>
       ),
     },

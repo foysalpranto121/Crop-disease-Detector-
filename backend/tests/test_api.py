@@ -41,11 +41,13 @@ def test_health(client):
 def test_crops_and_diseases(client):
     crops = client.get("/api/crops").json()
     assert len(crops) == 17
-    assert next(c for c in crops if c["key"] == "tomato")["disease_count"] == 9
-    assert [c["key"] for c in crops if not c["supported"]] == ["rice", "jute", "wheat"]
+    assert all(c["supported"] for c in crops)
+    assert [c["key"] for c in crops[:3]] == ["rice", "wheat", "jute"]  # Bangladesh crops first
+    counts = {c["key"]: c["disease_count"] for c in crops}
+    assert counts["tomato"] == 9 and counts["rice"] == 7 and counts["wheat"] == 7 and counts["jute"] == 17 and counts["soybean"] == 5
 
     diseases = client.get("/api/diseases").json()
-    assert len(diseases) == 38
+    assert len(diseases) == 77
     assert len(client.get("/api/diseases?crop=potato").json()) == 3
 
     d = client.get("/api/diseases/30").json()
@@ -55,18 +57,53 @@ def test_crops_and_diseases(client):
     assert client.get("/api/diseases/999").status_code == 404
 
 
-def test_every_disease_has_real_photos(client):
+def test_every_disease_photo_exists(client):
     public = Path(__file__).parents[2] / "frontend" / "public"
     for d in client.get("/api/diseases").json():
-        assert len(d["images"]) == 3, d["class_label"]
+        if ":" not in d["class_label"]:  # every PlantVillage class has 3 real photos
+            assert len(d["images"]) == 3, d["class_label"]
         for url in d["images"]:
             assert (public / url.lstrip("/")).is_file(), url
 
 
+MODEL_DIR = Path(__file__).parents[1] / "model"
+SEED = json.loads((Path(__file__).parents[1] / "app" / "seed" / "diseases.json").read_text(encoding="utf-8"))
+
+
 def test_model_labels_match_database():
-    labels = json.loads((Path(__file__).parents[1] / "model" / "labels.json").read_text(encoding="utf-8"))
-    seed = json.loads((Path(__file__).parents[1] / "app" / "seed" / "diseases.json").read_text(encoding="utf-8"))
-    assert labels == [d["class_label"] for d in sorted(seed, key=lambda d: d["model_index"])]
+    labels = json.loads((MODEL_DIR / "labels.json").read_text(encoding="utf-8"))
+    main = [d for d in SEED if ":" not in d["class_label"]]
+    assert [d["class_label"] for d in sorted(main, key=lambda d: d["id"])] == labels
+    assert [d["id"] for d in sorted(main, key=lambda d: d["id"])] == list(range(1, 39))
+
+
+@pytest.mark.parametrize("model,crop,count", [("rice", "rice", 8), ("india", "wheat", 8), ("soybean", "soybean", 6), ("jute", "jute", 17)])
+def test_specialist_labels_have_disease_rows(model, crop, count):
+    labels = json.loads((MODEL_DIR / model / "labels.json").read_text(encoding="utf-8"))
+    rows = {d["class_label"]: d["crop_key"] for d in SEED if d["class_label"].startswith(f"{model}:")}
+    assert len(rows) == count
+    assert all(rows[k] == crop for k in rows)
+    assert set(rows) <= {f"{model}:{label}" for label in labels}
+
+
+def test_health_lists_crop_models(client):
+    models = client.get("/api/health").json()["crop_models"]
+    assert set(models) == {"rice", "wheat", "soybean", "jute"}
+
+
+@pytest.mark.parametrize("crop", ["rice", "wheat", "soybean", "jute", "potato"])
+def test_predict_with_crop_stays_in_that_crop(client, crop):
+    res = client.post("/api/predict", files={"file": ("leaf.jpg", (FIXTURES / "potato_late_blight.jpg").read_bytes(), "image/jpeg")}, data={"crop": crop})
+    assert res.status_code == 200, res.text
+    body = res.json()
+    assert body["status"] in {"ok", "low_confidence"}
+    assert body["disease"]["crop"]["key"] == crop
+    assert body["top_k"] and all(k["crop"] == body["disease"]["crop"]["name"] for k in body["top_k"])
+
+
+def test_predict_unknown_crop(client):
+    res = client.post("/api/predict", files={"file": ("leaf.jpg", (FIXTURES / "apple_scab.jpg").read_bytes(), "image/jpeg")}, data={"crop": "banana"})
+    assert res.status_code == 422 and res.json()["detail"]["reason"] == "UNSUPPORTED_CROP"
 
 
 # ---------- diagnosis ----------

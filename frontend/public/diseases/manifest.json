@@ -188,5 +188,60 @@
     "/diseases/healthy-tomato-plant-1.jpg",
     "/diseases/healthy-tomato-plant-2.jpg",
     "/diseases/healthy-tomato-plant-3.jpg"
+  ],
+  "rice-rice-bacterial-leaf-blight": [
+    "/diseases/rice-rice-bacterial-leaf-blight-1.jpg",
+    "/diseases/rice-rice-bacterial-leaf-blight-2.jpg",
+    "/diseases/rice-rice-bacterial-leaf-blight-3.jpg"
+  ],
+  "rice-rice-brown-spot": [
+    "/diseases/rice-rice-brown-spot-1.jpg",
+    "/diseases/rice-rice-brown-spot-2.jpg",
+    "/diseases/rice-rice-brown-spot-3.jpg"
+  ],
+  "rice-rice-healthy-leaf": [
+    "/diseases/rice-rice-healthy-leaf-1.jpg",
+    "/diseases/rice-rice-healthy-leaf-2.jpg",
+    "/diseases/rice-rice-healthy-leaf-3.jpg"
+  ],
+  "rice-rice-leaf-blast": [
+    "/diseases/rice-rice-leaf-blast-1.jpg",
+    "/diseases/rice-rice-leaf-blast-2.jpg",
+    "/diseases/rice-rice-leaf-blast-3.jpg"
+  ],
+  "rice-rice-leaf-scald": [
+    "/diseases/rice-rice-leaf-scald-1.jpg",
+    "/diseases/rice-rice-leaf-scald-2.jpg",
+    "/diseases/rice-rice-leaf-scald-3.jpg"
+  ],
+  "rice-rice-sheath-blight": [
+    "/diseases/rice-rice-sheath-blight-1.jpg",
+    "/diseases/rice-rice-sheath-blight-2.jpg",
+    "/diseases/rice-rice-sheath-blight-3.jpg"
+  ],
+  "rice-rice-narrow-brown-leaf-spot": [
+    "/diseases/rice-rice-narrow-brown-leaf-spot-1.jpg",
+    "/diseases/rice-rice-narrow-brown-leaf-spot-2.jpg",
+    "/diseases/rice-rice-narrow-brown-leaf-spot-3.jpg"
+  ],
+  "soybean-frogeye-leaf-spot": [
+    "/diseases/soybean-frogeye-leaf-spot-1.jpg",
+    "/diseases/soybean-frogeye-leaf-spot-2.jpg",
+    "/diseases/soybean-frogeye-leaf-spot-3.jpg"
+  ],
+  "soybean-healthy": [
+    "/diseases/soybean-healthy-1.jpg",
+    "/diseases/soybean-healthy-2.jpg",
+    "/diseases/soybean-healthy-3.jpg"
+  ],
+  "soybean-rust": [
+    "/diseases/soybean-rust-1.jpg",
+    "/diseases/soybean-rust-2.jpg",
+    "/diseases/soybean-rust-3.jpg"
+  ],
+  "soybean-septoria-brown-spot": [
+    "/diseases/soybean-septoria-brown-spot-1.jpg",
+    "/diseases/soybean-septoria-brown-spot-2.jpg",
+    "/diseases/soybean-septoria-brown-spot-3.jpg"
   ]
 }

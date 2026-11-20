@@ -1,7 +1,13 @@
 import type { Crop } from "../../api/types";
 
-/** The 14 crops the pre-trained model supports, plus Bangladesh crops planned for later. */
+/**
+ * Supported crops. Bangladesh's main field crops come first; each has its own specialist model.
+ * The rest are covered by the PlantVillage model.
+ */
 export const CROPS: Crop[] = [
+  { key: "rice", name: { en: "Rice", bn: "ধান" }, emoji: "🌾", supported: true },
+  { key: "wheat", name: { en: "Wheat", bn: "গম" }, emoji: "🌾", supported: true },
+  { key: "jute", name: { en: "Jute (pests)", bn: "পাট (পোকা)" }, emoji: "🌿", supported: true },
   { key: "apple", name: { en: "Apple", bn: "আপেল" }, emoji: "🍎", supported: true },
   { key: "blueberry", name: { en: "Blueberry", bn: "ব্লুবেরি" }, emoji: "🫐", supported: true },
   { key: "cherry", name: { en: "Cherry", bn: "চেরি" }, emoji: "🍒", supported: true },
@@ -16,10 +22,6 @@ export const CROPS: Crop[] = [
   { key: "squash", name: { en: "Squash", bn: "স্কোয়াশ" }, emoji: "🎃", supported: true },
   { key: "strawberry", name: { en: "Strawberry", bn: "স্ট্রবেরি" }, emoji: "🍓", supported: true },
   { key: "tomato", name: { en: "Tomato", bn: "টমেটো" }, emoji: "🍅", supported: true },
-  // Coming soon — major Bangladesh crops not covered by the current model.
-  { key: "rice", name: { en: "Rice", bn: "ধান" }, emoji: "🌾", supported: false },
-  { key: "jute", name: { en: "Jute", bn: "পাট" }, emoji: "🌿", supported: false },
-  { key: "wheat", name: { en: "Wheat", bn: "গম" }, emoji: "🌾", supported: false },
 ];
 
 export const SUPPORTED_CROPS = CROPS.filter((c) => c.supported);
@@ -30,3 +32,8 @@ export function cropByKey(key: string): Crop {
   if (!crop) throw new Error(`Unknown crop: ${key}`);
   return crop;
 }
+
+/** Crops served by a newer specialist model that is still in beta (shown with a "Beta" label). */
+export const BETA_CROPS: ReadonlySet<string> = new Set(["rice", "wheat", "jute", "soybean"]);
+/** Crops whose model recognises insect pests rather than leaf diseases. */
+export const PEST_CROPS: ReadonlySet<string> = new Set(["jute"]);

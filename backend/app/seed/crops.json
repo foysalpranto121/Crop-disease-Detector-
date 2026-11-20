@@ -1,5 +1,32 @@
 [
   {
+    "key": "rice",
+    "name": {
+      "en": "Rice",
+      "bn": "ধান"
+    },
+    "emoji": "🌾",
+    "supported": true
+  },
+  {
+    "key": "wheat",
+    "name": {
+      "en": "Wheat",
+      "bn": "গম"
+    },
+    "emoji": "🌾",
+    "supported": true
+  },
+  {
+    "key": "jute",
+    "name": {
+      "en": "Jute (pests)",
+      "bn": "পাট (পোকা)"
+    },
+    "emoji": "🌿",
+    "supported": true
+  },
+  {
     "key": "apple",
     "name": {
       "en": "Apple",
@@ -124,32 +151,5 @@
     },
     "emoji": "🍅",
     "supported": true
-  },
-  {
-    "key": "rice",
-    "name": {
-      "en": "Rice",
-      "bn": "ধান"
-    },
-    "emoji": "🌾",
-    "supported": false
-  },
-  {
-    "key": "jute",
-    "name": {
-      "en": "Jute",
-      "bn": "পাট"
-    },
-    "emoji": "🌿",
-    "supported": false
-  },
-  {
-    "key": "wheat",
-    "name": {
-      "en": "Wheat",
-      "bn": "গম"
-    },
-    "emoji": "🌾",
-    "supported": false
   }
 ]

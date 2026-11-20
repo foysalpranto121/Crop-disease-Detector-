@@ -36,3 +36,25 @@ def preprocess(img: Image.Image) -> np.ndarray:
     arr = np.asarray(resize_and_crop(img), dtype=np.float32) / 255.0
     arr = (arr - MEAN) / STD
     return np.ascontiguousarray(arr.transpose(2, 0, 1)[None], dtype=np.float32)
+
+
+def preprocess_with(img: Image.Image, cfg: dict) -> np.ndarray:
+    """Generic version driven by a model's model_info.json "preprocessing" block.
+
+    mode "shortest_crop": resize shortest edge to cfg.resize, centre-crop cfg.crop (HF MobileNet, timm, YOLO-cls)
+    mode "square":        resize straight to cfg.crop x cfg.crop (HF ViT)
+    """
+    img = img.convert("RGB")
+    crop = int(cfg["crop"])
+    if cfg.get("mode") == "square":
+        img = img.resize((crop, crop), Image.Resampling.BILINEAR)
+    else:
+        resize = int(cfg["resize"])
+        w, h = img.size
+        new_w, new_h = (resize, int(resize * h / w)) if w <= h else (int(resize * w / h), resize)
+        img = img.resize((new_w, new_h), Image.Resampling.BILINEAR)
+        left, top = (new_w - crop) // 2, (new_h - crop) // 2
+        img = img.crop((left, top, left + crop, top + crop))
+    arr = np.asarray(img, dtype=np.float32) / 255.0
+    arr = (arr - np.array(cfg["mean"], dtype=np.float32)) / np.array(cfg["std"], dtype=np.float32)
+    return np.ascontiguousarray(arr.transpose(2, 0, 1)[None], dtype=np.float32)
