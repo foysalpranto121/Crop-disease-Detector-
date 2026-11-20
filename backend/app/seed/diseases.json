@@ -1,0 +1,2017 @@
+[
+  {
+    "model_index": 0,
+    "class_label": "Apple Scab",
+    "crop_key": "apple",
+    "name": {
+      "en": "Apple Scab",
+      "bn": "আপেলের স্ক্যাব রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Venturia inaequalis",
+    "symptoms": {
+      "en": "Olive-green to dark brown velvety spots on leaves; leaves may curl, yellow and fall early. Fruit gets dark, corky scabs.",
+      "bn": "পাতায় জলপাই-সবুজ থেকে গাঢ় বাদামি মখমলের মতো দাগ পড়ে; পাতা কুঁকড়ে হলুদ হয়ে আগেভাগে ঝরে যায়। ফলে গাঢ়, শক্ত, খসখসে দাগ হয়।"
+    },
+    "causes": {
+      "en": "Fungus Venturia inaequalis. It survives in fallen leaves and spreads by rain splash in cool, wet spring weather.",
+      "bn": "ভেনচুরিয়া ইনইকুয়ালিস ছত্রাক। ঝরা পাতায় বেঁচে থাকে এবং ঠান্ডা, ভেজা বসন্তে বৃষ্টির ছিটায় ছড়ায়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Captan 50 WP or Mancozeb 75 WP from bud break, every 7–10 days during wet weather.",
+          "bn": "কুঁড়ি ফোটার সময় থেকে ভেজা আবহাওয়ায় ৭–১০ দিন পরপর ক্যাপটান ৫০ ডব্লিউপি বা ম্যানকোজেব ৭৫ ডব্লিউপি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2–2.5 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২–২.৫ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Spray wettable sulphur (2–3 g per litre) and rake up and destroy fallen leaves.",
+          "bn": "ভেজানো যায় এমন সালফার (প্রতি লিটারে ২–৩ গ্রাম) স্প্রে করুন এবং ঝরা পাতা জড়ো করে নষ্ট করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Plant scab-resistant varieties and prune trees so air moves freely through the canopy.",
+          "bn": "স্ক্যাব-প্রতিরোধী জাত লাগান এবং ডাল ছাঁটাই করে গাছের ভেতরে বাতাস চলাচল নিশ্চিত করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 1,
+    "class_label": "Apple with Black Rot",
+    "crop_key": "apple",
+    "name": {
+      "en": "Black Rot",
+      "bn": "কালো পচা রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Botryosphaeria obtusa",
+    "symptoms": {
+      "en": "Small purple spots on leaves grow into brown 'frog-eye' spots with a purple edge. Fruit rots black from the blossom end; sunken cankers form on branches.",
+      "bn": "পাতায় ছোট বেগুনি দাগ বড় হয়ে বেগুনি কিনারাসহ বাদামি 'ব্যাঙের চোখ' দাগে পরিণত হয়। ফলের ফুলের দিক থেকে কালো পচন শুরু হয়; ডালে বসে যাওয়া ক্ষত (ক্যাঙ্কার) হয়।"
+    },
+    "causes": {
+      "en": "Fungus Botryosphaeria obtusa, which lives in dead wood, cankers and dried 'mummy' fruit, and spreads in warm, wet weather.",
+      "bn": "বোট্রায়োস্ফেরিয়া অবটুসা ছত্রাক, যা মরা কাঠ, ক্যাঙ্কার ও শুকনো 'মমি' ফলে বেঁচে থাকে এবং উষ্ণ, ভেজা আবহাওয়ায় ছড়ায়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Captan 50 WP every 10–14 days from petal fall until harvest in wet seasons.",
+          "bn": "ভেজা মৌসুমে পাপড়ি ঝরার পর থেকে ফল তোলা পর্যন্ত ১০–১৪ দিন পরপর ক্যাপটান ৫০ ডব্লিউপি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Cut out cankers and dead branches 15 cm below the infection, remove mummified fruit, and spray copper oxychloride (3 g per litre) at the dormant stage.",
+          "bn": "সংক্রমণের ১৫ সেমি নিচ থেকে ক্যাঙ্কার ও মরা ডাল কেটে ফেলুন, মমি হওয়া ফল সরান এবং সুপ্ত অবস্থায় কপার অক্সিক্লোরাইড (প্রতি লিটারে ৩ গ্রাম) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the orchard clean, avoid wounding trees, and burn or bury pruned wood.",
+          "bn": "বাগান পরিষ্কার রাখুন, গাছে আঘাত এড়িয়ে চলুন এবং ছাঁটাই করা ডাল পুড়িয়ে বা পুঁতে ফেলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 2,
+    "class_label": "Cedar Apple Rust",
+    "crop_key": "apple",
+    "name": {
+      "en": "Cedar Apple Rust",
+      "bn": "সিডার আপেল মরিচা রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Gymnosporangium juniperi-virginianae",
+    "symptoms": {
+      "en": "Bright yellow-orange spots on the upper leaf surface that later show tiny black dots; small tube-like growths form under the leaf.",
+      "bn": "পাতার ওপরের দিকে উজ্জ্বল হলুদ-কমলা দাগ, পরে তাতে ছোট কালো বিন্দু দেখা যায়; পাতার নিচে ছোট নলের মতো গঠন তৈরি হয়।"
+    },
+    "causes": {
+      "en": "A rust fungus that needs juniper (cedar) trees to complete its life cycle. Spores blow from cedar galls in spring rain.",
+      "bn": "একটি মরিচা ছত্রাক, যার জীবনচক্র সম্পূর্ণ করতে জুনিপার (সিডার) গাছ দরকার। বসন্তের বৃষ্টিতে সিডারের গুটি থেকে রেণু উড়ে আসে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Mancozeb 75 WP from pink bud stage until 2–3 weeks after petal fall, every 7–10 days.",
+          "bn": "গোলাপি কুঁড়ি অবস্থা থেকে পাপড়ি ঝরার ২–৩ সপ্তাহ পর পর্যন্ত ৭–১০ দিন পরপর ম্যানকোজেব ৭৫ ডব্লিউপি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Spray wettable sulphur (2–3 g per litre) and remove orange galls from nearby juniper trees.",
+          "bn": "ভেজানো যায় এমন সালফার (প্রতি লিটারে ২–৩ গ্রাম) স্প্রে করুন এবং কাছের জুনিপার গাছ থেকে কমলা গুটি সরিয়ে ফেলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Plant rust-resistant varieties and avoid planting apples near juniper or cedar trees.",
+          "bn": "মরিচা-প্রতিরোধী জাত লাগান এবং জুনিপার বা সিডার গাছের কাছে আপেল লাগাবেন না।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 3,
+    "class_label": "Healthy Apple",
+    "crop_key": "apple",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease signs found. The leaf looks green and normal.",
+      "bn": "কোনো রোগের লক্ষণ পাওয়া যায়নি। পাতা সবুজ ও স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the plant healthy.",
+      "bn": "গাছ সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Inspect plants every week, including the underside of leaves, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচের দিকসহ গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser and water at the base of the plant in the morning; avoid wetting the leaves.",
+          "bn": "সুষম সার দিন এবং সকালে গাছের গোড়ায় পানি দিন; পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Prune in winter to open the canopy and remove fallen leaves and fruit.",
+          "bn": "শীতে ডাল ছাঁটাই করে গাছের ভেতর খোলামেলা রাখুন এবং ঝরা পাতা ও ফল সরিয়ে ফেলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 4,
+    "class_label": "Healthy Blueberry Plant",
+    "crop_key": "blueberry",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease signs found. The leaf looks green and normal.",
+      "bn": "কোনো রোগের লক্ষণ পাওয়া যায়নি। পাতা সবুজ ও স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the plant healthy.",
+      "bn": "গাছ সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Inspect plants every week, including the underside of leaves, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচের দিকসহ গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser and water at the base of the plant in the morning; avoid wetting the leaves.",
+          "bn": "সুষম সার দিন এবং সকালে গাছের গোড়ায় পানি দিন; পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the soil acidic (pH 4.5–5.5) and mulch with sawdust or pine bark.",
+          "bn": "মাটি অম্লীয় রাখুন (pH ৪.৫–৫.৫) এবং কাঠের গুঁড়া বা পাইনের বাকল দিয়ে মালচ করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 5,
+    "class_label": "Cherry with Powdery Mildew",
+    "crop_key": "cherry",
+    "name": {
+      "en": "Powdery Mildew",
+      "bn": "পাউডারি মিলডিউ (সাদা গুঁড়া রোগ)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Podosphaera clandestina",
+    "symptoms": {
+      "en": "White, powdery patches on young leaves and shoots; leaves curl upward and become brittle.",
+      "bn": "কচি পাতা ও ডগায় সাদা পাউডারের মতো ছোপ; পাতা ওপরের দিকে কুঁকড়ে যায় ও ভঙ্গুর হয়।"
+    },
+    "causes": {
+      "en": "Fungus Podosphaera clandestina. Favoured by warm days, high humidity and crowded canopies — it does not need rain.",
+      "bn": "পোডোস্ফেরা ক্ল্যানডেস্টিনা ছত্রাক। উষ্ণ দিন, উচ্চ আর্দ্রতা ও ঘন ডালপালায় বাড়ে — বৃষ্টির প্রয়োজন হয় না।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Hexaconazole 5 EC at the first sign of white powder; repeat after 10–14 days.",
+          "bn": "সাদা পাউডার দেখা দেওয়ার সাথে সাথে হেক্সাকোনাজল ৫ ইসি স্প্রে করুন; ১০–১৪ দিন পর আবার দিন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Spray potassium bicarbonate (5 g per litre) or neem oil (5 mL per litre) with a few drops of liquid soap.",
+          "bn": "পটাশিয়াম বাইকার্বোনেট (প্রতি লিটারে ৫ গ্রাম) বা নিম তেল (প্রতি লিটারে ৫ মিলি) সামান্য তরল সাবানসহ স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Prune for good air flow, give plants full sun, and avoid too much nitrogen fertiliser.",
+          "bn": "বাতাস চলাচলের জন্য ছাঁটাই করুন, গাছে পূর্ণ রোদ নিশ্চিত করুন এবং অতিরিক্ত নাইট্রোজেন সার এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 6,
+    "class_label": "Healthy Cherry Plant",
+    "crop_key": "cherry",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease signs found. The leaf looks green and normal.",
+      "bn": "কোনো রোগের লক্ষণ পাওয়া যায়নি। পাতা সবুজ ও স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the plant healthy.",
+      "bn": "গাছ সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Inspect plants every week, including the underside of leaves, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচের দিকসহ গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser and water at the base of the plant in the morning; avoid wetting the leaves.",
+          "bn": "সুষম সার দিন এবং সকালে গাছের গোড়ায় পানি দিন; পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Prune for good air flow and remove root suckers.",
+          "bn": "বাতাস চলাচলের জন্য ছাঁটাই করুন এবং গোড়ার কুশি সরিয়ে ফেলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 7,
+    "class_label": "Corn (Maize) with Cercospora and Gray Leaf Spot",
+    "crop_key": "corn",
+    "name": {
+      "en": "Cercospora / Gray Leaf Spot",
+      "bn": "সারকোস্পোরা / ধূসর পাতা দাগ রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Cercospora zeae-maydis",
+    "symptoms": {
+      "en": "Long, narrow, rectangular grey to tan spots running between the leaf veins; spots join together and leaves dry out.",
+      "bn": "পাতার শিরার মাঝে লম্বা, সরু, আয়তাকার ধূসর থেকে হালকা বাদামি দাগ; দাগগুলো মিলে পাতা শুকিয়ে যায়।"
+    },
+    "causes": {
+      "en": "Fungus Cercospora zeae-maydis surviving on old maize residue; favoured by warm, humid weather and long periods of leaf wetness.",
+      "bn": "সারকোস্পোরা জি-মেইডিস ছত্রাক, যা পুরনো ভুট্টার অবশিষ্টাংশে বেঁচে থাকে; উষ্ণ, আর্দ্র আবহাওয়া ও দীর্ঘক্ষণ পাতা ভেজা থাকলে বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Azoxystrobin 23 SC or Propiconazole 25 EC when spots first appear, before tasselling.",
+          "bn": "দাগ প্রথম দেখা দিলে, মোচা বের হওয়ার আগে অ্যাজোক্সিস্ট্রোবিন ২৩ এসসি বা প্রোপিকোনাজল ২৫ ইসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove and destroy infected lower leaves, and plough under or remove crop residue after harvest.",
+          "bn": "আক্রান্ত নিচের পাতা তুলে নষ্ট করুন এবং ফসল তোলার পর অবশিষ্টাংশ চাষ দিয়ে মাটিতে মিশিয়ে দিন বা সরিয়ে ফেলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Rotate with a non-maize crop for at least one season and grow tolerant hybrids.",
+          "bn": "অন্তত এক মৌসুম ভুট্টা ছাড়া অন্য ফসল চাষ করুন এবং সহনশীল হাইব্রিড জাত লাগান।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 8,
+    "class_label": "Corn (Maize) with Common Rust",
+    "crop_key": "corn",
+    "name": {
+      "en": "Common Rust",
+      "bn": "সাধারণ মরিচা রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Puccinia sorghi",
+    "symptoms": {
+      "en": "Small, oval, cinnamon-brown powdery pustules on both sides of the leaf; badly infected leaves turn yellow and dry.",
+      "bn": "পাতার দুই পাশে ছোট, ডিম্বাকার, দারুচিনি-বাদামি গুঁড়াযুক্ত ফুসকুড়ি; বেশি আক্রান্ত পাতা হলুদ হয়ে শুকিয়ে যায়।"
+    },
+    "causes": {
+      "en": "Rust fungus Puccinia sorghi. Spores travel long distances on the wind; cool (16–23 °C), humid weather favours it.",
+      "bn": "পাক্সিনিয়া সরগি মরিচা ছত্রাক। রেণু বাতাসে বহু দূর যায়; ঠান্ডা (১৬–২৩ °সে) ও আর্দ্র আবহাওয়ায় বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Mancozeb 75 WP or Propiconazole 25 EC (1 mL per litre) when pustules first appear; repeat after 10–15 days if needed.",
+          "bn": "ফুসকুড়ি প্রথম দেখা দিলে ম্যানকোজেব ৭৫ ডব্লিউপি বা প্রোপিকোনাজল ২৫ ইসি (প্রতি লিটারে ১ মিলি) স্প্রে করুন; প্রয়োজনে ১০–১৫ দিন পর আবার দিন।"
+        },
+        "dosage": {
+          "en": "2.5 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২.৫ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove heavily infected leaves early and keep the field free of self-sown maize plants.",
+          "bn": "বেশি আক্রান্ত পাতা আগেভাগে সরিয়ে ফেলুন এবং মাঠে আপনা-আপনি গজানো ভুট্টা গাছ রাখবেন না।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Plant rust-resistant hybrids, sow early, and use balanced fertiliser.",
+          "bn": "মরিচা-প্রতিরোধী হাইব্রিড লাগান, আগাম বপন করুন এবং সুষম সার দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 9,
+    "class_label": "Corn (Maize) with Northern Leaf Blight",
+    "crop_key": "corn",
+    "name": {
+      "en": "Northern Leaf Blight",
+      "bn": "নর্দান লিফ ব্লাইট (পাতা ঝলসানো রোগ)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Exserohilum turcicum",
+    "symptoms": {
+      "en": "Long, cigar-shaped grey-green to tan lesions (2.5–15 cm) on the leaves, starting on the lower leaves.",
+      "bn": "পাতায় লম্বা, চুরুটের মতো ধূসর-সবুজ থেকে হালকা বাদামি দাগ (২.৫–১৫ সেমি), যা নিচের পাতা থেকে শুরু হয়।"
+    },
+    "causes": {
+      "en": "Fungus Exserohilum turcicum on infected crop residue; moderate temperatures (18–27 °C) with heavy dew favour it.",
+      "bn": "এক্সসেরোহাইলাম টারসিকাম ছত্রাক, যা আক্রান্ত ফসলের অবশিষ্টাংশে থাকে; মাঝারি তাপমাত্রা (১৮–২৭ °সে) ও ভারী শিশিরে বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Mancozeb 75 WP or Propiconazole 25 EC (1 mL per litre) at first symptoms; repeat after 10–15 days.",
+          "bn": "প্রথম লক্ষণ দেখা দিলে ম্যানকোজেব ৭৫ ডব্লিউপি বা প্রোপিকোনাজল ২৫ ইসি (প্রতি লিটারে ১ মিলি) স্প্রে করুন; ১০–১৫ দিন পর আবার দিন।"
+        },
+        "dosage": {
+          "en": "2.5 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২.৫ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove infected leaves and deep-plough crop residue after harvest.",
+          "bn": "আক্রান্ত পাতা সরিয়ে ফেলুন এবং ফসল তোলার পর গভীর চাষ দিয়ে অবশিষ্টাংশ মাটিতে মিশিয়ে দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Grow resistant hybrids, rotate crops and avoid very dense planting.",
+          "bn": "প্রতিরোধী হাইব্রিড চাষ করুন, শস্যপর্যায় মানুন এবং খুব ঘন করে লাগাবেন না।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 10,
+    "class_label": "Healthy Corn (Maize) Plant",
+    "crop_key": "corn",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease signs found. The leaf looks green and normal.",
+      "bn": "কোনো রোগের লক্ষণ পাওয়া যায়নি। পাতা সবুজ ও স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the plant healthy.",
+      "bn": "গাছ সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Inspect plants every week, including the underside of leaves, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচের দিকসহ গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser and water at the base of the plant in the morning; avoid wetting the leaves.",
+          "bn": "সুষম সার দিন এবং সকালে গাছের গোড়ায় পানি দিন; পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Rotate with legumes and keep proper plant spacing.",
+          "bn": "ডালজাতীয় ফসলের সাথে শস্যপর্যায় মানুন এবং সঠিক দূরত্বে গাছ লাগান।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 11,
+    "class_label": "Grape with Black Rot",
+    "crop_key": "grape",
+    "name": {
+      "en": "Black Rot",
+      "bn": "কালো পচা রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Guignardia bidwellii",
+    "symptoms": {
+      "en": "Round tan-brown leaf spots with a dark border and tiny black dots; berries turn brown, then shrivel into hard black 'mummies'.",
+      "bn": "পাতায় গাঢ় কিনারাসহ গোল হালকা-বাদামি দাগ ও ছোট কালো বিন্দু; আঙুর বাদামি হয়ে পরে শক্ত কালো 'মমি'-তে পরিণত হয়।"
+    },
+    "causes": {
+      "en": "Fungus Guignardia bidwellii, which overwinters in mummified berries and infected canes and spreads in warm, rainy weather.",
+      "bn": "গিগনার্ডিয়া বিডওয়েলি ছত্রাক, যা মমি হওয়া ফল ও আক্রান্ত ডালে শীত কাটায় এবং উষ্ণ, বৃষ্টির আবহাওয়ায় ছড়ায়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Mancozeb 75 WP from new shoot growth until berries start to colour, every 10–14 days.",
+          "bn": "নতুন ডগা গজানো থেকে ফলে রং ধরা পর্যন্ত ১০–১৪ দিন পরপর ম্যানকোজেব ৭৫ ডব্লিউপি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove all mummified berries and infected canes, and spray copper oxychloride (3 g per litre).",
+          "bn": "সব মমি হওয়া ফল ও আক্রান্ত ডাল সরিয়ে ফেলুন এবং কপার অক্সিক্লোরাইড (প্রতি লিটারে ৩ গ্রাম) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Prune for an open canopy with good air flow and keep the ground under vines clean.",
+          "bn": "বাতাস চলাচলের জন্য খোলামেলা করে ছাঁটাই করুন এবং লতার নিচের মাটি পরিষ্কার রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 12,
+    "class_label": "Grape with Esca (Black Measles)",
+    "crop_key": "grape",
+    "name": {
+      "en": "Esca (Black Measles)",
+      "bn": "এসকা (ব্ল্যাক মিজলস) রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Phaeomoniella chlamydospora (complex)",
+    "symptoms": {
+      "en": "'Tiger-stripe' leaves: yellow or red areas between the veins that dry to brown. Berries get small dark spots and vines may suddenly wilt.",
+      "bn": "'বাঘের ডোরা' পাতা: শিরার মাঝে হলুদ বা লাল অংশ যা শুকিয়ে বাদামি হয়। ফলে ছোট কালো দাগ পড়ে এবং লতা হঠাৎ নেতিয়ে যেতে পারে।"
+    },
+    "causes": {
+      "en": "A group of wood-rotting fungi (such as Phaeomoniella chlamydospora) that enter through pruning wounds and live inside the trunk.",
+      "bn": "কাঠ-পচানো একদল ছত্রাক (যেমন ফেওমোনিয়েলা ক্ল্যামাইডোস্পোরা), যা ছাঁটাইয়ের ক্ষত দিয়ে ঢুকে কাণ্ডের ভেতরে বাস করে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "No spray can cure Esca. Protect large pruning wounds with a fungicide wound paste right after pruning.",
+          "bn": "কোনো স্প্রে এসকা সারাতে পারে না। ছাঁটাইয়ের পরপরই বড় ক্ষতে ছত্রাকনাশক পেস্ট লাগিয়ে রক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Cut out and burn infected wood well below the discoloured part, and disinfect pruning tools between vines.",
+          "bn": "রং বদলানো অংশের বেশ নিচ থেকে আক্রান্ত কাঠ কেটে পুড়িয়ে ফেলুন এবং প্রতিটি লতার পর ছাঁটাইয়ের যন্ত্র জীবাণুমুক্ত করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Prune in dry weather, avoid large cuts, and mark and monitor infected vines.",
+          "bn": "শুকনো আবহাওয়ায় ছাঁটাই করুন, বড় কাটা এড়িয়ে চলুন এবং আক্রান্ত লতা চিহ্নিত করে নজরে রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 13,
+    "class_label": "Grape with Isariopsis Leaf Spot",
+    "crop_key": "grape",
+    "name": {
+      "en": "Isariopsis Leaf Spot (Leaf Blight)",
+      "bn": "আইসারিওপসিস পাতার দাগ (পাতা ঝলসানো)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Pseudocercospora vitis",
+    "symptoms": {
+      "en": "Irregular dark red-brown to black spots on the leaves, often with a yellow border; leaves dry and fall early.",
+      "bn": "পাতায় অনিয়মিত গাঢ় লালচে-বাদামি থেকে কালো দাগ, প্রায়ই হলুদ কিনারাসহ; পাতা শুকিয়ে আগেভাগে ঝরে যায়।"
+    },
+    "causes": {
+      "en": "Fungus Pseudocercospora vitis (Isariopsis); warm, humid weather; spreads by wind and rain.",
+      "bn": "সিউডোসারকোস্পোরা ভিটিস (আইসারিওপসিস) ছত্রাক; উষ্ণ, আর্দ্র আবহাওয়ায় বাড়ে এবং বাতাস ও বৃষ্টিতে ছড়ায়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Mancozeb 75 WP or copper oxychloride 50 WP (3 g per litre) every 10–14 days.",
+          "bn": "১০–১৪ দিন পরপর ম্যানকোজেব ৭৫ ডব্লিউপি বা কপার অক্সিক্লোরাইড ৫০ ডব্লিউপি (প্রতি লিটারে ৩ গ্রাম) স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove infected leaves and spray 1% Bordeaux mixture.",
+          "bn": "আক্রান্ত পাতা সরিয়ে ফেলুন এবং ১% বোর্দো মিশ্রণ স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Keep the canopy open for air flow and remove fallen leaves.",
+          "bn": "বাতাস চলাচলের জন্য লতা খোলামেলা রাখুন এবং ঝরা পাতা সরিয়ে ফেলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 14,
+    "class_label": "Healthy Grape Plant",
+    "crop_key": "grape",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease signs found. The leaf looks green and normal.",
+      "bn": "কোনো রোগের লক্ষণ পাওয়া যায়নি। পাতা সবুজ ও স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the plant healthy.",
+      "bn": "গাছ সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Inspect plants every week, including the underside of leaves, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচের দিকসহ গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser and water at the base of the plant in the morning; avoid wetting the leaves.",
+          "bn": "সুষম সার দিন এবং সকালে গাছের গোড়ায় পানি দিন; পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Train vines for an open canopy and remove old, dead wood.",
+          "bn": "লতাগুলো খোলামেলা মাচায় সাজান এবং পুরনো মরা কাঠ সরিয়ে ফেলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 15,
+    "class_label": "Orange with Citrus Greening",
+    "crop_key": "orange",
+    "name": {
+      "en": "Citrus Greening (Huanglongbing)",
+      "bn": "সাইট্রাস গ্রিনিং (হুয়াংলংবিং) রোগ"
+    },
+    "type": "bacteria",
+    "is_healthy": false,
+    "pathogen": "Candidatus Liberibacter asiaticus",
+    "symptoms": {
+      "en": "Blotchy, uneven yellow mottling on leaves (different on each half), small upright leaves, lopsided bitter green fruit and twig dieback.",
+      "bn": "পাতায় ছোপ ছোপ অসমান হলুদ দাগ (দুই অর্ধেকে ভিন্ন), ছোট খাড়া পাতা, বাঁকা তেতো সবুজ ফল এবং ডগা মরে যাওয়া।"
+    },
+    "causes": {
+      "en": "Bacterium Candidatus Liberibacter asiaticus, spread by the Asian citrus psyllid insect and by infected planting material.",
+      "bn": "ক্যান্ডিডেটাস লাইবেরিব্যাক্টর এশিয়াটিকাস ব্যাকটেরিয়া, যা এশিয়ান সাইট্রাস সিলিড পোকা ও আক্রান্ত চারার মাধ্যমে ছড়ায়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "There is no cure for the disease. Control the psyllid insect by spraying Imidacloprid 17.8 SL on new leaf flushes.",
+          "bn": "এই রোগের কোনো প্রতিকার নেই। নতুন পাতা গজানোর সময় ইমিডাক্লোপ্রিড ১৭.৮ এসএল স্প্রে করে সিলিড পোকা দমন করুন।"
+        },
+        "dosage": {
+          "en": "0.5 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ০.৫ মিলি"
+        },
+        "precautions": {
+          "en": "Toxic to bees — do not spray on open flowers. Wear protective gear.",
+          "bn": "মৌমাছির জন্য ক্ষতিকর — ফোটা ফুলে স্প্রে করবেন না। সুরক্ষা সরঞ্জাম পরুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Spray neem oil (5 mL per litre) on new flushes to deter psyllids, and remove and destroy infected trees.",
+          "bn": "সিলিড তাড়াতে নতুন পাতায় নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন এবং আক্রান্ত গাছ তুলে নষ্ট করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Plant only certified disease-free saplings and check new leaves for psyllids every week.",
+          "bn": "শুধু প্রত্যয়িত রোগমুক্ত চারা লাগান এবং প্রতি সপ্তাহে নতুন পাতায় সিলিড আছে কিনা দেখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 16,
+    "class_label": "Peach with Bacterial Spot",
+    "crop_key": "peach",
+    "name": {
+      "en": "Bacterial Spot",
+      "bn": "ব্যাকটেরিয়াজনিত দাগ রোগ"
+    },
+    "type": "bacteria",
+    "is_healthy": false,
+    "pathogen": "Xanthomonas arboricola pv. pruni",
+    "symptoms": {
+      "en": "Small, angular, water-soaked spots that turn purple-black; the centres fall out leaving 'shot holes', and leaves yellow and drop.",
+      "bn": "ছোট, কোণাকার, পানিভেজা দাগ যা বেগুনি-কালো হয়ে যায়; দাগের মাঝখান খসে 'গুলির ছিদ্র' তৈরি হয় এবং পাতা হলুদ হয়ে ঝরে পড়ে।"
+    },
+    "causes": {
+      "en": "Bacterium Xanthomonas arboricola pv. pruni, spread by wind-driven rain; worse in sandy soils and warm, wet weather.",
+      "bn": "জ্যান্থোমোনাস আরবোরিকোলা ব্যাকটেরিয়া, যা বাতাসসহ বৃষ্টিতে ছড়ায়; বেলে মাটি ও উষ্ণ, ভেজা আবহাওয়ায় বেশি হয়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray copper oxychloride 50 WP at leaf fall and again before bud break.",
+          "bn": "পাতা ঝরার সময় এবং কুঁড়ি ফোটার আগে আবার কপার অক্সিক্লোরাইড ৫০ ডব্লিউপি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "3 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ৩ গ্রাম"
+        },
+        "precautions": {
+          "en": "Copper can burn peach leaves in summer — use only low label rates during the growing season.",
+          "bn": "গ্রীষ্মে কপার পীচের পাতা পুড়িয়ে দিতে পারে — বাড়ন্ত মৌসুমে লেবেলের কম মাত্রা ব্যবহার করুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Prune out infected twigs and avoid excess nitrogen fertiliser.",
+          "bn": "আক্রান্ত ডগা ছেঁটে ফেলুন এবং অতিরিক্ত নাইট্রোজেন সার এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Plant resistant varieties, use windbreaks and avoid overhead irrigation.",
+          "bn": "প্রতিরোধী জাত লাগান, বায়ুরোধী বেড়া দিন এবং ওপর থেকে সেচ এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 17,
+    "class_label": "Healthy Peach Plant",
+    "crop_key": "peach",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease signs found. The leaf looks green and normal.",
+      "bn": "কোনো রোগের লক্ষণ পাওয়া যায়নি। পাতা সবুজ ও স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the plant healthy.",
+      "bn": "গাছ সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Inspect plants every week, including the underside of leaves, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচের দিকসহ গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser and water at the base of the plant in the morning; avoid wetting the leaves.",
+          "bn": "সুষম সার দিন এবং সকালে গাছের গোড়ায় পানি দিন; পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Prune to an open centre and avoid excess nitrogen.",
+          "bn": "মাঝখান খোলা রেখে ছাঁটাই করুন এবং অতিরিক্ত নাইট্রোজেন এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 18,
+    "class_label": "Bell Pepper with Bacterial Spot",
+    "crop_key": "pepper",
+    "name": {
+      "en": "Bacterial Spot",
+      "bn": "ব্যাকটেরিয়াজনিত দাগ রোগ"
+    },
+    "type": "bacteria",
+    "is_healthy": false,
+    "pathogen": "Xanthomonas spp.",
+    "symptoms": {
+      "en": "Small water-soaked spots that turn dark brown, often with a yellow halo; leaves yellow and drop; fruit gets raised, scabby spots.",
+      "bn": "ছোট পানিভেজা দাগ যা গাঢ় বাদামি হয়, প্রায়ই হলুদ বলয়সহ; পাতা হলুদ হয়ে ঝরে যায়; ফলে উঁচু, খসখসে দাগ হয়।"
+    },
+    "causes": {
+      "en": "Xanthomonas bacteria carried on seed and transplants, spread by rain splash, wet hands and tools in warm, wet weather.",
+      "bn": "জ্যান্থোমোনাস ব্যাকটেরিয়া বীজ ও চারার মাধ্যমে আসে এবং উষ্ণ, ভেজা আবহাওয়ায় বৃষ্টির ছিটা, ভেজা হাত ও যন্ত্রপাতিতে ছড়ায়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray copper oxychloride 50 WP mixed with Mancozeb 75 WP every 7–10 days.",
+          "bn": "৭–১০ দিন পরপর কপার অক্সিক্লোরাইড ৫০ ডব্লিউপি ও ম্যানকোজেব ৭৫ ডব্লিউপি মিশিয়ে স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "3 g copper + 2 g Mancozeb per litre of water",
+          "bn": "প্রতি লিটার পানিতে ৩ গ্রাম কপার + ২ গ্রাম ম্যানকোজেব"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove infected leaves and badly affected plants, and do not handle plants while they are wet.",
+          "bn": "আক্রান্ত পাতা ও বেশি আক্রান্ত গাছ সরিয়ে ফেলুন এবং গাছ ভেজা থাকা অবস্থায় হাত দেবেন না।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use certified or hot-water-treated seed (50 °C for 25 minutes), rotate crops for 2–3 years and use drip irrigation.",
+          "bn": "প্রত্যয়িত বা গরম পানিতে শোধিত বীজ (৫০ °সে-এ ২৫ মিনিট) ব্যবহার করুন, ২–৩ বছর শস্যপর্যায় মানুন এবং ড্রিপ সেচ দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 19,
+    "class_label": "Healthy Bell Pepper Plant",
+    "crop_key": "pepper",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease signs found. The leaf looks green and normal.",
+      "bn": "কোনো রোগের লক্ষণ পাওয়া যায়নি। পাতা সবুজ ও স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the plant healthy.",
+      "bn": "গাছ সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Inspect plants every week, including the underside of leaves, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচের দিকসহ গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser and water at the base of the plant in the morning; avoid wetting the leaves.",
+          "bn": "সুষম সার দিন এবং সকালে গাছের গোড়ায় পানি দিন; পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use healthy seedlings and rotate with crops outside the tomato/brinjal family.",
+          "bn": "সুস্থ চারা ব্যবহার করুন এবং টমেটো/বেগুন-জাতীয় নয় এমন ফসলের সাথে শস্যপর্যায় মানুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 20,
+    "class_label": "Potato with Early Blight",
+    "crop_key": "potato",
+    "name": {
+      "en": "Early Blight",
+      "bn": "আগাম ধসা রোগ (আর্লি ব্লাইট)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Alternaria solani",
+    "symptoms": {
+      "en": "Dark brown spots with rings inside them, like a target, often with a yellow halo; starts on older, lower leaves.",
+      "bn": "ভেতরে চক্রাকার রেখাসহ গাঢ় বাদামি দাগ, দেখতে নিশানার মতো, প্রায়ই হলুদ বলয়সহ; পুরনো, নিচের পাতা থেকে শুরু হয়।"
+    },
+    "causes": {
+      "en": "Fungus Alternaria solani surviving in soil and plant debris; warm weather with alternating wet and dry periods, and stressed plants.",
+      "bn": "অল্টারনারিয়া সোলানি ছত্রাক, যা মাটি ও গাছের অবশিষ্টাংশে বেঁচে থাকে; উষ্ণ আবহাওয়ায় ভেজা-শুকনো পালাক্রমে এবং দুর্বল গাছে বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Mancozeb 75 WP or Chlorothalonil 75 WP every 7–10 days. For a severe attack use Difenoconazole 25 EC (0.5 mL per litre).",
+          "bn": "৭–১০ দিন পরপর ম্যানকোজেব ৭৫ ডব্লিউপি বা ক্লোরোথালোনিল ৭৫ ডব্লিউপি স্প্রে করুন। তীব্র আক্রমণে ডাইফেনোকোনাজল ২৫ ইসি (প্রতি লিটারে ০.৫ মিলি) দিন।"
+        },
+        "dosage": {
+          "en": "2–2.5 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২–২.৫ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Pick off infected lower leaves, mulch the soil, and spray a Bacillus subtilis bio-fungicide or neem oil (5 mL per litre).",
+          "bn": "আক্রান্ত নিচের পাতা তুলে ফেলুন, মাটিতে মালচ দিন এবং ব্যাসিলাস সাবটিলিস জৈব ছত্রাকনাশক বা নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Rotate crops for 2–3 years, use balanced fertiliser with enough potash, and avoid wetting the leaves.",
+          "bn": "২–৩ বছর শস্যপর্যায় মানুন, পর্যাপ্ত পটাশসহ সুষম সার দিন এবং পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 21,
+    "class_label": "Potato with Late Blight",
+    "crop_key": "potato",
+    "name": {
+      "en": "Late Blight",
+      "bn": "নাবি ধসা বা মড়ক রোগ (লেট ব্লাইট)"
+    },
+    "type": "oomycete",
+    "is_healthy": false,
+    "pathogen": "Phytophthora infestans",
+    "symptoms": {
+      "en": "Large, pale-green water-soaked patches that turn dark brown to black; white fuzzy growth under leaves in humid weather. It spreads very fast and can destroy a field in days.",
+      "bn": "বড়, ফ্যাকাশে-সবুজ পানিভেজা ছোপ যা গাঢ় বাদামি থেকে কালো হয়ে যায়; আর্দ্র আবহাওয়ায় পাতার নিচে সাদা তুলার মতো আস্তরণ। খুব দ্রুত ছড়ায় এবং কয়েক দিনে পুরো মাঠ নষ্ট করতে পারে।"
+    },
+    "causes": {
+      "en": "Water mould Phytophthora infestans; cool (10–20 °C), foggy and humid weather; spreads by wind and infected seed tubers.",
+      "bn": "ফাইটোফথোরা ইনফেস্ট্যান্স (পানির ছত্রাক); ঠান্ডা (১০–২০ °সে), কুয়াশাচ্ছন্ন ও আর্দ্র আবহাওয়ায় বাড়ে; বাতাস ও আক্রান্ত বীজআলুর মাধ্যমে ছড়ায়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Before symptoms: spray Mancozeb 75 WP as protection. After symptoms: spray Metalaxyl + Mancozeb or Cymoxanil + Mancozeb every 7 days.",
+          "bn": "লক্ষণ দেখার আগে: সুরক্ষা হিসেবে ম্যানকোজেব ৭৫ ডব্লিউপি স্প্রে করুন। লক্ষণ দেখা দিলে: ৭ দিন পরপর মেটালাক্সিল + ম্যানকোজেব বা সাইমোক্সানিল + ম্যানকোজেব স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2–2.5 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২–২.৫ গ্রাম"
+        },
+        "precautions": {
+          "en": "Act immediately — this disease spreads within days. Alternate fungicide groups and wear protective gear.",
+          "bn": "দেরি না করে ব্যবস্থা নিন — এই রোগ কয়েক দিনের মধ্যে ছড়ায়। ছত্রাকনাশকের গ্রুপ পাল্টে ব্যবহার করুন এবং সুরক্ষা সরঞ্জাম পরুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Pull out and destroy infected plants (do not compost them) and spray copper hydroxide as protection.",
+          "bn": "আক্রান্ত গাছ তুলে নষ্ট করুন (কম্পোস্ট করবেন না) এবং সুরক্ষা হিসেবে কপার হাইড্রক্সাইড স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use certified disease-free seed, earth up the rows, avoid evening irrigation and watch for foggy winter weather.",
+          "bn": "প্রত্যয়িত রোগমুক্ত বীজ ব্যবহার করুন, সারিতে মাটি তুলে দিন, সন্ধ্যায় সেচ এড়িয়ে চলুন এবং শীতের কুয়াশার দিকে নজর রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 22,
+    "class_label": "Healthy Potato Plant",
+    "crop_key": "potato",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease signs found. The leaf looks green and normal.",
+      "bn": "কোনো রোগের লক্ষণ পাওয়া যায়নি। পাতা সবুজ ও স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the plant healthy.",
+      "bn": "গাছ সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Inspect plants every week, including the underside of leaves, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচের দিকসহ গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser and water at the base of the plant in the morning; avoid wetting the leaves.",
+          "bn": "সুষম সার দিন এবং সকালে গাছের গোড়ায় পানি দিন; পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use certified seed tubers and earth up (hill) the rows.",
+          "bn": "প্রত্যয়িত বীজআলু ব্যবহার করুন এবং সারিতে মাটি তুলে দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 23,
+    "class_label": "Healthy Raspberry Plant",
+    "crop_key": "raspberry",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease signs found. The leaf looks green and normal.",
+      "bn": "কোনো রোগের লক্ষণ পাওয়া যায়নি। পাতা সবুজ ও স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the plant healthy.",
+      "bn": "গাছ সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Inspect plants every week, including the underside of leaves, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচের দিকসহ গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser and water at the base of the plant in the morning; avoid wetting the leaves.",
+          "bn": "সুষম সার দিন এবং সকালে গাছের গোড়ায় পানি দিন; পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Remove old fruiting canes after harvest and keep rows narrow.",
+          "bn": "ফল তোলার পর পুরনো ডাল কেটে ফেলুন এবং সারি সরু রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 24,
+    "class_label": "Healthy Soybean Plant",
+    "crop_key": "soybean",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease signs found. The leaf looks green and normal.",
+      "bn": "কোনো রোগের লক্ষণ পাওয়া যায়নি। পাতা সবুজ ও স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the plant healthy.",
+      "bn": "গাছ সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Inspect plants every week, including the underside of leaves, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচের দিকসহ গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser and water at the base of the plant in the morning; avoid wetting the leaves.",
+          "bn": "সুষম সার দিন এবং সকালে গাছের গোড়ায় পানি দিন; পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use good-quality seed and rotate with cereals like maize.",
+          "bn": "মানসম্মত বীজ ব্যবহার করুন এবং ভুট্টার মতো দানাশস্যের সাথে শস্যপর্যায় মানুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 25,
+    "class_label": "Squash with Powdery Mildew",
+    "crop_key": "squash",
+    "name": {
+      "en": "Powdery Mildew",
+      "bn": "পাউডারি মিলডিউ (সাদা গুঁড়া রোগ)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Podosphaera xanthii",
+    "symptoms": {
+      "en": "White, powdery spots on the upper side of leaves that spread to cover whole leaves; leaves turn yellow and dry.",
+      "bn": "পাতার ওপরে সাদা পাউডারের মতো দাগ যা ছড়িয়ে পুরো পাতা ঢেকে ফেলে; পাতা হলুদ হয়ে শুকিয়ে যায়।"
+    },
+    "causes": {
+      "en": "Fungus Podosphaera xanthii; spreads by wind on warm, dry days with humid nights, especially in shaded, crowded plantings.",
+      "bn": "পোডোস্ফেরা জ্যান্থাই ছত্রাক; উষ্ণ শুকনো দিন ও আর্দ্র রাতে বাতাসে ছড়ায়, বিশেষ করে ছায়াযুক্ত ঘন চাষে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Hexaconazole 5 EC at the first sign of white powder; repeat after 10–14 days.",
+          "bn": "সাদা পাউডার দেখা দেওয়ার সাথে সাথে হেক্সাকোনাজল ৫ ইসি স্প্রে করুন; ১০–১৪ দিন পর আবার দিন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Spray wettable sulphur (2 g per litre) or potassium bicarbonate (5 g per litre) with a few drops of liquid soap; remove badly infected leaves.",
+          "bn": "ভেজানো যায় এমন সালফার (প্রতি লিটারে ২ গ্রাম) বা পটাশিয়াম বাইকার্বোনেট (প্রতি লিটারে ৫ গ্রাম) সামান্য তরল সাবানসহ স্প্রে করুন; বেশি আক্রান্ত পাতা সরিয়ে ফেলুন।"
+        },
+        "dosage": null,
+        "precautions": {
+          "en": "Sulphur can burn squash leaves above 32 °C; spray in the cool morning.",
+          "bn": "৩২ °সে-এর বেশি তাপমাত্রায় সালফার স্কোয়াশের পাতা পুড়িয়ে দিতে পারে; ঠান্ডা সকালে স্প্রে করুন।"
+        }
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Prune for good air flow, give plants full sun, and avoid too much nitrogen fertiliser.",
+          "bn": "বাতাস চলাচলের জন্য ছাঁটাই করুন, গাছে পূর্ণ রোদ নিশ্চিত করুন এবং অতিরিক্ত নাইট্রোজেন সার এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 26,
+    "class_label": "Strawberry with Leaf Scorch",
+    "crop_key": "strawberry",
+    "name": {
+      "en": "Leaf Scorch",
+      "bn": "পাতা ঝলসানো রোগ (লিফ স্কর্চ)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Diplocarpon earlianum",
+    "symptoms": {
+      "en": "Many small, irregular purple spots on leaves; spots merge and the leaf looks burned (scorched) and dries up.",
+      "bn": "পাতায় অনেক ছোট, অনিয়মিত বেগুনি দাগ; দাগগুলো মিলে পাতা পোড়া (ঝলসানো) দেখায় ও শুকিয়ে যায়।"
+    },
+    "causes": {
+      "en": "Fungus Diplocarpon earlianum surviving on old leaves; spreads by splashing water in warm, wet weather.",
+      "bn": "ডিপ্লোকারপন আরলিয়ানাম ছত্রাক, যা পুরনো পাতায় বেঁচে থাকে; উষ্ণ, ভেজা আবহাওয়ায় পানির ছিটায় ছড়ায়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Captan 50 WP every 10–14 days during wet periods.",
+          "bn": "ভেজা মৌসুমে ১০–১৪ দিন পরপর ক্যাপটান ৫০ ডব্লিউপি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove old infected leaves after harvest and spray a copper-based product.",
+          "bn": "ফল তোলার পর পুরনো আক্রান্ত পাতা সরিয়ে ফেলুন এবং কপারভিত্তিক বালাইনাশক স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Plant resistant varieties, use drip irrigation, renew beds every 2–3 years and keep good spacing.",
+          "bn": "প্রতিরোধী জাত লাগান, ড্রিপ সেচ দিন, ২–৩ বছর পরপর বেড নতুন করুন এবং সঠিক দূরত্ব রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 27,
+    "class_label": "Healthy Strawberry Plant",
+    "crop_key": "strawberry",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease signs found. The leaf looks green and normal.",
+      "bn": "কোনো রোগের লক্ষণ পাওয়া যায়নি। পাতা সবুজ ও স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the plant healthy.",
+      "bn": "গাছ সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Inspect plants every week, including the underside of leaves, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচের দিকসহ গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser and water at the base of the plant in the morning; avoid wetting the leaves.",
+          "bn": "সুষম সার দিন এবং সকালে গাছের গোড়ায় পানি দিন; পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Mulch with straw to keep fruit off the soil and use drip irrigation.",
+          "bn": "ফল মাটি থেকে দূরে রাখতে খড় দিয়ে মালচ করুন এবং ড্রিপ সেচ দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 28,
+    "class_label": "Tomato with Bacterial Spot",
+    "crop_key": "tomato",
+    "name": {
+      "en": "Bacterial Spot",
+      "bn": "ব্যাকটেরিয়াজনিত দাগ রোগ"
+    },
+    "type": "bacteria",
+    "is_healthy": false,
+    "pathogen": "Xanthomonas spp.",
+    "symptoms": {
+      "en": "Small water-soaked spots that turn dark brown, often with a yellow halo; leaves yellow and drop; fruit gets raised, scabby spots.",
+      "bn": "ছোট পানিভেজা দাগ যা গাঢ় বাদামি হয়, প্রায়ই হলুদ বলয়সহ; পাতা হলুদ হয়ে ঝরে যায়; ফলে উঁচু, খসখসে দাগ হয়।"
+    },
+    "causes": {
+      "en": "Xanthomonas bacteria carried on seed and transplants, spread by rain splash, wet hands and tools in warm, wet weather.",
+      "bn": "জ্যান্থোমোনাস ব্যাকটেরিয়া বীজ ও চারার মাধ্যমে আসে এবং উষ্ণ, ভেজা আবহাওয়ায় বৃষ্টির ছিটা, ভেজা হাত ও যন্ত্রপাতিতে ছড়ায়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray copper oxychloride 50 WP mixed with Mancozeb 75 WP every 7–10 days.",
+          "bn": "৭–১০ দিন পরপর কপার অক্সিক্লোরাইড ৫০ ডব্লিউপি ও ম্যানকোজেব ৭৫ ডব্লিউপি মিশিয়ে স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "3 g copper + 2 g Mancozeb per litre of water",
+          "bn": "প্রতি লিটার পানিতে ৩ গ্রাম কপার + ২ গ্রাম ম্যানকোজেব"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove infected leaves and badly affected plants, and do not handle plants while they are wet.",
+          "bn": "আক্রান্ত পাতা ও বেশি আক্রান্ত গাছ সরিয়ে ফেলুন এবং গাছ ভেজা থাকা অবস্থায় হাত দেবেন না।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use certified or hot-water-treated seed (50 °C for 25 minutes), rotate crops for 2–3 years and use drip irrigation.",
+          "bn": "প্রত্যয়িত বা গরম পানিতে শোধিত বীজ (৫০ °সে-এ ২৫ মিনিট) ব্যবহার করুন, ২–৩ বছর শস্যপর্যায় মানুন এবং ড্রিপ সেচ দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 29,
+    "class_label": "Tomato with Early Blight",
+    "crop_key": "tomato",
+    "name": {
+      "en": "Early Blight",
+      "bn": "আগাম ধসা রোগ (আর্লি ব্লাইট)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Alternaria solani",
+    "symptoms": {
+      "en": "Dark brown spots with rings inside them, like a target, often with a yellow halo; starts on older, lower leaves.",
+      "bn": "ভেতরে চক্রাকার রেখাসহ গাঢ় বাদামি দাগ, দেখতে নিশানার মতো, প্রায়ই হলুদ বলয়সহ; পুরনো, নিচের পাতা থেকে শুরু হয়।"
+    },
+    "causes": {
+      "en": "Fungus Alternaria solani surviving in soil and plant debris; warm weather with alternating wet and dry periods, and stressed plants.",
+      "bn": "অল্টারনারিয়া সোলানি ছত্রাক, যা মাটি ও গাছের অবশিষ্টাংশে বেঁচে থাকে; উষ্ণ আবহাওয়ায় ভেজা-শুকনো পালাক্রমে এবং দুর্বল গাছে বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Mancozeb 75 WP or Chlorothalonil 75 WP every 7–10 days. For a severe attack use Difenoconazole 25 EC (0.5 mL per litre).",
+          "bn": "৭–১০ দিন পরপর ম্যানকোজেব ৭৫ ডব্লিউপি বা ক্লোরোথালোনিল ৭৫ ডব্লিউপি স্প্রে করুন। তীব্র আক্রমণে ডাইফেনোকোনাজল ২৫ ইসি (প্রতি লিটারে ০.৫ মিলি) দিন।"
+        },
+        "dosage": {
+          "en": "2–2.5 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২–২.৫ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Pick off infected lower leaves, mulch the soil, and spray a Bacillus subtilis bio-fungicide or neem oil (5 mL per litre).",
+          "bn": "আক্রান্ত নিচের পাতা তুলে ফেলুন, মাটিতে মালচ দিন এবং ব্যাসিলাস সাবটিলিস জৈব ছত্রাকনাশক বা নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Rotate crops for 2–3 years, use balanced fertiliser with enough potash, and avoid wetting the leaves.",
+          "bn": "২–৩ বছর শস্যপর্যায় মানুন, পর্যাপ্ত পটাশসহ সুষম সার দিন এবং পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 30,
+    "class_label": "Tomato with Late Blight",
+    "crop_key": "tomato",
+    "name": {
+      "en": "Late Blight",
+      "bn": "নাবি ধসা বা মড়ক রোগ (লেট ব্লাইট)"
+    },
+    "type": "oomycete",
+    "is_healthy": false,
+    "pathogen": "Phytophthora infestans",
+    "symptoms": {
+      "en": "Large, pale-green water-soaked patches that turn dark brown to black; white fuzzy growth under leaves in humid weather. It spreads very fast and can destroy a field in days.",
+      "bn": "বড়, ফ্যাকাশে-সবুজ পানিভেজা ছোপ যা গাঢ় বাদামি থেকে কালো হয়ে যায়; আর্দ্র আবহাওয়ায় পাতার নিচে সাদা তুলার মতো আস্তরণ। খুব দ্রুত ছড়ায় এবং কয়েক দিনে পুরো মাঠ নষ্ট করতে পারে।"
+    },
+    "causes": {
+      "en": "Water mould Phytophthora infestans; cool (10–20 °C), foggy and humid weather; spreads by wind and infected seed tubers.",
+      "bn": "ফাইটোফথোরা ইনফেস্ট্যান্স (পানির ছত্রাক); ঠান্ডা (১০–২০ °সে), কুয়াশাচ্ছন্ন ও আর্দ্র আবহাওয়ায় বাড়ে; বাতাস ও আক্রান্ত বীজআলুর মাধ্যমে ছড়ায়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Before symptoms: spray Mancozeb 75 WP as protection. After symptoms: spray Metalaxyl + Mancozeb or Cymoxanil + Mancozeb every 7 days.",
+          "bn": "লক্ষণ দেখার আগে: সুরক্ষা হিসেবে ম্যানকোজেব ৭৫ ডব্লিউপি স্প্রে করুন। লক্ষণ দেখা দিলে: ৭ দিন পরপর মেটালাক্সিল + ম্যানকোজেব বা সাইমোক্সানিল + ম্যানকোজেব স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2–2.5 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২–২.৫ গ্রাম"
+        },
+        "precautions": {
+          "en": "Act immediately — this disease spreads within days. Alternate fungicide groups and wear protective gear.",
+          "bn": "দেরি না করে ব্যবস্থা নিন — এই রোগ কয়েক দিনের মধ্যে ছড়ায়। ছত্রাকনাশকের গ্রুপ পাল্টে ব্যবহার করুন এবং সুরক্ষা সরঞ্জাম পরুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Pull out and destroy infected plants (do not compost them) and spray copper hydroxide as protection.",
+          "bn": "আক্রান্ত গাছ তুলে নষ্ট করুন (কম্পোস্ট করবেন না) এবং সুরক্ষা হিসেবে কপার হাইড্রক্সাইড স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use certified disease-free seed, earth up the rows, avoid evening irrigation and watch for foggy winter weather.",
+          "bn": "প্রত্যয়িত রোগমুক্ত বীজ ব্যবহার করুন, সারিতে মাটি তুলে দিন, সন্ধ্যায় সেচ এড়িয়ে চলুন এবং শীতের কুয়াশার দিকে নজর রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 31,
+    "class_label": "Tomato with Leaf Mold",
+    "crop_key": "tomato",
+    "name": {
+      "en": "Leaf Mold",
+      "bn": "পাতার ছাঁচ রোগ (লিফ মোল্ড)"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Passalora fulva",
+    "symptoms": {
+      "en": "Pale green to yellow spots on the upper leaf surface with olive-green to brown velvety mould underneath; leaves wither and die.",
+      "bn": "পাতার ওপরে ফ্যাকাশে সবুজ থেকে হলুদ দাগ এবং নিচে জলপাই-সবুজ থেকে বাদামি মখমলের মতো ছাঁচ; পাতা শুকিয়ে মরে যায়।"
+    },
+    "causes": {
+      "en": "Fungus Passalora fulva; needs very high humidity (above 85%), so it is common in greenhouses and poly-tunnels.",
+      "bn": "প্যাসালোরা ফুলভা ছত্রাক; খুব বেশি আর্দ্রতা (৮৫%-এর বেশি) প্রয়োজন, তাই গ্রিনহাউস ও পলি-টানেলে বেশি দেখা যায়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Chlorothalonil 75 WP or Mancozeb 75 WP every 7–10 days.",
+          "bn": "৭–১০ দিন পরপর ক্লোরোথালোনিল ৭৫ ডব্লিউপি বা ম্যানকোজেব ৭৫ ডব্লিউপি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Improve ventilation, remove infected leaves and spray a copper-based product.",
+          "bn": "বাতাস চলাচল বাড়ান, আক্রান্ত পাতা সরিয়ে ফেলুন এবং কপারভিত্তিক বালাইনাশক স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Grow resistant varieties, keep humidity low, avoid wetting leaves and space plants widely.",
+          "bn": "প্রতিরোধী জাত চাষ করুন, আর্দ্রতা কম রাখুন, পাতা ভেজাবেন না এবং গাছ দূরে দূরে লাগান।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 32,
+    "class_label": "Tomato with Septoria Leaf Spot",
+    "crop_key": "tomato",
+    "name": {
+      "en": "Septoria Leaf Spot",
+      "bn": "সেপ্টোরিয়া পাতার দাগ রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Septoria lycopersici",
+    "symptoms": {
+      "en": "Many small round spots with dark brown edges and grey-white centres containing tiny black dots; starts on the lower leaves.",
+      "bn": "গাঢ় বাদামি কিনারা ও ধূসর-সাদা মাঝখানসহ অনেক ছোট গোল দাগ, মাঝে ছোট কালো বিন্দু; নিচের পাতা থেকে শুরু হয়।"
+    },
+    "causes": {
+      "en": "Fungus Septoria lycopersici surviving on plant debris and weeds; spread by water splash in warm, wet weather.",
+      "bn": "সেপ্টোরিয়া লাইকোপারসিসি ছত্রাক, যা গাছের অবশিষ্টাংশ ও আগাছায় বেঁচে থাকে; উষ্ণ, ভেজা আবহাওয়ায় পানির ছিটায় ছড়ায়।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Chlorothalonil 75 WP or Mancozeb 75 WP every 7–10 days.",
+          "bn": "৭–১০ দিন পরপর ক্লোরোথালোনিল ৭৫ ডব্লিউপি বা ম্যানকোজেব ৭৫ ডব্লিউপি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2–2.5 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২–২.৫ গ্রাম"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove infected lower leaves, mulch the soil and spray a copper-based product.",
+          "bn": "আক্রান্ত নিচের পাতা সরিয়ে ফেলুন, মাটিতে মালচ দিন এবং কপারভিত্তিক বালাইনাশক স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Rotate crops, remove nightshade weeds and stake plants to keep leaves off the soil.",
+          "bn": "শস্যপর্যায় মানুন, বেগুন-জাতীয় আগাছা সরিয়ে ফেলুন এবং পাতা মাটি থেকে দূরে রাখতে গাছে খুঁটি দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 33,
+    "class_label": "Tomato with Spider Mites or Two-spotted Spider Mite",
+    "crop_key": "tomato",
+    "name": {
+      "en": "Spider Mites",
+      "bn": "মাকড় (দুই-দাগি লাল মাকড়)"
+    },
+    "type": "pest",
+    "is_healthy": false,
+    "pathogen": "Tetranychus urticae",
+    "symptoms": {
+      "en": "Tiny yellow or white specks on leaves with fine webbing underneath; leaves turn bronze, dry out and fall.",
+      "bn": "পাতায় ছোট হলুদ বা সাদা বিন্দু এবং নিচে সূক্ষ্ম জাল; পাতা তামাটে হয়ে শুকিয়ে ঝরে যায়।"
+    },
+    "causes": {
+      "en": "The two-spotted spider mite, a tiny pest that multiplies very fast in hot, dry and dusty conditions.",
+      "bn": "দুই-দাগি মাকড়, একটি ক্ষুদ্র পোকা যা গরম, শুকনো ও ধুলোময় অবস্থায় খুব দ্রুত বংশবৃদ্ধি করে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray a miticide such as Abamectin 1.8 EC on the underside of leaves; repeat after 7 days if needed.",
+          "bn": "পাতার নিচের দিকে অ্যাবামেকটিন ১.৮ ইসি-র মতো মাকড়নাশক স্প্রে করুন; প্রয়োজনে ৭ দিন পর আবার দিন।"
+        },
+        "dosage": {
+          "en": "1 mL per litre of water",
+          "bn": "প্রতি লিটার পানিতে ১ মিলি"
+        },
+        "precautions": {
+          "en": "Use a miticide, not an ordinary insecticide, and rotate products to avoid resistance.",
+          "bn": "সাধারণ কীটনাশক নয়, মাকড়নাশক ব্যবহার করুন এবং প্রতিরোধ এড়াতে পণ্য পাল্টে দিন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Spray strong jets of water on leaf undersides and spray neem oil (5 mL per litre) with a little soap.",
+          "bn": "পাতার নিচে জোরে পানি স্প্রে করুন এবং সামান্য সাবানসহ নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Avoid water stress and dust, don't overuse broad-spectrum insecticides that kill natural enemies, and check leaf undersides weekly.",
+          "bn": "পানির অভাব ও ধুলো এড়িয়ে চলুন, উপকারী পোকা মেরে ফেলে এমন কীটনাশক অতিরিক্ত ব্যবহার করবেন না এবং প্রতি সপ্তাহে পাতার নিচে পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 34,
+    "class_label": "Tomato with Target Spot",
+    "crop_key": "tomato",
+    "name": {
+      "en": "Target Spot",
+      "bn": "টার্গেট স্পট (চক্রাকার দাগ) রোগ"
+    },
+    "type": "fungus",
+    "is_healthy": false,
+    "pathogen": "Corynespora cassiicola",
+    "symptoms": {
+      "en": "Brown spots with light centres and rings, larger and paler than early blight; can also affect stems and fruit.",
+      "bn": "হালকা মাঝখান ও চক্রাকার রেখাসহ বাদামি দাগ, আগাম ধসার চেয়ে বড় ও হালকা রঙের; কাণ্ড ও ফলেও হতে পারে।"
+    },
+    "causes": {
+      "en": "Fungus Corynespora cassiicola; warm, humid weather with long leaf wetness.",
+      "bn": "কোরিনেস্পোরা ক্যাসিকোলা ছত্রাক; উষ্ণ, আর্দ্র আবহাওয়ায় এবং দীর্ঘক্ষণ পাতা ভেজা থাকলে বাড়ে।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "Spray Chlorothalonil 75 WP or Azoxystrobin 23 SC every 7–14 days.",
+          "bn": "৭–১৪ দিন পরপর ক্লোরোথালোনিল ৭৫ ডব্লিউপি বা অ্যাজোক্সিস্ট্রোবিন ২৩ এসসি স্প্রে করুন।"
+        },
+        "dosage": {
+          "en": "2 g (Chlorothalonil) or 1 mL (Azoxystrobin) per litre of water",
+          "bn": "প্রতি লিটার পানিতে ২ গ্রাম (ক্লোরোথালোনিল) বা ১ মিলি (অ্যাজোক্সিস্ট্রোবিন)"
+        },
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove infected leaves and prune lower leaves to improve air flow.",
+          "bn": "আক্রান্ত পাতা সরিয়ে ফেলুন এবং বাতাস চলাচলের জন্য নিচের পাতা ছেঁটে দিন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Rotate crops, remove crop debris and avoid overhead irrigation.",
+          "bn": "শস্যপর্যায় মানুন, ফসলের অবশিষ্টাংশ সরিয়ে ফেলুন এবং ওপর থেকে সেচ এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 35,
+    "class_label": "Tomato Yellow Leaf Curl Virus",
+    "crop_key": "tomato",
+    "name": {
+      "en": "Yellow Leaf Curl Virus",
+      "bn": "হলুদ পাতা কোঁকড়ানো ভাইরাস"
+    },
+    "type": "virus",
+    "is_healthy": false,
+    "pathogen": "Begomovirus (TYLCV)",
+    "symptoms": {
+      "en": "Leaves curl upward, become small and turn yellow at the edges; plants are stunted, flowers drop and few fruits form.",
+      "bn": "পাতা ওপরের দিকে কুঁকড়ে যায়, ছোট হয় এবং কিনারা হলুদ হয়; গাছ খাটো হয়ে যায়, ফুল ঝরে পড়ে এবং খুব কম ফল ধরে।"
+    },
+    "causes": {
+      "en": "Tomato yellow leaf curl virus, spread by whiteflies (Bemisia tabaci). It does not spread through soil or by touch.",
+      "bn": "টমেটোর হলুদ পাতা কোঁকড়ানো ভাইরাস, যা সাদা মাছি (বেমিসিয়া ট্যাবাসি) দ্বারা ছড়ায়। মাটি বা স্পর্শে ছড়ায় না।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "There is no cure for the virus. Control whiteflies with Imidacloprid 17.8 SL or Thiamethoxam 25 WG, alternating between them.",
+          "bn": "ভাইরাসের কোনো প্রতিকার নেই। ইমিডাক্লোপ্রিড ১৭.৮ এসএল বা থায়ামেথোক্সাম ২৫ ডব্লিউজি পালাক্রমে ব্যবহার করে সাদা মাছি দমন করুন।"
+        },
+        "dosage": {
+          "en": "Imidacloprid 0.5 mL or Thiamethoxam 0.3 g per litre of water",
+          "bn": "প্রতি লিটার পানিতে ইমিডাক্লোপ্রিড ০.৫ মিলি বা থায়ামেথোক্সাম ০.৩ গ্রাম"
+        },
+        "precautions": {
+          "en": "Toxic to bees — do not spray on open flowers. Wear protective gear.",
+          "bn": "মৌমাছির জন্য ক্ষতিকর — ফোটা ফুলে স্প্রে করবেন না। সুরক্ষা সরঞ্জাম পরুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Hang yellow sticky traps, spray neem oil (5 mL per litre), and uproot and destroy infected plants early.",
+          "bn": "হলুদ আঠালো ফাঁদ ঝুলিয়ে দিন, নিম তেল (প্রতি লিটারে ৫ মিলি) স্প্রে করুন এবং আক্রান্ত গাছ আগেভাগে তুলে নষ্ট করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Grow resistant varieties, raise seedlings under insect-proof net and keep the field free of weeds.",
+          "bn": "প্রতিরোধী জাত চাষ করুন, পোকারোধী জালের নিচে চারা তৈরি করুন এবং মাঠ আগাছামুক্ত রাখুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 36,
+    "class_label": "Tomato Mosaic Virus",
+    "crop_key": "tomato",
+    "name": {
+      "en": "Mosaic Virus",
+      "bn": "মোজাইক ভাইরাস"
+    },
+    "type": "virus",
+    "is_healthy": false,
+    "pathogen": "Tobamovirus (ToMV)",
+    "symptoms": {
+      "en": "Light and dark green mosaic pattern on leaves; leaves may be twisted, narrow or fern-like; plants are stunted and fruit may ripen unevenly.",
+      "bn": "পাতায় হালকা ও গাঢ় সবুজ মোজাইক নকশা; পাতা মোচড়ানো, সরু বা ফার্নের মতো হতে পারে; গাছ খাটো হয় এবং ফল অসমানভাবে পাকে।"
+    },
+    "causes": {
+      "en": "Tomato mosaic virus is very stable and spreads by touch — hands, tools and clothes — and through infected seed. Insects do not spread it.",
+      "bn": "টমেটোর মোজাইক ভাইরাস খুব টেকসই এবং হাত, যন্ত্রপাতি ও কাপড়ের স্পর্শে এবং আক্রান্ত বীজের মাধ্যমে ছড়ায়। পোকামাকড় এটি ছড়ায় না।"
+    },
+    "treatments": [
+      {
+        "type": "chemical",
+        "remedy": {
+          "en": "No chemical can cure a viral disease. Focus on removal and hygiene.",
+          "bn": "কোনো রাসায়নিক ভাইরাসজনিত রোগ সারাতে পারে না। গাছ সরানো ও পরিচ্ছন্নতার ওপর জোর দিন।"
+        },
+        "dosage": null,
+        "precautions": {
+          "en": "Wear gloves, mask and long sleeves. Do not spray in wind or before rain. Respect the pre-harvest waiting period on the label.",
+          "bn": "গ্লাভস, মাস্ক ও লম্বা হাতার জামা পরুন। বাতাসে বা বৃষ্টির আগে স্প্রে করবেন না। লেবেলে লেখা ফসল তোলার আগের অপেক্ষার সময় মেনে চলুন।"
+        }
+      },
+      {
+        "type": "organic",
+        "remedy": {
+          "en": "Remove and destroy infected plants, wash hands with soap and disinfect tools (for example, in 10% household bleach).",
+          "bn": "আক্রান্ত গাছ তুলে নষ্ট করুন, সাবান দিয়ে হাত ধুয়ে নিন এবং যন্ত্রপাতি জীবাণুমুক্ত করুন (যেমন ১০% ব্লিচ দ্রবণে)।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use resistant varieties and certified seed, avoid handling tobacco near plants, and rotate crops.",
+          "bn": "প্রতিরোধী জাত ও প্রত্যয়িত বীজ ব্যবহার করুন, গাছের কাছে তামাক নাড়াচাড়া করবেন না এবং শস্যপর্যায় মানুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  },
+  {
+    "model_index": 37,
+    "class_label": "Healthy Tomato Plant",
+    "crop_key": "tomato",
+    "name": {
+      "en": "Healthy",
+      "bn": "সুস্থ"
+    },
+    "type": "healthy",
+    "is_healthy": true,
+    "pathogen": null,
+    "symptoms": {
+      "en": "No disease signs found. The leaf looks green and normal.",
+      "bn": "কোনো রোগের লক্ষণ পাওয়া যায়নি। পাতা সবুজ ও স্বাভাবিক দেখাচ্ছে।"
+    },
+    "causes": {
+      "en": "Keep up good field care to keep the plant healthy.",
+      "bn": "গাছ সুস্থ রাখতে মাঠের সঠিক যত্ন চালিয়ে যান।"
+    },
+    "treatments": [
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Inspect plants every week, including the underside of leaves, to catch problems early.",
+          "bn": "সমস্যা আগেভাগে ধরতে প্রতি সপ্তাহে পাতার নিচের দিকসহ গাছ পরীক্ষা করুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Use balanced fertiliser and water at the base of the plant in the morning; avoid wetting the leaves.",
+          "bn": "সুষম সার দিন এবং সকালে গাছের গোড়ায় পানি দিন; পাতা ভেজানো এড়িয়ে চলুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      },
+      {
+        "type": "preventive",
+        "remedy": {
+          "en": "Stake plants, remove lower leaves touching the soil, and rotate crops.",
+          "bn": "গাছে খুঁটি দিন, মাটি ছোঁয়া নিচের পাতা ছেঁটে দিন এবং শস্যপর্যায় মানুন।"
+        },
+        "dosage": null,
+        "precautions": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/* ---------- "Green Field" design tokens ---------- */
+@theme {
+  --color-leaf-50: #f3fbf4;
+  --color-leaf-100: #e8f7ea;
+  --color-leaf-200: #cdefd0;
+  --color-leaf-300: #8edb8f;
+  --color-leaf-400: #55c46b;
+  --color-leaf-500: #22a447;
+  --color-leaf-600: #1a8a3a;
+  --color-leaf-700: #146c2e;
+  --color-leaf-800: #10522a;
+  --color-leaf-900: #0b3d1f;
+
+  --color-soil-400: #b07a4f;
+  --color-soil-600: #7a4e2d;
+  --color-wheat-200: #f6e7b8;
+  --color-wheat-400: #e9c46a;
+  --color-wheat-600: #b8901f;
+  --color-sky-200: #d4effa;
+  --color-sky-300: #9ed8f0;
+  --color-danger-100: #fde8e8;
+  --color-danger-500: #d64545;
+  --color-danger-700: #a12f2f;
+  --color-cream-50: #fbfaf5;
+
+  --font-sans: "Inter", "Hind Siliguri", "Noto Sans Bengali", system-ui, sans-serif;
+  --font-display: "Poppins", "Hind Siliguri", "Noto Sans Bengali", system-ui, sans-serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-sway: sway 4s ease-in-out infinite;
+  --animate-scan: scan 2.2s ease-in-out infinite;
+  --animate-drift: drift linear infinite;
+  --animate-grow: grow 1.6s ease-out infinite;
+  --animate-pulse-ring: pulse-ring 2s ease-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(-2deg); }
+    50% { transform: translateY(-14px) rotate(2deg); }
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(-4deg); }
+    50% { transform: rotate(4deg); }
+  }
+  @keyframes scan {
+    0% { top: 0%; opacity: 0.2; }
+    10% { opacity: 1; }
+    50% { top: calc(100% - 4px); opacity: 1; }
+    90% { opacity: 1; }
+    100% { top: 0%; opacity: 0.2; }
+  }
+  @keyframes drift {
+    0% { transform: translate3d(0, -10vh, 0) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.9; }
+    90% { opacity: 0.9; }
+    100% { transform: translate3d(12vw, 110vh, 0) rotate(540deg); opacity: 0; }
+  }
+  @keyframes grow {
+    0% { stroke-dashoffset: 60; }
+    60%, 100% { stroke-dashoffset: 0; }
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(0.8); opacity: 0.8; }
+    100% { transform: scale(2.2); opacity: 0; }
+  }
+}
+
+/* ---------- Base ---------- */
+html {
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--color-cream-50);
+  color: var(--color-leaf-900);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+}
+html[lang="bn"] body {
+  /* Bangla script reads better slightly larger with more line height */
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+/* In the base layer so utilities like `focus-visible:outline-none` can override it. */
+@layer base {
+  :focus-visible {
+    outline: 3px solid var(--color-leaf-400);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+}
+::selection {
+  background: var(--color-leaf-200);
+}
+
+/* Leaf-shaped section divider */
+.wave-divider {
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80' preserveAspectRatio='none'%3E%3Cpath d='M0 40 C 240 90 480 -10 720 40 S 1200 90 1440 40 V80 H0Z'/%3E%3C/svg%3E")
+    center / 100% 100% no-repeat;
+}
+
+/* Subtle grid behind the scan overlay */
+.scan-grid {
+  background-image:
+    linear-gradient(to right, rgb(142 219 143 / 0.18) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(142 219 143 / 0.18) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* ---------- Lite mode & reduced motion ---------- */
+html.lite .decorative-motion {
+  display: none !important;
+}
+html.lite .animate-float,
+html.lite .animate-sway {
+  animation: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .decorative-motion {
+    display: none !important;
+  }
+}
+
+/* ---------- Print (result report) ---------- */
+@media print {
+  body {
+    background: white;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

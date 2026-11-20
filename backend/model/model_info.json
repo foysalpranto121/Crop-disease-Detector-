@@ -1,0 +1,26 @@
+{
+  "model_id": "linkanjarad/mobilenet_v2_1.0_224-plant-disease-identification",
+  "version": "mobilenet_v2-plantvillage-1.0",
+  "architecture": "MobileNetV2 (1.0, 224) fine-tuned on PlantVillage (38 classes)",
+  "reported_accuracy": 0.9541,
+  "source": "https://huggingface.co/linkanjarad/mobilenet_v2_1.0_224-plant-disease-identification",
+  "license": "see model card (license: other)",
+  "file": "plant_disease_mobilenetv2.onnx",
+  "sha256": "b6193cce6e75df615899254eaf83feaa6eb9608f958d61f024ed0cfe7231c603",
+  "size_bytes": 9246080,
+  "num_classes": 38,
+  "preprocessing": {
+    "resize_shortest_edge": 256,
+    "crop": 224,
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  }
+}

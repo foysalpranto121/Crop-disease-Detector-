@@ -1,0 +1,16 @@
+# Runtime — no PyTorch needed: the model runs with ONNX Runtime.
+fastapi>=0.115
+uvicorn[standard]>=0.32
+sqlalchemy>=2.0.36
+pydantic>=2.9
+pydantic-settings>=2.6
+python-multipart>=0.0.18
+pillow>=11.0
+numpy>=2.1
+onnxruntime>=1.20
+pyjwt>=2.10
+bcrypt>=4.2
+httpx>=0.28
+
+# Tests
+pytest>=8.3

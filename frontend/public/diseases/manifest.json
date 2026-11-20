@@ -1,0 +1,192 @@
+{
+  "apple-scab": [
+    "/diseases/apple-scab-1.jpg",
+    "/diseases/apple-scab-2.jpg",
+    "/diseases/apple-scab-3.jpg"
+  ],
+  "apple-with-black-rot": [
+    "/diseases/apple-with-black-rot-1.jpg",
+    "/diseases/apple-with-black-rot-2.jpg",
+    "/diseases/apple-with-black-rot-3.jpg"
+  ],
+  "cedar-apple-rust": [
+    "/diseases/cedar-apple-rust-1.jpg",
+    "/diseases/cedar-apple-rust-2.jpg",
+    "/diseases/cedar-apple-rust-3.jpg"
+  ],
+  "healthy-apple": [
+    "/diseases/healthy-apple-1.jpg",
+    "/diseases/healthy-apple-2.jpg",
+    "/diseases/healthy-apple-3.jpg"
+  ],
+  "healthy-blueberry-plant": [
+    "/diseases/healthy-blueberry-plant-1.jpg",
+    "/diseases/healthy-blueberry-plant-2.jpg",
+    "/diseases/healthy-blueberry-plant-3.jpg"
+  ],
+  "cherry-with-powdery-mildew": [
+    "/diseases/cherry-with-powdery-mildew-1.jpg",
+    "/diseases/cherry-with-powdery-mildew-2.jpg",
+    "/diseases/cherry-with-powdery-mildew-3.jpg"
+  ],
+  "healthy-cherry-plant": [
+    "/diseases/healthy-cherry-plant-1.jpg",
+    "/diseases/healthy-cherry-plant-2.jpg",
+    "/diseases/healthy-cherry-plant-3.jpg"
+  ],
+  "corn-maize-with-cercospora-and-gray-leaf-spot": [
+    "/diseases/corn-maize-with-cercospora-and-gray-leaf-spot-1.jpg",
+    "/diseases/corn-maize-with-cercospora-and-gray-leaf-spot-2.jpg",
+    "/diseases/corn-maize-with-cercospora-and-gray-leaf-spot-3.jpg"
+  ],
+  "corn-maize-with-common-rust": [
+    "/diseases/corn-maize-with-common-rust-1.jpg",
+    "/diseases/corn-maize-with-common-rust-2.jpg",
+    "/diseases/corn-maize-with-common-rust-3.jpg"
+  ],
+  "corn-maize-with-northern-leaf-blight": [
+    "/diseases/corn-maize-with-northern-leaf-blight-1.jpg",
+    "/diseases/corn-maize-with-northern-leaf-blight-2.jpg",
+    "/diseases/corn-maize-with-northern-leaf-blight-3.jpg"
+  ],
+  "healthy-corn-maize-plant": [
+    "/diseases/healthy-corn-maize-plant-1.jpg",
+    "/diseases/healthy-corn-maize-plant-2.jpg",
+    "/diseases/healthy-corn-maize-plant-3.jpg"
+  ],
+  "grape-with-black-rot": [
+    "/diseases/grape-with-black-rot-1.jpg",
+    "/diseases/grape-with-black-rot-2.jpg",
+    "/diseases/grape-with-black-rot-3.jpg"
+  ],
+  "grape-with-esca-black-measles": [
+    "/diseases/grape-with-esca-black-measles-1.jpg",
+    "/diseases/grape-with-esca-black-measles-2.jpg",
+    "/diseases/grape-with-esca-black-measles-3.jpg"
+  ],
+  "grape-with-isariopsis-leaf-spot": [
+    "/diseases/grape-with-isariopsis-leaf-spot-1.jpg",
+    "/diseases/grape-with-isariopsis-leaf-spot-2.jpg",
+    "/diseases/grape-with-isariopsis-leaf-spot-3.jpg"
+  ],
+  "healthy-grape-plant": [
+    "/diseases/healthy-grape-plant-1.jpg",
+    "/diseases/healthy-grape-plant-2.jpg",
+    "/diseases/healthy-grape-plant-3.jpg"
+  ],
+  "orange-with-citrus-greening": [
+    "/diseases/orange-with-citrus-greening-1.jpg",
+    "/diseases/orange-with-citrus-greening-2.jpg",
+    "/diseases/orange-with-citrus-greening-3.jpg"
+  ],
+  "peach-with-bacterial-spot": [
+    "/diseases/peach-with-bacterial-spot-1.jpg",
+    "/diseases/peach-with-bacterial-spot-2.jpg",
+    "/diseases/peach-with-bacterial-spot-3.jpg"
+  ],
+  "healthy-peach-plant": [
+    "/diseases/healthy-peach-plant-1.jpg",
+    "/diseases/healthy-peach-plant-2.jpg",
+    "/diseases/healthy-peach-plant-3.jpg"
+  ],
+  "bell-pepper-with-bacterial-spot": [
+    "/diseases/bell-pepper-with-bacterial-spot-1.jpg",
+    "/diseases/bell-pepper-with-bacterial-spot-2.jpg",
+    "/diseases/bell-pepper-with-bacterial-spot-3.jpg"
+  ],
+  "healthy-bell-pepper-plant": [
+    "/diseases/healthy-bell-pepper-plant-1.jpg",
+    "/diseases/healthy-bell-pepper-plant-2.jpg",
+    "/diseases/healthy-bell-pepper-plant-3.jpg"
+  ],
+  "potato-with-early-blight": [
+    "/diseases/potato-with-early-blight-1.jpg",
+    "/diseases/potato-with-early-blight-2.jpg",
+    "/diseases/potato-with-early-blight-3.jpg"
+  ],
+  "potato-with-late-blight": [
+    "/diseases/potato-with-late-blight-1.jpg",
+    "/diseases/potato-with-late-blight-2.jpg",
+    "/diseases/potato-with-late-blight-3.jpg"
+  ],
+  "healthy-potato-plant": [
+    "/diseases/healthy-potato-plant-1.jpg",
+    "/diseases/healthy-potato-plant-2.jpg",
+    "/diseases/healthy-potato-plant-3.jpg"
+  ],
+  "healthy-raspberry-plant": [
+    "/diseases/healthy-raspberry-plant-1.jpg",
+    "/diseases/healthy-raspberry-plant-2.jpg",
+    "/diseases/healthy-raspberry-plant-3.jpg"
+  ],
+  "healthy-soybean-plant": [
+    "/diseases/healthy-soybean-plant-1.jpg",
+    "/diseases/healthy-soybean-plant-2.jpg",
+    "/diseases/healthy-soybean-plant-3.jpg"
+  ],
+  "squash-with-powdery-mildew": [
+    "/diseases/squash-with-powdery-mildew-1.jpg",
+    "/diseases/squash-with-powdery-mildew-2.jpg",
+    "/diseases/squash-with-powdery-mildew-3.jpg"
+  ],
+  "strawberry-with-leaf-scorch": [
+    "/diseases/strawberry-with-leaf-scorch-1.jpg",
+    "/diseases/strawberry-with-leaf-scorch-2.jpg",
+    "/diseases/strawberry-with-leaf-scorch-3.jpg"
+  ],
+  "healthy-strawberry-plant": [
+    "/diseases/healthy-strawberry-plant-1.jpg",
+    "/diseases/healthy-strawberry-plant-2.jpg",
+    "/diseases/healthy-strawberry-plant-3.jpg"
+  ],
+  "tomato-with-bacterial-spot": [
+    "/diseases/tomato-with-bacterial-spot-1.jpg",
+    "/diseases/tomato-with-bacterial-spot-2.jpg",
+    "/diseases/tomato-with-bacterial-spot-3.jpg"
+  ],
+  "tomato-with-early-blight": [
+    "/diseases/tomato-with-early-blight-1.jpg",
+    "/diseases/tomato-with-early-blight-2.jpg",
+    "/diseases/tomato-with-early-blight-3.jpg"
+  ],
+  "tomato-with-late-blight": [
+    "/diseases/tomato-with-late-blight-1.jpg",
+    "/diseases/tomato-with-late-blight-2.jpg",
+    "/diseases/tomato-with-late-blight-3.jpg"
+  ],
+  "tomato-with-leaf-mold": [
+    "/diseases/tomato-with-leaf-mold-1.jpg",
+    "/diseases/tomato-with-leaf-mold-2.jpg",
+    "/diseases/tomato-with-leaf-mold-3.jpg"
+  ],
+  "tomato-with-septoria-leaf-spot": [
+    "/diseases/tomato-with-septoria-leaf-spot-1.jpg",
+    "/diseases/tomato-with-septoria-leaf-spot-2.jpg",
+    "/diseases/tomato-with-septoria-leaf-spot-3.jpg"
+  ],
+  "tomato-with-spider-mites-or-two-spotted-spider-mite": [
+    "/diseases/tomato-with-spider-mites-or-two-spotted-spider-mite-1.jpg",
+    "/diseases/tomato-with-spider-mites-or-two-spotted-spider-mite-2.jpg",
+    "/diseases/tomato-with-spider-mites-or-two-spotted-spider-mite-3.jpg"
+  ],
+  "tomato-with-target-spot": [
+    "/diseases/tomato-with-target-spot-1.jpg",
+    "/diseases/tomato-with-target-spot-2.jpg",
+    "/diseases/tomato-with-target-spot-3.jpg"
+  ],
+  "tomato-yellow-leaf-curl-virus": [
+    "/diseases/tomato-yellow-leaf-curl-virus-1.jpg",
+    "/diseases/tomato-yellow-leaf-curl-virus-2.jpg",
+    "/diseases/tomato-yellow-leaf-curl-virus-3.jpg"
+  ],
+  "tomato-mosaic-virus": [
+    "/diseases/tomato-mosaic-virus-1.jpg",
+    "/diseases/tomato-mosaic-virus-2.jpg",
+    "/diseases/tomato-mosaic-virus-3.jpg"
+  ],
+  "healthy-tomato-plant": [
+    "/diseases/healthy-tomato-plant-1.jpg",
+    "/diseases/healthy-tomato-plant-2.jpg",
+    "/diseases/healthy-tomato-plant-3.jpg"
+  ]
+}
