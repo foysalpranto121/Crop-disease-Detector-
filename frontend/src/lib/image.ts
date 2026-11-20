@@ -3,8 +3,12 @@ export const MAX_FILE_BYTES = 10 * 1024 * 1024;
 
 export type ImageCheck = { ok: true } | { ok: false; reason: "UNSUPPORTED_FORMAT" | "FILE_TOO_LARGE" };
 
+const ACCEPTED_EXTENSIONS = /\.(jpe?g|png|webp)$/i;
+
 export function checkImageFile(file: File): ImageCheck {
-  if (!ACCEPTED_TYPES.includes(file.type)) return { ok: false, reason: "UNSUPPORTED_FORMAT" };
+  // Some browsers/OS pickers leave file.type empty — fall back to the file extension.
+  const typeOk = file.type ? ACCEPTED_TYPES.includes(file.type) : ACCEPTED_EXTENSIONS.test(file.name);
+  if (!typeOk) return { ok: false, reason: "UNSUPPORTED_FORMAT" };
   if (file.size > MAX_FILE_BYTES) return { ok: false, reason: "FILE_TOO_LARGE" };
   return { ok: true };
 }
@@ -33,7 +37,7 @@ async function loadBitmap(file: Blob): Promise<ImageBitmap | HTMLImageElement> {
 }
 
 /**
- * Shrink a photo in the browser before upload (FRONTEND_PLAN §5: max 640 px, ~50–80 KB).
+ * Shrink a photo in the browser before upload (max 640 px, ~50–80 KB).
  * Saves data on slow mobile connections — a 4 MB phone photo becomes ~60 KB.
  */
 export async function compressImage(file: Blob, maxSide = 640, quality = 0.85): Promise<Blob> {

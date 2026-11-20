@@ -1,7 +1,7 @@
 # Crop Disease Detector — Frontend
 
 React + Vite + TypeScript web app. Green agriculture theme, 3D landing page, Bangla + English.
-Built from `../FRONTEND_PLAN.md`. Runs **without a backend** using built-in mock data.
+Runs **without a backend** using built-in mock data.
 
 ## Run it
 
@@ -37,7 +37,7 @@ The mock layer (`src/mocks/`, MSW) answers every `/api/*` call in the browser an
 - To reset demo data: in the browser console run `localStorage.removeItem("cdd.mock.v1")` and reload.
 
 When the FastAPI backend is ready, create `.env` with `VITE_USE_MOCKS=false`. Nothing else changes —
-the mocks follow the same API contract (`src/api/types.ts`, FRONTEND_PLAN §7).
+the mocks follow the same API contract (`src/api/types.ts`).
 
 ## Krishi AI chatbot
 

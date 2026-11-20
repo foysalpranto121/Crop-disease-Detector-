@@ -1,4 +1,4 @@
-"""Database tables (follows the mid-defence ERD: USER, LEAF_IMAGE→PREDICTION, DISEASE, TREATMENT, plus CROP and FEEDBACK).
+"""Database tables: USER, LEAF_IMAGE→PREDICTION, DISEASE, TREATMENT, CROP and FEEDBACK.
 
 Bilingual text fields are stored as JSON objects: {"en": "...", "bn": "..."}.
 The leaf image is stored as a file; PREDICTION.image_name points to it (merges the ERD's LEAF_IMAGE 1:1 row).

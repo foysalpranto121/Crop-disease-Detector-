@@ -19,7 +19,7 @@ function hasWebGL(): boolean {
 }
 
 /**
- * Decide whether this device should render the 3D scenes (FRONTEND_PLAN §4.5).
+ * Decide whether this device should render the 3D scenes.
  * Returns false on reduced motion, Data Saver, 2G/3G, ≤2 GB RAM, or no WebGL.
  */
 export function deviceCanRender3D(): boolean {

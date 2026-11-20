@@ -1,4 +1,4 @@
-import { useRef, useState, type DragEvent } from "react";
+import { useState, type ChangeEvent, type DragEvent } from "react";
 import { motion } from "motion/react";
 import { Camera, ImagePlus, Upload, Webcam } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -6,14 +6,15 @@ import { cn } from "../lib/cn";
 import { isTouchDevice } from "../lib/device";
 import { checkImageFile, type ImageCheck } from "../lib/image";
 import { CameraCapture } from "./CameraCapture";
+import { buttonClasses } from "./buttonClasses";
 import { Button } from "./ui";
 
 type Reason = Extract<ImageCheck, { ok: false }>["reason"];
 
+const FOCUS_WITHIN = "has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-leaf-600";
+
 export function ImagePicker({ onPick, onError }: { onPick: (file: File) => void; onError: (reason: Reason) => void }) {
   const { t } = useTranslation();
-  const cameraInput = useRef<HTMLInputElement>(null);
-  const galleryInput = useRef<HTMLInputElement>(null);
   const [dragging, setDragging] = useState(false);
   const [webcamOpen, setWebcamOpen] = useState(false);
   const touch = isTouchDevice();
@@ -24,6 +25,11 @@ export function ImagePicker({ onPick, onError }: { onPick: (file: File) => void;
     const check = checkImageFile(file);
     if (!check.ok) onError(check.reason);
     else onPick(file);
+  };
+
+  const onInput = (e: ChangeEvent<HTMLInputElement>) => {
+    handle(e.target.files?.[0]);
+    e.target.value = ""; // allow picking the same file again
   };
 
   const onDrop = (e: DragEvent) => {
@@ -56,52 +62,25 @@ export function ImagePicker({ onPick, onError }: { onPick: (file: File) => void;
           <p className="mt-1 text-sm text-leaf-900/60">{t("diagnose.formats")}</p>
 
           <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
-            {touch ? (
-              <>
-                <Button size="lg" onClick={() => cameraInput.current?.click()}>
-                  <Camera className="size-5" /> {t("diagnose.take_photo")}
-                </Button>
-                <Button size="lg" variant="secondary" onClick={() => galleryInput.current?.click()}>
-                  <Upload className="size-5" /> {t("diagnose.choose_gallery")}
-                </Button>
-              </>
-            ) : (
-              <>
-                <Button size="lg" onClick={() => galleryInput.current?.click()}>
-                  <Upload className="size-5" /> {t("diagnose.choose_gallery")}
-                </Button>
-                {canWebcam && (
-                  <Button size="lg" variant="secondary" onClick={() => setWebcamOpen(true)}>
-                    <Webcam className="size-5" /> {t("diagnose.use_webcam")}
-                  </Button>
-                )}
-              </>
+            {/* <label> + file input: opens the native picker without script-triggered clicks,
+                which some in-app and embedded browsers block. */}
+            {touch && (
+              <label className={cn(buttonClasses("primary", "lg"), FOCUS_WITHIN, "cursor-pointer")}>
+                <input type="file" accept="image/*" capture="environment" className="sr-only" onChange={onInput} />
+                <Camera className="size-5" aria-hidden /> {t("diagnose.take_photo")}
+              </label>
+            )}
+            <label className={cn(buttonClasses(touch ? "secondary" : "primary", "lg"), FOCUS_WITHIN, "cursor-pointer")}>
+              <input type="file" accept="image/jpeg,image/png,image/webp" className="sr-only" data-testid="gallery-input" onChange={onInput} />
+              <Upload className="size-5" aria-hidden /> {t("diagnose.choose_gallery")}
+            </label>
+            {canWebcam && (
+              <Button size="lg" variant="secondary" onClick={() => setWebcamOpen(true)}>
+                <Webcam className="size-5" /> {t("diagnose.use_webcam")}
+              </Button>
             )}
           </div>
         </div>
-
-        <input
-          ref={cameraInput}
-          type="file"
-          accept="image/*"
-          capture="environment"
-          className="hidden"
-          onChange={(e) => {
-            handle(e.target.files?.[0]);
-            e.target.value = "";
-          }}
-        />
-        <input
-          ref={galleryInput}
-          type="file"
-          accept="image/jpeg,image/png,image/webp"
-          className="hidden"
-          data-testid="gallery-input"
-          onChange={(e) => {
-            handle(e.target.files?.[0]);
-            e.target.value = "";
-          }}
-        />
       </motion.div>
 
       <CameraCapture

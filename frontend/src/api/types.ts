@@ -1,5 +1,4 @@
-// API contract shared by the mock layer (MSW) and the future FastAPI backend.
-// See FRONTEND_PLAN.md §7.
+// API contract shared by the mock layer (MSW) and the FastAPI backend.
 
 export type Lang = "en" | "bn";
 

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 /**
- * Pause a 3D canvas when it scrolls out of view or the tab is hidden (FRONTEND_PLAN §4.5).
+ * Pause a 3D canvas when it scrolls out of view or the tab is hidden.
  * Returns a ref for the wrapper element and whether rendering should run.
  */
 export function useActiveCanvas<T extends HTMLElement>() {

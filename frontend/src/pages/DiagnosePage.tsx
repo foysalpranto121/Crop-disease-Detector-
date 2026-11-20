@@ -84,13 +84,6 @@ export default function DiagnosePage() {
       <div className={cn(container, "grid gap-8 pb-8 lg:grid-cols-[minmax(0,1fr)_340px]")}>
         <div className="min-w-0 space-y-4">
           {USE_MOCKS && <Alert tone="info">{t("common.demo_mode")}</Alert>}
-          <AnimatePresence>
-            {error && (
-              <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }}>
-                <Alert tone="danger">{error}</Alert>
-              </motion.div>
-            )}
-          </AnimatePresence>
 
           <Card className="p-4 sm:p-5">
             <fieldset disabled={analyzing}>
@@ -124,6 +117,14 @@ export default function DiagnosePage() {
               )}
             </fieldset>
           </Card>
+
+          <AnimatePresence>
+            {error && (
+              <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }}>
+                <Alert tone="danger" className="scroll-mt-24">{error}</Alert>
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           <AnimatePresence mode="wait">
             {!preview ? (

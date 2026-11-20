@@ -25,6 +25,9 @@ describe("image checks", () => {
     const big = new File([new Uint8Array(11 * 1024 * 1024)], "a.jpg", { type: "image/jpeg" });
     expect(checkImageFile(big)).toEqual({ ok: false, reason: "FILE_TOO_LARGE" });
     expect(checkImageFile(new File(["x"], "a.jpg", { type: "image/jpeg" }))).toEqual({ ok: true });
+    // Some pickers leave the MIME type empty: the extension decides
+    expect(checkImageFile(new File(["x"], "LEAF.JPG", { type: "" }))).toEqual({ ok: true });
+    expect(checkImageFile(new File(["x"], "leaf.heic", { type: "" }))).toEqual({ ok: false, reason: "UNSUPPORTED_FORMAT" });
   });
 });
 
