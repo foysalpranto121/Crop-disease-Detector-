@@ -164,7 +164,7 @@ On first start the API creates the database, loads the disease knowledge base an
 
 | Variable | Description |
 |---|---|
-| `VITE_API_URL` | API origin, e.g. `https://your-api.hf.space`. Empty = same origin |
+| `VITE_API_URL` | API origin, e.g. `https://krishi-doctor-api.onrender.com`. Empty = same origin |
 | `VITE_USE_MOCKS` | `false` for the real API; `true` runs the website on built-in demo data |
 
 > [!CAUTION]
@@ -172,40 +172,37 @@ On first start the API creates the database, loads the disease knowledge base an
 
 ## Deployment
 
-The website and the API are deployed separately: **Netlify** serves the static website, and the API (which needs
-about 1 GB of RAM for its five models) runs on a container host. A free **Hugging Face Docker Space**
-(2 vCPU, 16 GB RAM) is the recommended option.
+The website and the API are deployed separately: **Netlify** serves the static website and **Render** runs the API
+as a Docker web service (about 350 MB of RAM with all five models, so the free plan is enough).
 
-### 1. API → Hugging Face Spaces
+### 1. API → Render
 
-1. Create a new Space at [huggingface.co/new-space](https://huggingface.co/new-space) → SDK **Docker** → template
-   **Blank** → hardware **CPU basic (free)**.
-2. Upload the two files from [`deploy/huggingface/`](deploy/huggingface): `Dockerfile` and `README.md`.
-   The Dockerfile clones this repository and installs the API.
-3. In **Settings → Variables and secrets**, add:
+1. Sign in at [render.com](https://render.com) with GitHub.
+2. Open **[New → Blueprint](https://dashboard.render.com/blueprint/new)** and select this repository.
+   [`render.yaml`](render.yaml) defines the service `krishi-doctor-api` (Docker, free plan, health check `/api/health`).
+3. Enter the two values Render asks for:
 
-   | Name | Type | Value |
-   |---|---|---|
-   | `SECRET_KEY` | Secret | a long random string |
-   | `ADMIN_EMAIL` | Variable | your admin email |
-   | `ADMIN_PASSWORD` | Secret | a strong password |
-   | `EURI_API_KEY` | Secret | your EURI key (optional) |
-   | `CORS_ORIGINS` | Variable | `["https://<your-site>.netlify.app"]` |
+   | Name | Value |
+   |---|---|
+   | `ADMIN_PASSWORD` | a strong password for `admin@krishi-doctor.app` |
+   | `EURI_API_KEY` | your EURI key (optional — without it the chat answers from the offline library) |
 
-4. Wait for the build, then open `https://<user>-<space>.hf.space/api/health` — it should return `"status": "ok"`.
+   `SECRET_KEY` is generated automatically; `CORS_ORIGINS` already allows `https://krishi-doctor.netlify.app`.
+4. Click **Apply**. When the deploy is live, `https://krishi-doctor-api.onrender.com/api/health` returns `"status": "ok"`.
 
 ### 2. Website → Netlify
 
 1. In Netlify: **Add new site → Import an existing project → GitHub** and select this repository.
    Build settings are read from [`netlify.toml`](netlify.toml) (base `frontend`, command `npm run build`, publish `dist`).
-2. In **Site configuration → Environment variables**, add `VITE_API_URL` = `https://<user>-<space>.hf.space`
-   (no trailing slash).
-3. Deploy. Then make sure the Netlify URL is listed in the Space's `CORS_ORIGINS` and restart the Space.
+2. In **Site configuration → Environment variables**, set `VITE_API_URL` = `https://krishi-doctor-api.onrender.com`
+   (no trailing slash), then redeploy.
+3. If your site URL is not `krishi-doctor.netlify.app`, update `CORS_ORIGINS` on Render to match.
 
 > [!NOTE]
-> On the free Space tier the SQLite database is reset when the Space restarts (the knowledge base and admin account
-> are recreated automatically; user accounts and scan history are not). Enable persistent storage on the Space, or
-> point `DATABASE_URL` to a hosted database, to keep them. To ship a new API version, use **Settings → Factory rebuild**.
+> Free Render services sleep after 15 minutes without traffic; the first request afterwards takes about a minute
+> while the models load. The free plan has no persistent disk: the SQLite database is recreated on each deploy or
+> restart (the knowledge base and admin account come back automatically; user accounts and scan history do not).
+> Attach a Render disk or point `DATABASE_URL` to a hosted database to keep them.
 
 ## API
 
@@ -251,7 +248,8 @@ cd frontend && npm run build           # type-check + production build
 │   ├── model/                ONNX models (main + rice, india/wheat, soybean, jute)
 │   ├── scripts/              Model export and photo download scripts
 │   └── tests/                API tests
-├── deploy/huggingface/       Dockerfile and Space card for the API
+├── deploy/render/            Dockerfile for the API (used by render.yaml)
+├── render.yaml               Render Blueprint for the API
 ├── docs/screenshots/         Images used in this README
 └── netlify.toml              Website build and hosting settings
 ```
