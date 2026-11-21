@@ -7,8 +7,8 @@ import { cn } from "../lib/cn";
 import { ChatMarkdown } from "./ChatMarkdown";
 import { LeafMark } from "./Logo";
 
-/** Krishi AI's face: a Bangladeshi farmer-doctor portrait (public/avatar/krishi-doctor.webp); leaf logo if missing. */
-const BOT_AVATAR_SRC = "/avatar/krishi-doctor.webp";
+/** Krishi AI's face: a Bangladeshi farmer-doctor (tupi, gamchha, stethoscope); leaf logo if the image fails. */
+const BOT_AVATAR_SRC = "/avatar/krishi-doctor.svg";
 
 function BotAvatar({ className, online = false }: { className?: string; online?: boolean }) {
   const [failed, setFailed] = useState(false);
@@ -17,13 +17,10 @@ function BotAvatar({ className, online = false }: { className?: string; online?:
       {failed ? (
         <LeafMark className="size-full" />
       ) : (
-        <img
-          src={BOT_AVATAR_SRC}
-          alt=""
-          onError={() => setFailed(true)}
-          className="size-full rounded-full bg-leaf-100 object-cover ring-2 ring-white shadow-sm"
-          draggable={false}
-        />
+        <span className="block size-full overflow-hidden rounded-full bg-sky-200 shadow-sm ring-2 ring-white">
+          {/* zoom into the face so it stays recognisable at small sizes */}
+          <img src={BOT_AVATAR_SRC} alt="" onError={() => setFailed(true)} className="size-full origin-[50%_40%] scale-[1.55] object-cover" draggable={false} />
+        </span>
       )}
       {online && <span className="absolute end-0 bottom-0 size-[28%] min-h-2.5 min-w-2.5 rounded-full bg-[#22c55e] ring-2 ring-white" aria-hidden />}
     </span>
