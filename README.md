@@ -17,6 +17,8 @@ a confidence score, real reference photos and a clear chemical, organic and prev
 ![ONNX Runtime](https://img.shields.io/badge/ONNX_Runtime-CPU-005ced?logo=onnx&logoColor=white)
 ![Netlify](https://img.shields.io/badge/Frontend-Netlify-00c7b7?logo=netlify&logoColor=white)
 
+**[🌐 Live demo — krishi-doctor.netlify.app](https://krishi-doctor.netlify.app)**
+
 [Features](#features) · [Supported crops](#supported-crops) · [Architecture](#architecture) · [Quick start](#quick-start) · [Deployment](#deployment) · [API](#api)
 
 <br />
